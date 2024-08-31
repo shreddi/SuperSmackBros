@@ -6,14 +6,20 @@ signal selection_confirmed(player, character_index)
 var player1_selection = 1
 var player2_selection = 1
 var characters = {"fox": "res://Characters/Fox/Fox.tscn", "mario": "res://Characters/Mario/Mario.tscn"} # Character to path mapping
-@onready var gridContainer = $ColorRect/VBoxContainer/GridContainer
+@onready var gridContainer = $HBoxContainer/VBoxContainer/GridContainer
 @onready var p1 = $ColorRect/Player1Indicator
 @onready var p2 = $ColorRect/Player2Indicator
 
 func _ready():
 	characters = gridContainer.get_children()
 	print(characters)
-
+	p1.global_position.x = characters[0].global_position.x + characters[0].custom_minimum_size.x/10
+	p1.global_position.y = characters[0].global_position.y
+	p2.global_position.x = characters[0].global_position.x + characters[0].custom_minimum_size.x/3
+	p2.global_position.y = characters[0].global_position.y
+	print(characters[0].global_position.x + characters[0].custom_minimum_size.x/10)
+	print(characters[0].global_position.y)
+	print(p1.global_position)
 	# Initialize selections
 	update_selection(1, 0)
 	update_selection(2, 0)
@@ -38,9 +44,8 @@ func _input(event):
 		emit_signal("selection_confirmed", 2, player2_selection)
 
 func update_selection(player, selection_index):
-	print("bruh")
 	if player == 1:
-		p1.global_position.x = characters[selection_index].global_position.x 
+		p1.global_position.x = characters[selection_index].global_position.x + characters[selection_index].custom_minimum_size.x/10
 		p1.global_position.y = characters[selection_index].global_position.y
 		Globals.player1 = selection_index
 	elif player == 2:

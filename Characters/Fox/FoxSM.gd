@@ -1232,7 +1232,7 @@ func enter_state(new_state, old_state):
 			parent.play_animation('fox_forward_air')
 			parent.state.text = str('FAIR')
 		states.DAIR:
-			parent.play_animation('DAIR')
+			parent.play_animation('fox_down_air')
 			parent.state.text = str('DAIR')
 		states.UAIR:
 			parent.play_animation('fox_up_air')
