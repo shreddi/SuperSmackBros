@@ -1,0 +1,162 @@
+[gd_scene load_steps=16 format=3 uid="uid://rjxc1dai050l"]
+
+[ext_resource type="PackedScene" uid="uid://dj0l0vs0bb2p0" path="res://Test/Projectile/Projectile_Fox_Laser.tscn" id="3_x3uko"]
+[ext_resource type="PackedScene" uid="uid://o26cu0gt83vt" path="res://Grabbox/Grabbox.tscn" id="4_e3wi3"]
+[ext_resource type="SpriteFrames" uid="uid://bxbkwb0stfsbf" path="res://Characters/Fox/FoxSprite.tres" id="4_fgs8j"]
+[ext_resource type="AnimationLibrary" uid="uid://cij37t0wue5vg" path="res://Characters/Fox/FoxAnimationLibrary.res" id="5_7ipet"]
+[ext_resource type="Script" path="res://Characters/Fox/StateMachineFox.gd" id="35"]
+[ext_resource type="Script" path="res://Characters/Fox/Fox.gd" id="36"]
+[ext_resource type="PackedScene" uid="uid://c0vr38g52o5jl" path="res://Hitbox/Hitbox.tscn" id="37"]
+
+[sub_resource type="RectangleShape2D" id="185"]
+size = Vector2(60, 94)
+
+[sub_resource type="SystemFont" id="SystemFont_4gxdn"]
+font_names = PackedStringArray("TF2 Secondary", "TF2 Build")
+subpixel_positioning = 0
+multichannel_signed_distance_field = true
+
+[sub_resource type="FontVariation" id="FontVariation_7s7o2"]
+base_font = SubResource("SystemFont_4gxdn")
+
+[sub_resource type="SystemFont" id="SystemFont_tlvxr"]
+font_names = PackedStringArray("TF2 Build", "TF2 Secondary")
+subpixel_positioning = 0
+multichannel_signed_distance_field = true
+
+[sub_resource type="FontVariation" id="FontVariation_fhjw6"]
+base_font = SubResource("SystemFont_tlvxr")
+
+[sub_resource type="FontVariation" id="FontVariation_e77rm"]
+base_font = SubResource("SystemFont_4gxdn")
+
+[sub_resource type="RectangleShape2D" id="186"]
+size = Vector2(40, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ew1h"]
+size = Vector2(60, 94)
+
+[node name="FOX" type="CharacterBody2D" groups=["Character"]]
+collision_mask = 6
+slide_on_ceiling = false
+platform_on_leave = 2
+platform_floor_layers = 6
+script = ExtResource("36")
+hitbox = ExtResource("37")
+projectile = ExtResource("3_x3uko")
+grabbox = ExtResource("4_e3wi3")
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("35")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
+sprite_frames = ExtResource("4_fgs8j")
+animation = &"IDLE"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+libraries = {
+"": ExtResource("5_7ipet")
+}
+
+[node name="CollisionBox" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("185")
+
+[node name="Raycasts" type="Node2D" parent="."]
+
+[node name="GroundL" type="RayCast2D" parent="Raycasts"]
+position = Vector2(-30, 40)
+target_position = Vector2(0, 10)
+collision_mask = 6
+hit_from_inside = true
+
+[node name="GroundR" type="RayCast2D" parent="Raycasts"]
+position = Vector2(30, 40)
+target_position = Vector2(0, 10)
+collision_mask = 6
+hit_from_inside = true
+
+[node name="Ledge_Grab_F" type="RayCast2D" parent="Raycasts"]
+position = Vector2(22, -15)
+scale = Vector2(3, 3)
+target_position = Vector2(20, 0)
+collision_mask = 8
+hit_from_inside = true
+collide_with_areas = true
+
+[node name="Ledge_Grab_B" type="RayCast2D" parent="Raycasts"]
+position = Vector2(0, -38)
+scale = Vector2(3, 3)
+target_position = Vector2(-11, 0)
+collision_mask = 8
+hit_from_inside = true
+collide_with_areas = true
+
+[node name="Frames" type="Label" parent="."]
+offset_left = -20.0
+offset_top = -76.0
+offset_right = 20.0
+offset_bottom = -62.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = SubResource("FontVariation_7s7o2")
+text = "45"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="State" type="Label" parent="."]
+offset_left = -20.0
+offset_top = -60.0
+offset_right = 20.0
+offset_bottom = -46.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = SubResource("FontVariation_fhjw6")
+text = "State"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Health" type="Label" parent="."]
+offset_left = 38.0
+offset_top = -54.0
+offset_right = 78.0
+offset_bottom = -40.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("FontVariation_e77rm")
+text = "Health"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(62, 32)
+shape = SubResource("186")
+disabled = true
+
+[node name="gun_pos" type="Marker2D" parent="."]
+position = Vector2(48, 0)
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_mask = 6
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Hurtbox"]
+unique_name_in_owner = true
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_3ew1h")
+debug_color = Color(0.352941, 0, 0.00784314, 0.419608)
+
+[node name="Parrybox" type="Area2D" parent="."]
+collision_mask = 6
+
+[node name="Parrybox" type="CollisionShape2D" parent="Parrybox"]
+unique_name_in_owner = true
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_3ew1h")
+disabled = true
+debug_color = Color(1, 0.298039, 0.254902, 0.419608)

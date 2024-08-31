@@ -1,0 +1,130 @@
+[gd_scene load_steps=10 format=3 uid="uid://bq75qy14ncugn"]
+
+[ext_resource type="Script" path="res://UI/Title_Screen/playbutton.gd" id="1_al4n3"]
+[ext_resource type="Script" path="res://UI/Title_Screen/titlescreen.gd" id="1_dl327"]
+[ext_resource type="Script" path="res://UI/Title_Screen/optionsbutton.gd" id="2_goa6y"]
+[ext_resource type="Script" path="res://UI/Title_Screen/exitbutton.gd" id="3_0km31"]
+
+[sub_resource type="SystemFont" id="SystemFont_sw1k3"]
+font_names = PackedStringArray("Futura")
+
+[sub_resource type="Theme" id="Theme_ilk0l"]
+default_font = SubResource("SystemFont_sw1k3")
+
+[sub_resource type="Theme" id="Theme_n1t18"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0lu3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7ic1"]
+
+[node name="Titlescreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_ilk0l")
+script = ExtResource("1_dl327")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.188235, 0.262745, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -308.0
+offset_top = 104.0
+offset_right = 308.0
+offset_bottom = 209.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 80
+text = "Super Trash Bros
+"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -418.0
+offset_top = -241.0
+offset_right = 418.0
+offset_bottom = 241.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_n1t18")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="playbutton" type="Button" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(600, 100)
+layout_mode = 2
+text = "PLAY"
+script = ExtResource("1_al4n3")
+
+[node name="Area2D" type="Area2D" parent="HBoxContainer/VBoxContainer/playbutton"]
+collision_layer = 65536
+collision_mask = 524288
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HBoxContainer/VBoxContainer/playbutton/Area2D"]
+shape = SubResource("RectangleShape2D_t0lu3")
+
+[node name="optionsbutton" type="Button" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(600, 100)
+layout_mode = 2
+text = "OPTIONS"
+script = ExtResource("2_goa6y")
+
+[node name="Area2D" type="Area2D" parent="HBoxContainer/VBoxContainer/optionsbutton"]
+collision_layer = 65536
+collision_mask = 524288
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HBoxContainer/VBoxContainer/optionsbutton/Area2D"]
+shape = SubResource("RectangleShape2D_t0lu3")
+
+[node name="exitbutton" type="Button" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(600, 100)
+layout_mode = 2
+text = "EXITS"
+script = ExtResource("3_0km31")
+
+[node name="Area2D" type="Area2D" parent="HBoxContainer/VBoxContainer/exitbutton"]
+collision_layer = 65536
+collision_mask = 524288
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HBoxContainer/VBoxContainer/exitbutton/Area2D"]
+shape = SubResource("RectangleShape2D_t0lu3")
+
+[node name="Pointer" type="Area2D" parent="."]
+collision_layer = 524288
+collision_mask = 65536
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pointer"]
+shape = SubResource("RectangleShape2D_l7ic1")
+
+[connection signal="focus_entered" from="HBoxContainer/VBoxContainer/playbutton" to="HBoxContainer/VBoxContainer/playbutton" method="_on_SinglePlayerButton_focus_entered"]
+[connection signal="focus_exited" from="HBoxContainer/VBoxContainer/playbutton" to="HBoxContainer/VBoxContainer/playbutton" method="_on_SinglePlayerButton_focus_exited"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/playbutton" to="HBoxContainer/VBoxContainer/playbutton" method="_on_pressed"]
+[connection signal="area_entered" from="HBoxContainer/VBoxContainer/playbutton/Area2D" to="HBoxContainer/VBoxContainer/playbutton" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="HBoxContainer/VBoxContainer/playbutton/Area2D" to="HBoxContainer/VBoxContainer/playbutton" method="_on_area_2d_area_exited"]
+[connection signal="focus_entered" from="HBoxContainer/VBoxContainer/exitbutton" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_SinglePlayerButton_focus_entered"]
+[connection signal="focus_exited" from="HBoxContainer/VBoxContainer/exitbutton" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_SinglePlayerButton_focus_exited"]
+[connection signal="focus_exited" from="HBoxContainer/VBoxContainer/exitbutton" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_focus_exited"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/exitbutton" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_pressed"]
+[connection signal="area_entered" from="HBoxContainer/VBoxContainer/exitbutton/Area2D" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="HBoxContainer/VBoxContainer/exitbutton/Area2D" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_area_2d_area_exited"]

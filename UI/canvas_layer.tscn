@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cnf1uvwvkouns"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="P1Stocks" type="Label" parent="."]
+offset_left = 784.0
+offset_top = 776.0
+offset_right = 1284.0
+offset_bottom = 1076.0
+theme_override_font_sizes/font_size = 150
+text = "Stocks"
+
+[node name="P2Stocks" type="Label" parent="."]
+offset_left = 1406.0
+offset_top = 781.0
+offset_right = 1906.0
+offset_bottom = 1081.0
+theme_override_font_sizes/font_size = 150
+text = "Stocks"

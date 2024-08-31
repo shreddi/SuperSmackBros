@@ -1,0 +1,73 @@
+[gd_scene load_steps=8 format=3 uid="uid://c365wbvot4nlh"]
+
+[ext_resource type="Script" path="res://Characters/Mario/fireball/fireball.gd" id="1_julbi"]
+[ext_resource type="Texture2D" uid="uid://dbunm7bthcotj" path="res://Characters/Mario/Sprites/fireball.png" id="2_wvq8g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmanv"]
+atlas = ExtResource("2_wvq8g")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vuqdk"]
+atlas = ExtResource("2_wvq8g")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jat5e"]
+atlas = ExtResource("2_wvq8g")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2adno"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmanv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmanv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmanv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmanv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmanv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmanv")
+}],
+"loop": true,
+"name": &"burst",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vuqdk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jat5e")
+}],
+"loop": true,
+"name": &"fire",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v1slg"]
+size = Vector2(64, 24)
+
+[node name="fireball" type="Area2D"]
+collision_layer = 0
+script = ExtResource("1_julbi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2.84217e-14, 28)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_2adno")
+animation = &"burst"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_v1slg")
+
+[connection signal="body_entered" from="." to="." method="_on_WOLF_LASER_body_entered"]
