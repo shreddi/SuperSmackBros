@@ -259,7 +259,7 @@ func STRONG_DASH_ATTACK():
 		
 #TILTS
 func DOWN_TILT():
-	var width = 60
+	var width = 90
 	var height = 40
 	var damage = 8
 	var angle = 90
@@ -282,8 +282,8 @@ func UP_TILT():
 func FORWARD_TILT():
 	if frame == 4:
 		#create_hitbox(w,h,dam,ang,bkb,kbs,dur, type, points, angle_flipper)
-		create_hitbox(60, 30, 7, 20, 3, 90, 2, 'normal', Vector2(41,3), 0)
-	if frame >= 12:
+		create_hitbox(100, 30, 7, 20, 3, 90, 2, 'normal', Vector2(61,3), 0)
+	if frame >= 15:
 		return true
 		
 func FORWARD_SMASH():
@@ -344,7 +344,7 @@ func NAIR():
 	if frame == 5:
 		create_hitbox(90,70,12,30,1,70,3,'normal',Vector2(20,10),0,0)
 	if frame == 8:
-		create_hitbox(60,40,5,30,0,60,27,'normal',Vector2(20,10),0,0)
+		create_hitbox(75,55,5,30,0,60,27,'normal',Vector2(20,10),0,0)
 	if frame == 36:
 		return true 
 
@@ -434,7 +434,7 @@ func UP_SPECIAL():
 		#var deadzone = (Input.get_action_strength("right_%s" % id)-Input.get_action_strength("left_%s" % id) in range(-0.2,1.2) and Input.get_action_strength("up_%s" % id)-Input.get_action_strength("down_%s" % id) in range(-0.2,1.2))
 		#var direction = Vector2(Input.is_action_pressed("right_%s" % id)-Input.is_action_pressed("left_%s" % id),Input.is_action_pressed("down_%s" % id)-Input.is_action_pressed("up_%s" % id))
 		var direction = Vector2(0, 0)
-
+		create_hitbox(70,70,12,90,10,80,trans1-end,'normal',Vector2(0,0),0,1)
 		if Input.is_action_pressed("right_%s" % id):
 			direction.x += 1
 		if Input.is_action_pressed("left_%s" % id):

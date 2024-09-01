@@ -205,6 +205,14 @@ scale = Vector2(9.945, 6)
 sprite_frames = SubResource("SpriteFrames_abgo5")
 frame_progress = 0.485008
 
+[node name="Player1Indicator" type="Sprite2D" parent="."]
+position = Vector2(-64, -38)
+texture = ExtResource("3_r7jn7")
+
+[node name="Player2Indicator" type="Sprite2D" parent="."]
+position = Vector2(-9, -39)
+texture = ExtResource("2_iyqww")
+
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 8
@@ -234,21 +242,13 @@ Light Attack: Z
 Strong Attack: X
 Jump: C
 Special: V
-Shield: Command
+Shield: Shift
 Grab: Shield + Attack (strong or light)"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 100
 alignment = 1
-
-[node name="Player1Indicator" type="Sprite2D" parent="HBoxContainer/VBoxContainer"]
-position = Vector2(-573, -61)
-texture = ExtResource("3_r7jn7")
-
-[node name="Player2Indicator" type="Sprite2D" parent="HBoxContainer/VBoxContainer"]
-position = Vector2(-518, -62)
-texture = ExtResource("2_iyqww")
 
 [node name="title" type="Label" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -302,7 +302,7 @@ Light Attack: M
 Strong Attack: ,
 Jump: .
 Special: /
-Shield: Space
+Shield: N
 Grab: Shield + Attack (strong or light)"
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Button" to="HBoxContainer/VBoxContainer/Button" method="_on_pressed"]

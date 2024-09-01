@@ -113,6 +113,7 @@ scale = Vector2(2, 2)
 texture = ExtResource("1_8tddp")
 
 [node name="Floor" type="StaticBody2D" parent="."]
+visible = false
 position = Vector2(7, 293)
 collision_layer = 4
 
@@ -130,6 +131,7 @@ text = "Floor
 metadata/_edit_use_anchors_ = true
 
 [node name="Wall" type="StaticBody2D" parent="."]
+visible = false
 position = Vector2(8, 356)
 scale = Vector2(0.99, 0.99)
 collision_layer = 2
@@ -151,11 +153,13 @@ script = ExtResource("7_skqt3")
 zoom_offset = 0.17
 
 [node name="Ledge" parent="." instance=ExtResource("3_76yki")]
+visible = false
 position = Vector2(525, 326)
 collision_mask = 0
 ledge_side = "right"
 
 [node name="Ledge2" parent="." instance=ExtResource("3_76yki")]
+visible = false
 position = Vector2(-510, 326)
 collision_mask = 0
 
