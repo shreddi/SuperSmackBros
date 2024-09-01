@@ -2,6 +2,7 @@ extends Control
 
 var current_state = States.PLAY
 @onready var getpointer = $Pointer
+@onready var anim = $AnimatedSprite2D
 
 enum States{
 	PLAY,
@@ -9,6 +10,9 @@ enum States{
 	EXIT
 }
 
+func _ready():
+	anim.play("default",1.0,false)
+	
 func _process(delta):
 	#When pressing select, Pointer checks which button it's on, and triggers its button
 	if Input.is_action_just_pressed("ui_select_1") or Input.is_action_just_pressed("ui_select_2"):

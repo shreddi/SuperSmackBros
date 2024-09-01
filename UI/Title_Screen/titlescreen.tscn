@@ -1,19 +1,168 @@
-[gd_scene load_steps=10 format=3 uid="uid://bq75qy14ncugn"]
+[gd_scene load_steps=31 format=3 uid="uid://bq75qy14ncugn"]
 
 [ext_resource type="Script" path="res://UI/Title_Screen/playbutton.gd" id="1_al4n3"]
 [ext_resource type="Script" path="res://UI/Title_Screen/titlescreen.gd" id="1_dl327"]
+[ext_resource type="Texture2D" uid="uid://bdolo3igs00ug" path="res://UI/character_select/fire.png" id="2_61vfs"]
 [ext_resource type="Script" path="res://UI/Title_Screen/optionsbutton.gd" id="2_goa6y"]
+[ext_resource type="Texture2D" uid="uid://dexd0508ukbiq" path="res://UI/Title_Screen/pixeltitle.png" id="2_ubdhk"]
 [ext_resource type="Script" path="res://UI/Title_Screen/exitbutton.gd" id="3_0km31"]
 
-[sub_resource type="SystemFont" id="SystemFont_sw1k3"]
-font_names = PackedStringArray("Futura")
-
-[sub_resource type="Theme" id="Theme_ilk0l"]
-default_font = SubResource("SystemFont_sw1k3")
-
-[sub_resource type="Theme" id="Theme_n1t18"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t0lu3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ciqtx"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(0, 0, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxugl"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(220, 0, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ti8xw"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(440, 0, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_soj2w"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(660, 0, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88vtv"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(880, 0, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lol56"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(0, 220, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6dhd"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(220, 220, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_otq44"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(440, 220, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxxcy"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(660, 220, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8osop"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(880, 220, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7gfsx"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(0, 440, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0teok"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(220, 440, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5gxs"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(440, 440, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3yrd"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(660, 440, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uhgdi"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(880, 440, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7chl"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(0, 660, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ptsq5"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(220, 660, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bq8m"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(440, 660, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6lk6d"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(660, 660, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5u4wb"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(880, 660, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4shq4"]
+atlas = ExtResource("2_61vfs")
+region = Rect2(0, 880, 220, 220)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fe41a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ciqtx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mxugl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ti8xw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_soj2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_88vtv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lol56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6dhd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_otq44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxxcy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8osop")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7gfsx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0teok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5gxs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3yrd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uhgdi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7chl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ptsq5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bq8m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6lk6d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5u4wb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4shq4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l7ic1"]
 
@@ -24,7 +173,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = SubResource("Theme_ilk0l")
 script = ExtResource("1_dl327")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -34,81 +182,74 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 0.188235, 0.262745, 1)
+color = Color(0, 0, 0, 1)
 
-[node name="Label" type="Label" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -308.0
-offset_top = 104.0
-offset_right = 308.0
-offset_bottom = 209.0
+offset_left = -524.0
+offset_top = -70.0
+offset_right = 525.0
+offset_bottom = 860.0
 grow_horizontal = 2
-theme_override_font_sizes/font_size = 80
-text = "Super Trash Bros
-"
-
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -418.0
-offset_top = -241.0
-offset_right = 418.0
-offset_bottom = 241.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_n1t18")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
-layout_mode = 2
 size_flags_horizontal = 4
-theme_override_constants/separation = 30
+theme_override_constants/separation = -50
 alignment = 1
 
-[node name="playbutton" type="Button" parent="HBoxContainer/VBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(400, 800)
+layout_mode = 2
+texture = ExtResource("2_ubdhk")
+
+[node name="playbutton" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(600, 100)
 layout_mode = 2
+theme_override_font_sizes/font_size = 50
 text = "PLAY"
 script = ExtResource("1_al4n3")
 
-[node name="Area2D" type="Area2D" parent="HBoxContainer/VBoxContainer/playbutton"]
+[node name="Area2D" type="Area2D" parent="VBoxContainer/playbutton"]
 collision_layer = 65536
 collision_mask = 524288
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HBoxContainer/VBoxContainer/playbutton/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/playbutton/Area2D"]
 shape = SubResource("RectangleShape2D_t0lu3")
 
-[node name="optionsbutton" type="Button" parent="HBoxContainer/VBoxContainer"]
+[node name="optionsbutton" type="Button" parent="VBoxContainer"]
+visible = false
 custom_minimum_size = Vector2(600, 100)
 layout_mode = 2
 text = "OPTIONS"
 script = ExtResource("2_goa6y")
 
-[node name="Area2D" type="Area2D" parent="HBoxContainer/VBoxContainer/optionsbutton"]
+[node name="Area2D" type="Area2D" parent="VBoxContainer/optionsbutton"]
 collision_layer = 65536
 collision_mask = 524288
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HBoxContainer/VBoxContainer/optionsbutton/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/optionsbutton/Area2D"]
 shape = SubResource("RectangleShape2D_t0lu3")
 
-[node name="exitbutton" type="Button" parent="HBoxContainer/VBoxContainer"]
+[node name="exitbutton" type="Button" parent="VBoxContainer"]
+visible = false
 custom_minimum_size = Vector2(600, 100)
 layout_mode = 2
 text = "EXITS"
 script = ExtResource("3_0km31")
 
-[node name="Area2D" type="Area2D" parent="HBoxContainer/VBoxContainer/exitbutton"]
+[node name="Area2D" type="Area2D" parent="VBoxContainer/exitbutton"]
 collision_layer = 65536
 collision_mask = 524288
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HBoxContainer/VBoxContainer/exitbutton/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/exitbutton/Area2D"]
 shape = SubResource("RectangleShape2D_t0lu3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.384314)
+position = Vector2(960, 450)
+scale = Vector2(9.945, 6)
+sprite_frames = SubResource("SpriteFrames_fe41a")
 
 [node name="Pointer" type="Area2D" parent="."]
 collision_layer = 524288
@@ -117,14 +258,14 @@ collision_mask = 65536
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pointer"]
 shape = SubResource("RectangleShape2D_l7ic1")
 
-[connection signal="focus_entered" from="HBoxContainer/VBoxContainer/playbutton" to="HBoxContainer/VBoxContainer/playbutton" method="_on_SinglePlayerButton_focus_entered"]
-[connection signal="focus_exited" from="HBoxContainer/VBoxContainer/playbutton" to="HBoxContainer/VBoxContainer/playbutton" method="_on_SinglePlayerButton_focus_exited"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/playbutton" to="HBoxContainer/VBoxContainer/playbutton" method="_on_pressed"]
-[connection signal="area_entered" from="HBoxContainer/VBoxContainer/playbutton/Area2D" to="HBoxContainer/VBoxContainer/playbutton" method="_on_area_2d_area_entered"]
-[connection signal="area_exited" from="HBoxContainer/VBoxContainer/playbutton/Area2D" to="HBoxContainer/VBoxContainer/playbutton" method="_on_area_2d_area_exited"]
-[connection signal="focus_entered" from="HBoxContainer/VBoxContainer/exitbutton" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_SinglePlayerButton_focus_entered"]
-[connection signal="focus_exited" from="HBoxContainer/VBoxContainer/exitbutton" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_SinglePlayerButton_focus_exited"]
-[connection signal="focus_exited" from="HBoxContainer/VBoxContainer/exitbutton" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_focus_exited"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/exitbutton" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_pressed"]
-[connection signal="area_entered" from="HBoxContainer/VBoxContainer/exitbutton/Area2D" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_area_2d_area_entered"]
-[connection signal="area_exited" from="HBoxContainer/VBoxContainer/exitbutton/Area2D" to="HBoxContainer/VBoxContainer/exitbutton" method="_on_area_2d_area_exited"]
+[connection signal="focus_entered" from="VBoxContainer/playbutton" to="VBoxContainer/playbutton" method="_on_SinglePlayerButton_focus_entered"]
+[connection signal="focus_exited" from="VBoxContainer/playbutton" to="VBoxContainer/playbutton" method="_on_SinglePlayerButton_focus_exited"]
+[connection signal="pressed" from="VBoxContainer/playbutton" to="VBoxContainer/playbutton" method="_on_pressed"]
+[connection signal="area_entered" from="VBoxContainer/playbutton/Area2D" to="VBoxContainer/playbutton" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="VBoxContainer/playbutton/Area2D" to="VBoxContainer/playbutton" method="_on_area_2d_area_exited"]
+[connection signal="focus_entered" from="VBoxContainer/exitbutton" to="VBoxContainer/exitbutton" method="_on_SinglePlayerButton_focus_entered"]
+[connection signal="focus_exited" from="VBoxContainer/exitbutton" to="VBoxContainer/exitbutton" method="_on_SinglePlayerButton_focus_exited"]
+[connection signal="focus_exited" from="VBoxContainer/exitbutton" to="VBoxContainer/exitbutton" method="_on_focus_exited"]
+[connection signal="pressed" from="VBoxContainer/exitbutton" to="VBoxContainer/exitbutton" method="_on_pressed"]
+[connection signal="area_entered" from="VBoxContainer/exitbutton/Area2D" to="VBoxContainer/exitbutton" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="VBoxContainer/exitbutton/Area2D" to="VBoxContainer/exitbutton" method="_on_area_2d_area_exited"]

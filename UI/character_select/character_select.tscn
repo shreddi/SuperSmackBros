@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://xk7fdeaogkqq"]
+[gd_scene load_steps=32 format=3 uid="uid://xk7fdeaogkqq"]
 
 [ext_resource type="Texture2D" uid="uid://bqhp5t1on48i1" path="res://Characters/Fox/charselect.png" id="1_aj6me"]
 [ext_resource type="Script" path="res://UI/character_select/characterselect.gd" id="1_thc21"]
@@ -6,6 +6,162 @@
 [ext_resource type="Texture2D" uid="uid://c8b23g45te57j" path="res://UI/character_select/P2indicator.png" id="3_r7jn7"]
 [ext_resource type="Texture2D" uid="uid://b3exfmw1wwd1w" path="res://Characters/Mario/Sprites/portrait.png" id="5_3xlhb"]
 [ext_resource type="Script" path="res://UI/character_select/startbutton.gd" id="5_xbe68"]
+[ext_resource type="Texture2D" uid="uid://bdolo3igs00ug" path="res://UI/character_select/fire.png" id="7_pctem"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ciqtx"]
+atlas = ExtResource("7_pctem")
+region = Rect2(0, 0, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxugl"]
+atlas = ExtResource("7_pctem")
+region = Rect2(220, 0, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ti8xw"]
+atlas = ExtResource("7_pctem")
+region = Rect2(440, 0, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_soj2w"]
+atlas = ExtResource("7_pctem")
+region = Rect2(660, 0, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88vtv"]
+atlas = ExtResource("7_pctem")
+region = Rect2(880, 0, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lol56"]
+atlas = ExtResource("7_pctem")
+region = Rect2(0, 220, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6dhd"]
+atlas = ExtResource("7_pctem")
+region = Rect2(220, 220, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_otq44"]
+atlas = ExtResource("7_pctem")
+region = Rect2(440, 220, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxxcy"]
+atlas = ExtResource("7_pctem")
+region = Rect2(660, 220, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8osop"]
+atlas = ExtResource("7_pctem")
+region = Rect2(880, 220, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7gfsx"]
+atlas = ExtResource("7_pctem")
+region = Rect2(0, 440, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0teok"]
+atlas = ExtResource("7_pctem")
+region = Rect2(220, 440, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5gxs"]
+atlas = ExtResource("7_pctem")
+region = Rect2(440, 440, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3yrd"]
+atlas = ExtResource("7_pctem")
+region = Rect2(660, 440, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uhgdi"]
+atlas = ExtResource("7_pctem")
+region = Rect2(880, 440, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7chl"]
+atlas = ExtResource("7_pctem")
+region = Rect2(0, 660, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ptsq5"]
+atlas = ExtResource("7_pctem")
+region = Rect2(220, 660, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bq8m"]
+atlas = ExtResource("7_pctem")
+region = Rect2(440, 660, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6lk6d"]
+atlas = ExtResource("7_pctem")
+region = Rect2(660, 660, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5u4wb"]
+atlas = ExtResource("7_pctem")
+region = Rect2(880, 660, 220, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4shq4"]
+atlas = ExtResource("7_pctem")
+region = Rect2(0, 880, 220, 220)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_abgo5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ciqtx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mxugl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ti8xw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_soj2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_88vtv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lol56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6dhd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_otq44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxxcy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8osop")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7gfsx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0teok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5gxs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3yrd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uhgdi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7chl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ptsq5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bq8m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6lk6d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5u4wb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4shq4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="GDScript" id="GDScript_4rcup"]
 script/source = "extends TextureRect
@@ -42,13 +198,12 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Player1Indicator" type="Sprite2D" parent="ColorRect"]
-position = Vector2(-64, -38)
-texture = ExtResource("3_r7jn7")
-
-[node name="Player2Indicator" type="Sprite2D" parent="ColorRect"]
-position = Vector2(-9, -39)
-texture = ExtResource("2_iyqww")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.364706)
+position = Vector2(960, 450)
+scale = Vector2(9.945, 6)
+sprite_frames = SubResource("SpriteFrames_abgo5")
+frame_progress = 0.485008
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
@@ -86,6 +241,14 @@ Grab: Shield + Attack (strong or light)"
 layout_mode = 2
 theme_override_constants/separation = 100
 alignment = 1
+
+[node name="Player1Indicator" type="Sprite2D" parent="HBoxContainer/VBoxContainer"]
+position = Vector2(-573, -61)
+texture = ExtResource("3_r7jn7")
+
+[node name="Player2Indicator" type="Sprite2D" parent="HBoxContainer/VBoxContainer"]
+position = Vector2(-518, -62)
+texture = ExtResource("2_iyqww")
 
 [node name="title" type="Label" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -133,7 +296,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxLine_hhrmu")
 text = "P2 Controls
-Select Character: J or K
+Select Character: J or L
 Move: IJKL
 Light Attack: M
 Strong Attack: ,
@@ -141,7 +304,5 @@ Jump: .
 Special: /
 Shield: Space
 Grab: Shield + Attack (strong or light)"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Button" to="HBoxContainer/VBoxContainer/Button" method="_on_pressed"]
