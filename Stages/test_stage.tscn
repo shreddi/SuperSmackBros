@@ -11,7 +11,7 @@
 [ext_resource type="Script" path="res://Stages/StageCamera.gd" id="7_skqt3"]
 [ext_resource type="Texture2D" uid="uid://b8em5a37h2wge" path="res://Stages/Trashville/Stage2.png" id="9_kw7pb"]
 [ext_resource type="Texture2D" uid="uid://2jhg1oyhaa4l" path="res://Stages/Trashville/Stage1.png" id="10_c7ci1"]
-[ext_resource type="PackedScene" uid="uid://cnf1uvwvkouns" path="res://UI/canvas_layer.tscn" id="12_upc5g"]
+[ext_resource type="PackedScene" uid="uid://becgecctqkkj5" path="res://UI/canvas_layer.tscn" id="12_upc5g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_px5ta"]
 size = Vector2(962, 39)

@@ -2994,6 +2994,7 @@ collision_mask = 8
 collide_with_areas = true
 
 [node name="Frames" type="Label" parent="."]
+visible = false
 offset_left = -20.0
 offset_top = -82.0
 offset_right = 20.0
@@ -3001,6 +3002,7 @@ offset_bottom = -59.0
 vertical_alignment = 1
 
 [node name="State" type="Label" parent="."]
+visible = false
 offset_left = -20.0
 offset_top = -54.0
 offset_right = 20.0
@@ -3008,6 +3010,7 @@ offset_bottom = -31.0
 vertical_alignment = 1
 
 [node name="Percent" type="Label" parent="."]
+visible = false
 offset_left = 32.0
 offset_top = -68.0
 offset_right = 73.0
