@@ -60,6 +60,7 @@ var selfState
 @onready var Ledge_Grab_B = get_node('RayCasts/Ledge_Grab_B')
 @onready var state = $State
 @onready var anim = $Sprite/AnimationPlayer
+@onready var sprite = $Sprite
 @onready var gun_pos = $gun_pos
 
 #Attributes
@@ -418,6 +419,7 @@ func DAIR_LANDING():
 
 
 func UP_SPECIAL():
+	print("rotation: ", $Sprite.rotation)
 	special = false
 	var start = 5
 	var trans1 = 60
@@ -442,13 +444,43 @@ func UP_SPECIAL():
 		if Input.is_action_pressed("down_%s" % id):
 			direction.y += 1
 
-		if direction.length() > 0:
-			direction = direction.normalized()
-
+		#if direction.length() > 0:
+			#direction = direction.normalized()
+		
+		#print("angle: ", rad_to_deg(direction.angle()))
+		var directions = [Vector2(1,0),Vector2(1,-1),Vector2(0,-1),Vector2(-1,-1),Vector2(-1,0),Vector2(-1,1),Vector2(0,1),Vector2(1,1)]
+		for dir in directions:
+			dir.y *= -1
+			var ang = round(rad_to_deg(dir.angle()))
+			dir.y *= -1
+			if ang < 0:
+				ang+=360
+			ang*=-1
+			ang+=90
+			print(ang)
+		direction.y *= -1
+		var angle = round(rad_to_deg(direction.angle()))
+		direction.y *= -1
+		if angle < 0:
+			angle+=360
+		angle*=-1
+		angle+=90
+		print("")
+		print(angle)
+			#
+		#90
+		#45
+		#-45
+		#-90
+		#-135
+		#-180
+		#-235
+		#$Sprite.scale.x *= -1
+		sprite.rotation_degrees = angle
 		velocity = 1750 * direction
-		print(velocity)
 		
 	if frame == end:
+		sprite.rotation_degrees = 0
 		return true
 
 # Special Attacks

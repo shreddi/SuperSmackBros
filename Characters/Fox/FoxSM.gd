@@ -87,6 +87,9 @@ func get_transition(delta):
 	
 	if Falling() == true:
 		return states.AIR
+	
+	if state != states.UP_SPECIAL:
+		parent.sprite.rotation_degrees = 0
 		
 	if Input.is_action_just_pressed("attack_%s" % id) && TILT() == true:
 		parent.newframe()

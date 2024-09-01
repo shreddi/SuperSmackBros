@@ -31,7 +31,7 @@ func _ready():
 	match Globals.player2:
 		Fighters.FOX:
 			p2 = load('res://Characters/Fox/Fox.tscn')
-			p2portrait.texture = preload("res://Characters/Fox/portrait.png")
+			p2portrait.texture = preload("res://Characters/Fox/charselect.png")
 		Fighters.MARIO:
 			p2 = load('res://Characters/Mario/Mario.tscn')
 			p2portrait.texture = preload("res://Characters/Mario/Sprites/portrait.png")
@@ -44,7 +44,7 @@ func _ready():
 	# Instantiate and add Player 2 character to the scene
 	p2instance = p2.instantiate()
 	add_child(p2instance)  # This should be p2instance, not p1instance
-	p2instance.position = Vector2(-384, 64)  # Set position for Player 2
+	p2instance.position = Vector2(384, -100)  # Set position for Player 2
 
 	# Optional: set a unique ID to distinguish players if needed
 	p1instance.id = 1

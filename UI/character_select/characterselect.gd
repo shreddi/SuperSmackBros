@@ -49,7 +49,6 @@ func _input(event):
 		emit_signal("selection_confirmed", 2, player2_selection)
 
 func update_selection(player, selection_index):
-	print("bruh")
 	if player == 1:
 		p1.global_position.x = characters[selection_index].global_position.x + characters[selection_index].custom_minimum_size.x/10
 		p1.global_position.y = characters[selection_index].global_position.y
