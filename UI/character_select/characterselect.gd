@@ -22,8 +22,8 @@ func _ready():
 	# Initialize selections
 	update_selection(1, 0)
 	update_selection(2, 0)
-	p1.global_position = Vector2(749, 345)
-	p2.global_position = Vector2(669, 345)
+	p1.global_position = Vector2(669, 345)
+	p2.global_position = Vector2(749, 345)
 	print(p1.global_position)
 	print(p2.global_position)
 	print(p1.position)

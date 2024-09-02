@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Super Trash Bros"
-run/main_scene="res://UI/character_select/character_select.tscn"
+run/main_scene="res://UI/Title_Screen/titlescreen.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 

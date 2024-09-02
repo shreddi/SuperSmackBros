@@ -46,7 +46,7 @@ func zooming():
 	var longest_dist:float = 100
 	var dist: float = (p1.global_position-p2.global_position).length_squared()
 	longest_dist = max(longest_dist, dist)
-	var z = clamp(0.75,1/max(min_zoom, sqrt(longest_dist)/zoom_factor),1.3)
+	var z = clamp(1,1/max(min_zoom, sqrt(longest_dist)/zoom_factor),1.5)
 	self.zoom = Vector2(z,z)
 
 func setplayers():

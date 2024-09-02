@@ -149,6 +149,10 @@ text = "Wall
 "
 
 [node name="Camera2D" type="Camera2D" parent="."]
+limit_left = -1500
+limit_top = -1300
+limit_right = 1800
+limit_bottom = 1300
 script = ExtResource("7_skqt3")
 zoom_offset = 0.17
 
