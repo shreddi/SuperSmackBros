@@ -66,21 +66,22 @@ func _on_WOLF_LASER_body_entered(body):
 		animation.play("burst", 1.0, false)	
 		var charstate 
 		charstate = body.get_node("StateMachine")
-		knockbackVal = knockback(body.percentage,damage,body.weight,kb_scaling,base_kb,1)
-		body.percentage += damage
-		body.knockback = knockbackVal
-		body.velocity.x = (getHorizontalVelocity (knockbackVal, -angle))
-		body.velocity.y = (getVerticalVelocity (knockbackVal, -angle))
-		body.hdecay = (getHorizontalDecay(-angle))
-		body.vdecay = (getVerticalDecay(angle))
-		charstate.kbx = (getHorizontalVelocity (knockbackVal, -angle))
-		charstate.kby = (getVerticalVelocity (knockbackVal, -angle))
-		charstate.hd = (getHorizontalDecay(-angle))
-		charstate.vd = (getVerticalDecay(angle))
-		
-		body.hitstun = getHitstun(knockbackVal/0.3)
-		body.newframe()
-		charstate.state = charstate.states.HITSTUN
+		if charstate.state != charstate.states.SHIELD:
+			knockbackVal = knockback(body.percentage,damage,body.weight,kb_scaling,base_kb,1)
+			body.percentage += damage
+			body.knockback = knockbackVal
+			body.velocity.x = (getHorizontalVelocity (knockbackVal, -angle))
+			body.velocity.y = (getVerticalVelocity (knockbackVal, -angle))
+			body.hdecay = (getHorizontalDecay(-angle))
+			body.vdecay = (getVerticalDecay(angle))
+			charstate.kbx = (getHorizontalVelocity (knockbackVal, -angle))
+			charstate.kby = (getVerticalVelocity (knockbackVal, -angle))
+			charstate.hd = (getHorizontalDecay(-angle))
+			charstate.vd = (getVerticalDecay(angle))
+			
+			body.hitstun = getHitstun(knockbackVal/0.3)
+			body.newframe()
+			charstate.state = charstate.states.HITSTUN
 		
 #
 		##charstate.state = charstate.states.HITFREEZE

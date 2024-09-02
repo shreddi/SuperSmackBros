@@ -30,6 +30,8 @@ func dir(directionx, directiony):
 	
 func _on_Fox_Laser_body_entered(body):
 	if not (body in player_list):
-		body.percentage += damage
+		var charstate = body.get_node("StateMachine")
+		if charstate.state != charstate.states.SHIELD:
+			body.percentage += damage
 		queue_free()
 	

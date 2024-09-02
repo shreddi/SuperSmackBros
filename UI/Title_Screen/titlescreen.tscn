@@ -4,10 +4,8 @@
 [ext_resource type="Script" path="res://UI/Title_Screen/titlescreen.gd" id="1_dl327"]
 [ext_resource type="Texture2D" uid="uid://bdolo3igs00ug" path="res://UI/character_select/fire.png" id="2_61vfs"]
 [ext_resource type="Script" path="res://UI/Title_Screen/optionsbutton.gd" id="2_goa6y"]
-[ext_resource type="Texture2D" uid="uid://dexd0508ukbiq" path="res://UI/Title_Screen/pixeltitle.png" id="2_ubdhk"]
+[ext_resource type="Texture2D" uid="uid://dwrseo06ljnka" path="res://UI/Title_Screen/pixeltitle2.png" id="2_ugoa3"]
 [ext_resource type="Script" path="res://UI/Title_Screen/exitbutton.gd" id="3_0km31"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0lu3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ciqtx"]
 atlas = ExtResource("2_61vfs")
@@ -164,6 +162,8 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0lu3"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l7ic1"]
 
 [node name="Titlescreen" type="Control"]
@@ -184,24 +184,30 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.482353)
+position = Vector2(978, 429)
+scale = Vector2(9.945, 6)
+sprite_frames = SubResource("SpriteFrames_fe41a")
+frame_progress = 0.724311
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -524.0
-offset_top = -70.0
 offset_right = 525.0
-offset_bottom = 860.0
+offset_bottom = 930.0
 grow_horizontal = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = -50
 alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
-custom_minimum_size = Vector2(400, 800)
+custom_minimum_size = Vector2(500, 800)
 layout_mode = 2
-texture = ExtResource("2_ubdhk")
+texture = ExtResource("2_ugoa3")
 
 [node name="playbutton" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(600, 100)
@@ -244,12 +250,6 @@ collision_mask = 524288
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="VBoxContainer/exitbutton/Area2D"]
 shape = SubResource("RectangleShape2D_t0lu3")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.384314)
-position = Vector2(960, 450)
-scale = Vector2(9.945, 6)
-sprite_frames = SubResource("SpriteFrames_fe41a")
 
 [node name="Pointer" type="Area2D" parent="."]
 collision_layer = 524288

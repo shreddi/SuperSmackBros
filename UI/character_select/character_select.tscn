@@ -92,7 +92,7 @@ region = Rect2(880, 660, 220, 220)
 atlas = ExtResource("7_pctem")
 region = Rect2(0, 880, 220, 220)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_abgo5"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_fe41a"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -199,11 +199,11 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.364706)
-position = Vector2(960, 450)
+self_modulate = Color(1, 1, 1, 0.482353)
+position = Vector2(978, 429)
 scale = Vector2(9.945, 6)
-sprite_frames = SubResource("SpriteFrames_abgo5")
-frame_progress = 0.485008
+sprite_frames = SubResource("SpriteFrames_fe41a")
+frame = 8
 
 [node name="Player1Indicator" type="Sprite2D" parent="."]
 position = Vector2(-64, -38)
