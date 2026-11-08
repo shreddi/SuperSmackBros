@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvx65kyvdirui"
-path="res://.godot/imported/land_strip1.png-8dba4b1ceb081a84b3c2de60f17f5d1f.ctex"
+path="res://.godot/imported/land_strip1.png-2e88caa8cf8c1e6573ff6f36f7533e97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/land_strip1.png"
-dest_files=["res://.godot/imported/land_strip1.png-8dba4b1ceb081a84b3c2de60f17f5d1f.ctex"]
+source_file="res://characters/fux/sprites/land_strip1.png"
+dest_files=["res://.godot/imported/land_strip1.png-2e88caa8cf8c1e6573ff6f36f7533e97.ctex"]
 
 [params]
 

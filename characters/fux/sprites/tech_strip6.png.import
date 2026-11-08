@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://babo42lyimrhs"
-path="res://.godot/imported/tech_strip6.png-ff822172e80b5e083a3b9c06c1dcebd6.ctex"
+path="res://.godot/imported/tech_strip6.png-8729f97f70e09c8b8a654f45ac440fb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/tech_strip6.png"
-dest_files=["res://.godot/imported/tech_strip6.png-ff822172e80b5e083a3b9c06c1dcebd6.ctex"]
+source_file="res://characters/fux/sprites/tech_strip6.png"
+dest_files=["res://.godot/imported/tech_strip6.png-8729f97f70e09c8b8a654f45ac440fb8.ctex"]
 
 [params]
 

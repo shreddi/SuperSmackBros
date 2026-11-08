@@ -1,103 +1,103 @@
 [gd_scene load_steps=351 format=3 uid="uid://bv414slw4icpj"]
 
-[ext_resource type="Texture2D" uid="uid://3ohf2ty6qn4q" path="res://characters/fox/sprites/idle_strip10.png" id="1"]
-[ext_resource type="Script" path="res://characters/mario/mario.gd" id="1_jh38t"]
-[ext_resource type="Texture2D" uid="uid://d1wnviqrtu8uq" path="res://characters/fox/sprites/bair_strip4.png" id="2"]
-[ext_resource type="Script" path="res://characters/mario/mario_state_machine.gd" id="2_rfbdu"]
-[ext_resource type="Texture2D" uid="uid://7qcjpdcmkcnq" path="res://characters/fox/sprites/dstrong_strip4.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://g41664niktpu" path="res://characters/fox/sprites/dspecial_strip2.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://c2qlbdifdkfsd" path="res://characters/fox/sprites/dtilt_strip3.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://di6y0txob5nrn" path="res://characters/fox/sprites/dattack_strip3.png" id="6"]
-[ext_resource type="Texture2D" uid="uid://dpfxmnacinb7o" path="res://characters/fox/sprites/dashstart_strip2.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://d0tcpmg65gqjg" path="res://characters/fox/sprites/fair_strip6.png" id="8"]
-[ext_resource type="Texture2D" uid="uid://06eb15yreuuf" path="res://characters/fox/sprites/fspecial_strip5.png" id="9"]
-[ext_resource type="Texture2D" uid="uid://dn852j3e0bupp" path="res://characters/fox/sprites/ftilt_strip3.png" id="10"]
-[ext_resource type="Texture2D" uid="uid://bpf3ei36xjksk" path="res://characters/fox/sprites/hurt_strip1.png" id="11"]
-[ext_resource type="Texture2D" uid="uid://ghkcu7ki2nhp" path="res://characters/fox/sprites/fstrong_strip6.png" id="12"]
-[ext_resource type="Texture2D" uid="uid://d08x32nbolt20" path="res://characters/fox/sprites/jab_strip5.png" id="13"]
-[ext_resource type="Texture2D" uid="uid://dxpe6s101ruwp" path="res://characters/fox/sprites/airdodge_strip6.png" id="14"]
-[ext_resource type="Texture2D" uid="uid://cuqpi0w6fuckl" path="res://characters/fox/sprites/jumpstart_strip1.png" id="15"]
-[ext_resource type="Texture2D" uid="uid://bw1ts40dc5qxt" path="res://characters/fox/sprites/dair_strip4.png" id="16"]
-[ext_resource type="Texture2D" uid="uid://dk1p4dgl12nyk" path="res://characters/fox/sprites/dashturn_strip1.png" id="17"]
-[ext_resource type="Texture2D" uid="uid://euddajdsnyrf" path="res://characters/fox/sprites/walk_strip4.png" id="18"]
-[ext_resource type="Texture2D" uid="uid://dt7eraguw2yjc" path="res://characters/fox/sprites/walljump_strip5.png" id="19"]
-[ext_resource type="Texture2D" uid="uid://ct6t5ybecb0an" path="res://characters/fox/sprites/walkturn_strip5.png" id="20"]
-[ext_resource type="Texture2D" uid="uid://da6exuvlp5bmc" path="res://characters/fox/sprites/jump_strip5.png" id="21"]
-[ext_resource type="Texture2D" uid="uid://dq6dly0127ger" path="res://characters/fox/sprites/landinglag_strip1.png" id="22"]
-[ext_resource type="Texture2D" uid="uid://cecyt8bhnric3" path="res://characters/fox/sprites/uair_strip4.png" id="23"]
-[ext_resource type="Texture2D" uid="uid://2q65avu24dw3" path="res://characters/fox/sprites/parry_strip1.png" id="24"]
-[ext_resource type="Texture2D" uid="uid://cj1qynv8bd1f2" path="res://characters/mario/sprites/idle2.png" id="24_8gil4"]
-[ext_resource type="Texture2D" uid="uid://dmtj77i87k7p8" path="res://characters/fox/sprites/roll_forward_strip8.png" id="25"]
-[ext_resource type="Texture2D" uid="uid://bqkmx3wisd1f3" path="res://characters/fox/sprites/ledge_strip1.png" id="26"]
-[ext_resource type="Texture2D" uid="uid://bb8nvsjirqj8b" path="res://characters/fox/sprites/uspecial_strip16.png" id="27"]
-[ext_resource type="Texture2D" uid="uid://dcc4urm38hl6e" path="res://characters/fox/sprites/utilt_strip3.png" id="28"]
-[ext_resource type="Texture2D" uid="uid://623tn0swqcad" path="res://characters/fox/sprites/dash_strip4.png" id="29"]
-[ext_resource type="Texture2D" uid="uid://cvp33qj7my8a" path="res://characters/fox/sprites/nair_strip1.png" id="30"]
-[ext_resource type="Texture2D" uid="uid://bigpj8tfxmk12" path="res://characters/fox/sprites/ustrong_strip6.png" id="31"]
-[ext_resource type="Texture2D" uid="uid://ccnr8gmwnhjra" path="res://characters/fox/sprites/nspecial_strip1.png" id="32"]
-[ext_resource type="Texture2D" uid="uid://babo42lyimrhs" path="res://characters/fox/sprites/tech_strip6.png" id="33"]
-[ext_resource type="Texture2D" uid="uid://01sindlrudq3" path="res://characters/fox/sprites/crouch_strip4.png" id="34"]
-[ext_resource type="Texture2D" uid="uid://dtsun12dxb0qx" path="res://characters/mario/sprites/air2.png" id="38_rg6fc"]
-[ext_resource type="Texture2D" uid="uid://dgualtw306tqw" path="res://characters/mario/sprites/air_dodge.png" id="39_5d7p2"]
-[ext_resource type="Texture2D" uid="uid://bix4hp4l33h17" path="res://characters/mario/sprites/bair.png" id="40_5yk22"]
-[ext_resource type="Texture2D" uid="uid://bca38w6xbuc1o" path="res://characters/mario/sprites/crouch2.png" id="40_7eba0"]
-[ext_resource type="Texture2D" uid="uid://bodemsy2nqb2r" path="res://characters/mario/sprites/dair.png" id="41_72e4m"]
-[ext_resource type="Texture2D" uid="uid://dr25xohkqrvpa" path="res://characters/mario/sprites/dtilt.png" id="41_xjotk"]
-[ext_resource type="Texture2D" uid="uid://dthvxtojbdum0" path="res://characters/mario/sprites/run3.png" id="42_eott7"]
-[ext_resource type="Texture2D" uid="uid://hq2ydkyfmhxb" path="res://characters/mario/sprites/ftilt.png" id="42_l60ml"]
-[ext_resource type="Texture2D" uid="uid://5btupfl188qt" path="res://characters/mario/sprites/hurt.png" id="43_cqhxo"]
-[ext_resource type="Texture2D" uid="uid://br8r4kk8a1rl6" path="res://characters/mario/sprites/dashattack.png" id="43_npplk"]
-[ext_resource type="Texture2D" uid="uid://dt8mpculswx3a" path="res://characters/mario/sprites/fair.png" id="44_0if7d"]
-[ext_resource type="Texture2D" uid="uid://6anb8ofooesu" path="res://characters/mario/sprites/nair2.png" id="44_6a5nw"]
-[ext_resource type="Texture2D" uid="uid://cw8kq165rw8mo" path="res://characters/mario/sprites/ledge2.png" id="45_2kqlj"]
-[ext_resource type="Texture2D" uid="uid://cg7y1cnupv3rq" path="res://characters/mario/sprites/uptilt.png" id="45_p1gml"]
-[ext_resource type="Texture2D" uid="uid://qqjf048lvnbn" path="res://characters/mario/sprites/downsmash2_02.png" id="45_s4adf"]
-[ext_resource type="Texture2D" uid="uid://dixow3nx77y7j" path="res://characters/mario/sprites/uair.png" id="46_5k5o3"]
-[ext_resource type="Texture2D" uid="uid://dxf77ull8umj2" path="res://characters/mario/sprites/fsmash_01.png" id="46_c4uqq"]
-[ext_resource type="Texture2D" uid="uid://drp5l8iml50si" path="res://characters/mario/sprites/grab.png" id="46_she5u"]
-[ext_resource type="Texture2D" uid="uid://cp3obwk7ysijs" path="res://characters/mario/sprites/downsmash2_03.png" id="46_tm14l"]
-[ext_resource type="Texture2D" uid="uid://0gax1ej6538q" path="res://characters/mario/sprites/downsmash2_04.png" id="47_1ggke"]
-[ext_resource type="Texture2D" uid="uid://bnqfuhb6hrwt4" path="res://characters/mario/sprites/roll.png" id="47_4c85t"]
-[ext_resource type="Texture2D" uid="uid://lfgg54e13hdp" path="res://characters/mario/sprites/fsmash_02.png" id="47_13frf"]
-[ext_resource type="Texture2D" uid="uid://csr4nroxgfjhy" path="res://characters/mario/sprites/downsmash2_05.png" id="48_45w70"]
-[ext_resource type="Texture2D" uid="uid://dpgjpubsk76l1" path="res://characters/mario/sprites/fsmash_03.png" id="48_te08t"]
-[ext_resource type="Texture2D" uid="uid://dunoiudpav7j1" path="res://characters/mario/sprites/downsmash2_06.png" id="49_e7hr1"]
-[ext_resource type="Texture2D" uid="uid://d1ithj38dbnld" path="res://characters/mario/sprites/fsmash_04_2.png" id="49_qhu0g"]
-[ext_resource type="Texture2D" uid="uid://05bswdrrapvx" path="res://characters/mario/sprites/downsmash2_07.png" id="50_8co4v"]
-[ext_resource type="Texture2D" uid="uid://3t0aw1arxpy" path="res://characters/mario/sprites/fsmash_05.png" id="50_tw0tq"]
-[ext_resource type="Texture2D" uid="uid://cijicw54ptmmp" path="res://characters/mario/sprites/fsmash_06.png" id="51_0bi4u"]
-[ext_resource type="Texture2D" uid="uid://b3c8mxxyvqnw" path="res://characters/mario/sprites/downsmash2_08.png" id="51_0k7ji"]
-[ext_resource type="Texture2D" uid="uid://cfobjoujw2y84" path="res://characters/mario/sprites/downsmash2_09.png" id="52_7blrd"]
-[ext_resource type="Texture2D" uid="uid://bhfccrw83gr6n" path="res://characters/mario/sprites/fsmash_07.png" id="52_a5dg8"]
-[ext_resource type="Texture2D" uid="uid://cryj355ju1lfb" path="res://characters/mario/sprites/downsmash2_10.png" id="53_ethnx"]
-[ext_resource type="Texture2D" uid="uid://c6gom0u88476o" path="res://characters/mario/sprites/fsmash_08.png" id="53_inp4m"]
-[ext_resource type="Texture2D" uid="uid://h75lm0aba1sk" path="res://characters/mario/sprites/throw.png" id="54_441d5"]
-[ext_resource type="Texture2D" uid="uid://4r7r1a014xu" path="res://characters/mario/sprites/downsmash2_11.png" id="54_q7qv1"]
-[ext_resource type="Texture2D" uid="uid://dwtaogb83lkmu" path="res://characters/mario/sprites/fsmash_09.png" id="54_sstv8"]
-[ext_resource type="Texture2D" uid="uid://cx8dccfwipe0a" path="res://characters/mario/sprites/strong-dash-attack.png" id="54_ttqik"]
-[ext_resource type="Texture2D" uid="uid://cahcpdosima1s" path="res://characters/mario/sprites/downsmash2_12.png" id="55_j3au7"]
-[ext_resource type="Texture2D" uid="uid://d4cv6h0rm4gwp" path="res://characters/mario/sprites/downsmash2_13.png" id="56_pvnsd"]
-[ext_resource type="Texture2D" uid="uid://bsl7go4tmy2fs" path="res://characters/mario/sprites/upsmash_01.png" id="56_tl7es"]
-[ext_resource type="Texture2D" uid="uid://0ooimox66vdd" path="res://Characters/Mario/Sprites/DOWNSMASH 14.png" id="57_g1wbi"]
-[ext_resource type="Texture2D" uid="uid://bfsec4ydldtn1" path="res://characters/mario/sprites/upsmash_02.png" id="57_m5s7l"]
-[ext_resource type="Texture2D" uid="uid://5q0bkmt2inmg" path="res://characters/mario/sprites/downsmash2_14.png" id="57_y5ehr"]
-[ext_resource type="Texture2D" uid="uid://ytpnemiepryv" path="res://characters/mario/sprites/downsmash2_15.png" id="58_qnm2j"]
-[ext_resource type="Texture2D" uid="uid://cq7dvvwfoa2fn" path="res://characters/mario/sprites/upsmash_03.png" id="58_xnjlm"]
-[ext_resource type="Texture2D" uid="uid://ddnqvx6fq4bfj" path="res://characters/mario/sprites/upsmash_04.png" id="59_dwhoe"]
-[ext_resource type="Texture2D" uid="uid://6i05dj8ll0fn" path="res://characters/mario/sprites/downsmash2_16.png" id="59_ill0g"]
-[ext_resource type="Texture2D" uid="uid://dv4ow4dg0y27x" path="res://characters/mario/sprites/downsmash2_17.png" id="60_56juv"]
-[ext_resource type="Texture2D" uid="uid://cl18nu8gvpwbw" path="res://characters/mario/sprites/upsmash_05.png" id="60_lnm3v"]
-[ext_resource type="Texture2D" uid="uid://cuyy2unx82e5u" path="res://characters/mario/sprites/downsmash2_18.png" id="61_0f2gn"]
-[ext_resource type="Texture2D" uid="uid://dimbr4lsidsqy" path="res://characters/mario/sprites/upsmash_06.png" id="61_2cwnk"]
-[ext_resource type="Texture2D" uid="uid://dwcfpa58vu6hr" path="res://characters/mario/sprites/downsmash2_19.png" id="62_cj11d"]
-[ext_resource type="Texture2D" uid="uid://yyjkle3fw3wo" path="res://characters/mario/sprites/upsmash_07.png" id="62_xb221"]
-[ext_resource type="Texture2D" uid="uid://becc2jrkvmkfm" path="res://characters/mario/sprites/upsmash_08.png" id="63_hq06c"]
-[ext_resource type="Texture2D" uid="uid://bonuqed3apv5j" path="res://characters/mario/sprites/downsmash2_20.png" id="63_qi43x"]
-[ext_resource type="Texture2D" uid="uid://smif28psq24m" path="res://characters/mario/sprites/upsmash_09.png" id="64_ha6m2"]
-[ext_resource type="Texture2D" uid="uid://caeili7xnccw4" path="res://characters/mario/sprites/upsmash_10.png" id="65_ohemr"]
-[ext_resource type="Texture2D" uid="uid://bq23m2m2symar" path="res://characters/mario/sprites/shield.png" id="82_n1yfs"]
-[ext_resource type="Texture2D" uid="uid://c4qrcjuw743fa" path="res://characters/mario/sprites/turn.png" id="84_wns3q"]
-[ext_resource type="Texture2D" uid="uid://cask847klww0x" path="res://characters/mario/sprites/up_special.png" id="96_mpdxl"]
+[ext_resource type="Texture2D" uid="uid://3ohf2ty6qn4q" path="res://characters/fux/sprites/idle_strip10.png" id="1"]
+[ext_resource type="Script" path="res://characters/martyo/martyo.gd" id="1_jh38t"]
+[ext_resource type="Texture2D" uid="uid://d1wnviqrtu8uq" path="res://characters/fux/sprites/bair_strip4.png" id="2"]
+[ext_resource type="Script" path="res://characters/martyo/martyo_state_machine.gd" id="2_rfbdu"]
+[ext_resource type="Texture2D" uid="uid://7qcjpdcmkcnq" path="res://characters/fux/sprites/dstrong_strip4.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://g41664niktpu" path="res://characters/fux/sprites/dspecial_strip2.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://c2qlbdifdkfsd" path="res://characters/fux/sprites/dtilt_strip3.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://di6y0txob5nrn" path="res://characters/fux/sprites/dattack_strip3.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dpfxmnacinb7o" path="res://characters/fux/sprites/dashstart_strip2.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://d0tcpmg65gqjg" path="res://characters/fux/sprites/fair_strip6.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://06eb15yreuuf" path="res://characters/fux/sprites/fspecial_strip5.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://dn852j3e0bupp" path="res://characters/fux/sprites/ftilt_strip3.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://bpf3ei36xjksk" path="res://characters/fux/sprites/hurt_strip1.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://ghkcu7ki2nhp" path="res://characters/fux/sprites/fstrong_strip6.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://d08x32nbolt20" path="res://characters/fux/sprites/jab_strip5.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://dxpe6s101ruwp" path="res://characters/fux/sprites/airdodge_strip6.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://cuqpi0w6fuckl" path="res://characters/fux/sprites/jumpstart_strip1.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bw1ts40dc5qxt" path="res://characters/fux/sprites/dair_strip4.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://dk1p4dgl12nyk" path="res://characters/fux/sprites/dashturn_strip1.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://euddajdsnyrf" path="res://characters/fux/sprites/walk_strip4.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://dt7eraguw2yjc" path="res://characters/fux/sprites/walljump_strip5.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://ct6t5ybecb0an" path="res://characters/fux/sprites/walkturn_strip5.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://da6exuvlp5bmc" path="res://characters/fux/sprites/jump_strip5.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://dq6dly0127ger" path="res://characters/fux/sprites/landinglag_strip1.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://cecyt8bhnric3" path="res://characters/fux/sprites/uair_strip4.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://2q65avu24dw3" path="res://characters/fux/sprites/parry_strip1.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://cj1qynv8bd1f2" path="res://characters/martyo/sprites/idle2.png" id="24_8gil4"]
+[ext_resource type="Texture2D" uid="uid://dmtj77i87k7p8" path="res://characters/fux/sprites/roll_forward_strip8.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://bqkmx3wisd1f3" path="res://characters/fux/sprites/ledge_strip1.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://bb8nvsjirqj8b" path="res://characters/fux/sprites/uspecial_strip16.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://dcc4urm38hl6e" path="res://characters/fux/sprites/utilt_strip3.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://623tn0swqcad" path="res://characters/fux/sprites/dash_strip4.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://cvp33qj7my8a" path="res://characters/fux/sprites/nair_strip1.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://bigpj8tfxmk12" path="res://characters/fux/sprites/ustrong_strip6.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://ccnr8gmwnhjra" path="res://characters/fux/sprites/nspecial_strip1.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://babo42lyimrhs" path="res://characters/fux/sprites/tech_strip6.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://01sindlrudq3" path="res://characters/fux/sprites/crouch_strip4.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://dtsun12dxb0qx" path="res://characters/martyo/sprites/air2.png" id="38_rg6fc"]
+[ext_resource type="Texture2D" uid="uid://dgualtw306tqw" path="res://characters/martyo/sprites/air_dodge.png" id="39_5d7p2"]
+[ext_resource type="Texture2D" uid="uid://bix4hp4l33h17" path="res://characters/martyo/sprites/bair.png" id="40_5yk22"]
+[ext_resource type="Texture2D" uid="uid://bca38w6xbuc1o" path="res://characters/martyo/sprites/crouch2.png" id="40_7eba0"]
+[ext_resource type="Texture2D" uid="uid://bodemsy2nqb2r" path="res://characters/martyo/sprites/dair.png" id="41_72e4m"]
+[ext_resource type="Texture2D" uid="uid://dr25xohkqrvpa" path="res://characters/martyo/sprites/dtilt.png" id="41_xjotk"]
+[ext_resource type="Texture2D" uid="uid://dthvxtojbdum0" path="res://characters/martyo/sprites/run3.png" id="42_eott7"]
+[ext_resource type="Texture2D" uid="uid://hq2ydkyfmhxb" path="res://characters/martyo/sprites/ftilt.png" id="42_l60ml"]
+[ext_resource type="Texture2D" uid="uid://5btupfl188qt" path="res://characters/martyo/sprites/hurt.png" id="43_cqhxo"]
+[ext_resource type="Texture2D" uid="uid://br8r4kk8a1rl6" path="res://characters/martyo/sprites/dashattack.png" id="43_npplk"]
+[ext_resource type="Texture2D" uid="uid://dt8mpculswx3a" path="res://characters/martyo/sprites/fair.png" id="44_0if7d"]
+[ext_resource type="Texture2D" uid="uid://6anb8ofooesu" path="res://characters/martyo/sprites/nair2.png" id="44_6a5nw"]
+[ext_resource type="Texture2D" uid="uid://cw8kq165rw8mo" path="res://characters/martyo/sprites/ledge2.png" id="45_2kqlj"]
+[ext_resource type="Texture2D" uid="uid://cg7y1cnupv3rq" path="res://characters/martyo/sprites/uptilt.png" id="45_p1gml"]
+[ext_resource type="Texture2D" uid="uid://qqjf048lvnbn" path="res://characters/martyo/sprites/downsmash2_02.png" id="45_s4adf"]
+[ext_resource type="Texture2D" uid="uid://dixow3nx77y7j" path="res://characters/martyo/sprites/uair.png" id="46_5k5o3"]
+[ext_resource type="Texture2D" uid="uid://dxf77ull8umj2" path="res://characters/martyo/sprites/fsmash_01.png" id="46_c4uqq"]
+[ext_resource type="Texture2D" uid="uid://drp5l8iml50si" path="res://characters/martyo/sprites/grab.png" id="46_she5u"]
+[ext_resource type="Texture2D" uid="uid://cp3obwk7ysijs" path="res://characters/martyo/sprites/downsmash2_03.png" id="46_tm14l"]
+[ext_resource type="Texture2D" uid="uid://0gax1ej6538q" path="res://characters/martyo/sprites/downsmash2_04.png" id="47_1ggke"]
+[ext_resource type="Texture2D" uid="uid://bnqfuhb6hrwt4" path="res://characters/martyo/sprites/roll.png" id="47_4c85t"]
+[ext_resource type="Texture2D" uid="uid://lfgg54e13hdp" path="res://characters/martyo/sprites/fsmash_02.png" id="47_13frf"]
+[ext_resource type="Texture2D" uid="uid://csr4nroxgfjhy" path="res://characters/martyo/sprites/downsmash2_05.png" id="48_45w70"]
+[ext_resource type="Texture2D" uid="uid://dpgjpubsk76l1" path="res://characters/martyo/sprites/fsmash_03.png" id="48_te08t"]
+[ext_resource type="Texture2D" uid="uid://dunoiudpav7j1" path="res://characters/martyo/sprites/downsmash2_06.png" id="49_e7hr1"]
+[ext_resource type="Texture2D" uid="uid://d1ithj38dbnld" path="res://characters/martyo/sprites/fsmash_04_2.png" id="49_qhu0g"]
+[ext_resource type="Texture2D" uid="uid://05bswdrrapvx" path="res://characters/martyo/sprites/downsmash2_07.png" id="50_8co4v"]
+[ext_resource type="Texture2D" uid="uid://3t0aw1arxpy" path="res://characters/martyo/sprites/fsmash_05.png" id="50_tw0tq"]
+[ext_resource type="Texture2D" uid="uid://cijicw54ptmmp" path="res://characters/martyo/sprites/fsmash_06.png" id="51_0bi4u"]
+[ext_resource type="Texture2D" uid="uid://b3c8mxxyvqnw" path="res://characters/martyo/sprites/downsmash2_08.png" id="51_0k7ji"]
+[ext_resource type="Texture2D" uid="uid://cfobjoujw2y84" path="res://characters/martyo/sprites/downsmash2_09.png" id="52_7blrd"]
+[ext_resource type="Texture2D" uid="uid://bhfccrw83gr6n" path="res://characters/martyo/sprites/fsmash_07.png" id="52_a5dg8"]
+[ext_resource type="Texture2D" uid="uid://cryj355ju1lfb" path="res://characters/martyo/sprites/downsmash2_10.png" id="53_ethnx"]
+[ext_resource type="Texture2D" uid="uid://c6gom0u88476o" path="res://characters/martyo/sprites/fsmash_08.png" id="53_inp4m"]
+[ext_resource type="Texture2D" uid="uid://h75lm0aba1sk" path="res://characters/martyo/sprites/throw.png" id="54_441d5"]
+[ext_resource type="Texture2D" uid="uid://4r7r1a014xu" path="res://characters/martyo/sprites/downsmash2_11.png" id="54_q7qv1"]
+[ext_resource type="Texture2D" uid="uid://dwtaogb83lkmu" path="res://characters/martyo/sprites/fsmash_09.png" id="54_sstv8"]
+[ext_resource type="Texture2D" uid="uid://cx8dccfwipe0a" path="res://characters/martyo/sprites/strong-dash-attack.png" id="54_ttqik"]
+[ext_resource type="Texture2D" uid="uid://cahcpdosima1s" path="res://characters/martyo/sprites/downsmash2_12.png" id="55_j3au7"]
+[ext_resource type="Texture2D" uid="uid://d4cv6h0rm4gwp" path="res://characters/martyo/sprites/downsmash2_13.png" id="56_pvnsd"]
+[ext_resource type="Texture2D" uid="uid://bsl7go4tmy2fs" path="res://characters/martyo/sprites/upsmash_01.png" id="56_tl7es"]
+[ext_resource type="Texture2D" uid="uid://0ooimox66vdd" path="res://Characters/Martyo/Sprites/DOWNSMASH 14.png" id="57_g1wbi"]
+[ext_resource type="Texture2D" uid="uid://bfsec4ydldtn1" path="res://characters/martyo/sprites/upsmash_02.png" id="57_m5s7l"]
+[ext_resource type="Texture2D" uid="uid://5q0bkmt2inmg" path="res://characters/martyo/sprites/downsmash2_14.png" id="57_y5ehr"]
+[ext_resource type="Texture2D" uid="uid://ytpnemiepryv" path="res://characters/martyo/sprites/downsmash2_15.png" id="58_qnm2j"]
+[ext_resource type="Texture2D" uid="uid://cq7dvvwfoa2fn" path="res://characters/martyo/sprites/upsmash_03.png" id="58_xnjlm"]
+[ext_resource type="Texture2D" uid="uid://ddnqvx6fq4bfj" path="res://characters/martyo/sprites/upsmash_04.png" id="59_dwhoe"]
+[ext_resource type="Texture2D" uid="uid://6i05dj8ll0fn" path="res://characters/martyo/sprites/downsmash2_16.png" id="59_ill0g"]
+[ext_resource type="Texture2D" uid="uid://dv4ow4dg0y27x" path="res://characters/martyo/sprites/downsmash2_17.png" id="60_56juv"]
+[ext_resource type="Texture2D" uid="uid://cl18nu8gvpwbw" path="res://characters/martyo/sprites/upsmash_05.png" id="60_lnm3v"]
+[ext_resource type="Texture2D" uid="uid://cuyy2unx82e5u" path="res://characters/martyo/sprites/downsmash2_18.png" id="61_0f2gn"]
+[ext_resource type="Texture2D" uid="uid://dimbr4lsidsqy" path="res://characters/martyo/sprites/upsmash_06.png" id="61_2cwnk"]
+[ext_resource type="Texture2D" uid="uid://dwcfpa58vu6hr" path="res://characters/martyo/sprites/downsmash2_19.png" id="62_cj11d"]
+[ext_resource type="Texture2D" uid="uid://yyjkle3fw3wo" path="res://characters/martyo/sprites/upsmash_07.png" id="62_xb221"]
+[ext_resource type="Texture2D" uid="uid://becc2jrkvmkfm" path="res://characters/martyo/sprites/upsmash_08.png" id="63_hq06c"]
+[ext_resource type="Texture2D" uid="uid://bonuqed3apv5j" path="res://characters/martyo/sprites/downsmash2_20.png" id="63_qi43x"]
+[ext_resource type="Texture2D" uid="uid://smif28psq24m" path="res://characters/martyo/sprites/upsmash_09.png" id="64_ha6m2"]
+[ext_resource type="Texture2D" uid="uid://caeili7xnccw4" path="res://characters/martyo/sprites/upsmash_10.png" id="65_ohemr"]
+[ext_resource type="Texture2D" uid="uid://bq23m2m2symar" path="res://characters/martyo/sprites/shield.png" id="82_n1yfs"]
+[ext_resource type="Texture2D" uid="uid://c4qrcjuw743fa" path="res://characters/martyo/sprites/turn.png" id="84_wns3q"]
+[ext_resource type="Texture2D" uid="uid://cask847klww0x" path="res://characters/martyo/sprites/up_special.png" id="96_mpdxl"]
 
 [sub_resource type="AtlasTexture" id="19"]
 atlas = ExtResource("21")
@@ -1340,7 +1340,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_yj3cu")
 }],
 "loop": true,
-"name": &"Mario_Idle",
+"name": &"Martyo_Idle",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1613,7 +1613,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_8cx57")
 }],
 "loop": true,
-"name": &"mario_air",
+"name": &"martyo_air",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1624,7 +1624,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_gpl04")
 }],
 "loop": true,
-"name": &"mario_airdodge_right",
+"name": &"martyo_airdodge_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1641,7 +1641,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_dpvb1")
 }],
 "loop": true,
-"name": &"mario_bair",
+"name": &"martyo_bair",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1655,7 +1655,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_pk6r7")
 }],
 "loop": false,
-"name": &"mario_crouch",
+"name": &"martyo_crouch",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1675,7 +1675,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_u5o58")
 }],
 "loop": true,
-"name": &"mario_dair",
+"name": &"martyo_dair",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1689,7 +1689,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_16wkn")
 }],
 "loop": true,
-"name": &"mario_dash_attack",
+"name": &"martyo_dash_attack",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1754,7 +1754,7 @@ animations = [{
 "texture": ExtResource("63_qi43x")
 }],
 "loop": true,
-"name": &"mario_down_smash",
+"name": &"martyo_down_smash",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1774,7 +1774,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_wkr32")
 }],
 "loop": false,
-"name": &"mario_dtilt",
+"name": &"martyo_dtilt",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1791,7 +1791,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_jc0mv")
 }],
 "loop": true,
-"name": &"mario_fair",
+"name": &"martyo_fair",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1823,7 +1823,7 @@ animations = [{
 "texture": ExtResource("54_sstv8")
 }],
 "loop": true,
-"name": &"mario_fsmash",
+"name": &"martyo_fsmash",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1846,7 +1846,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_bolww")
 }],
 "loop": false,
-"name": &"mario_ftilt",
+"name": &"martyo_ftilt",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1854,7 +1854,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_3dnui")
 }],
 "loop": true,
-"name": &"mario_grab",
+"name": &"martyo_grab",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1865,7 +1865,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_de42m")
 }],
 "loop": true,
-"name": &"mario_hurt",
+"name": &"martyo_hurt",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1879,7 +1879,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_un7pa")
 }],
 "loop": false,
-"name": &"mario_jump_squat",
+"name": &"martyo_jump_squat",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1887,7 +1887,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_xxqtd")
 }],
 "loop": true,
-"name": &"mario_landing",
+"name": &"martyo_landing",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1895,7 +1895,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_rdcar")
 }],
 "loop": true,
-"name": &"mario_ledge",
+"name": &"martyo_ledge",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1909,7 +1909,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_wn8ti")
 }],
 "loop": true,
-"name": &"mario_nair",
+"name": &"martyo_nair",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1926,7 +1926,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_xcm24")
 }],
 "loop": true,
-"name": &"mario_roll",
+"name": &"martyo_roll",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1943,7 +1943,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_hc1cl")
 }],
 "loop": true,
-"name": &"mario_run",
+"name": &"martyo_run",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1951,7 +1951,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_hlqia")
 }],
 "loop": true,
-"name": &"mario_shield",
+"name": &"martyo_shield",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1965,7 +1965,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_x62le")
 }],
 "loop": true,
-"name": &"mario_strong_dash_attack",
+"name": &"martyo_strong_dash_attack",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1976,7 +1976,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_8f50h")
 }],
 "loop": true,
-"name": &"mario_throw",
+"name": &"martyo_throw",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1987,7 +1987,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ltkk0")
 }],
 "loop": false,
-"name": &"mario_turn",
+"name": &"martyo_turn",
 "speed": 5.0
 }, {
 "frames": [{
@@ -2010,7 +2010,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_2vw8o")
 }],
 "loop": true,
-"name": &"mario_uair",
+"name": &"martyo_uair",
 "speed": 5.0
 }, {
 "frames": [{
@@ -2045,7 +2045,7 @@ animations = [{
 "texture": ExtResource("65_ohemr")
 }],
 "loop": true,
-"name": &"mario_upsmash",
+"name": &"martyo_upsmash",
 "speed": 5.0
 }, {
 "frames": [{
@@ -2053,7 +2053,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ry475")
 }],
 "loop": true,
-"name": &"mario_upspecial",
+"name": &"martyo_upspecial",
 "speed": 5.0
 }, {
 "frames": [{
@@ -2073,7 +2073,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_76ebr")
 }],
 "loop": false,
-"name": &"mario_utilt",
+"name": &"martyo_utilt",
 "speed": 5.0
 }, {
 "frames": [],
@@ -2096,7 +2096,7 @@ animations = [{
 length = 0.001
 
 [sub_resource type="Animation" id="Animation_aeabs"]
-resource_name = "mario_air"
+resource_name = "martyo_air"
 length = 0.333336
 loop_mode = 1
 step = 0.0166667
@@ -2110,7 +2110,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_air"]
+"values": [&"martyo_air"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2126,7 +2126,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_aqbq4"]
-resource_name = "mario_airdodge_right"
+resource_name = "martyo_airdodge_right"
 length = 0.333336
 step = 0.0166667
 tracks/0/type = "value"
@@ -2139,7 +2139,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_airdodge_right"]
+"values": [&"martyo_airdodge_right"]
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
@@ -2154,7 +2154,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_12x7l"]
-resource_name = "mario_bair"
+resource_name = "martyo_bair"
 length = 0.666668
 step = 0.0166667
 tracks/0/type = "value"
@@ -2167,7 +2167,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_bair"]
+"values": [&"martyo_bair"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2183,7 +2183,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_5y3h1"]
-resource_name = "mario_jump_squat"
+resource_name = "martyo_jump_squat"
 length = 6.00001
 step = 0.0166667
 tracks/0/type = "value"
@@ -2196,7 +2196,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_crouch"]
+"values": [&"martyo_crouch"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2212,7 +2212,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_w5hhq"]
-resource_name = "mario_dair"
+resource_name = "martyo_dair"
 length = 1.5
 step = 0.0166667
 tracks/0/type = "value"
@@ -2225,7 +2225,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_dair"]
+"values": [&"martyo_dair"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2241,7 +2241,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_mpi2n"]
-resource_name = "mario_dash_attack"
+resource_name = "martyo_dash_attack"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2253,7 +2253,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_dash_attack"]
+"values": [&"martyo_dash_attack"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2269,7 +2269,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_mjnsc"]
-resource_name = "mario_down_smash"
+resource_name = "martyo_down_smash"
 length = 1.33334
 step = 0.0166667
 tracks/0/type = "value"
@@ -2282,7 +2282,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_down_smash"]
+"values": [&"martyo_down_smash"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2298,7 +2298,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_bv3th"]
-resource_name = "mario_dtilt"
+resource_name = "martyo_dtilt"
 length = 0.283335
 step = 0.0166667
 tracks/0/type = "value"
@@ -2311,7 +2311,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_dtilt"]
+"values": [&"martyo_dtilt"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2327,7 +2327,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_jihwp"]
-resource_name = "mario_fair"
+resource_name = "martyo_fair"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2339,7 +2339,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_fair"]
+"values": [&"martyo_fair"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2355,7 +2355,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_gv5xh"]
-resource_name = "mario_fsmash"
+resource_name = "martyo_fsmash"
 length = 3.33334
 step = 0.0166667
 tracks/0/type = "value"
@@ -2368,7 +2368,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_fsmash"]
+"values": [&"martyo_fsmash"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2384,7 +2384,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_pouu5"]
-resource_name = "mario_ftilt"
+resource_name = "martyo_ftilt"
 length = 0.833335
 step = 0.0166667
 tracks/0/type = "value"
@@ -2397,7 +2397,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_ftilt"]
+"values": [&"martyo_ftilt"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2413,7 +2413,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_evemg"]
-resource_name = "mario_grab"
+resource_name = "martyo_grab"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2425,7 +2425,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_grab"]
+"values": [&"martyo_grab"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2441,7 +2441,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_nv7qt"]
-resource_name = "mario_hurt"
+resource_name = "martyo_hurt"
 length = 0.133335
 loop_mode = 1
 step = 0.0166667
@@ -2455,7 +2455,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_hurt"]
+"values": [&"martyo_hurt"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2471,7 +2471,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_t8kir"]
-resource_name = "Mario_idle"
+resource_name = "Martyo_idle"
 length = 0.800002
 loop_mode = 1
 step = 0.0166667
@@ -2485,7 +2485,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"Mario_Idle"]
+"values": [&"Martyo_Idle"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2501,7 +2501,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_xxu3t"]
-resource_name = "mario_crouch"
+resource_name = "martyo_crouch"
 length = 0.0500017
 step = 0.0166667
 tracks/0/type = "value"
@@ -2514,7 +2514,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_jump_squat"]
+"values": [&"martyo_jump_squat"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2530,7 +2530,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_cvena"]
-resource_name = "mario_landing"
+resource_name = "martyo_landing"
 loop_mode = 1
 step = 0.0166667
 tracks/0/type = "value"
@@ -2543,7 +2543,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_landing"]
+"values": [&"martyo_landing"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2559,7 +2559,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_5mk15"]
-resource_name = "mario_ledge"
+resource_name = "martyo_ledge"
 length = 0.033335
 step = 0.0166667
 tracks/0/type = "value"
@@ -2572,7 +2572,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_ledge"]
+"values": [&"martyo_ledge"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2588,7 +2588,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_vvsic"]
-resource_name = "mario_nair"
+resource_name = "martyo_nair"
 length = 0.750002
 step = 0.0166667
 tracks/0/type = "value"
@@ -2601,7 +2601,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_nair"]
+"values": [&"martyo_nair"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2617,7 +2617,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_a3jjj"]
-resource_name = "mario_roll"
+resource_name = "martyo_roll"
 length = 0.133335
 loop_mode = 1
 step = 0.0166667
@@ -2631,7 +2631,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_roll"]
+"values": [&"martyo_roll"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2647,7 +2647,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_w70mg"]
-resource_name = "mario_run"
+resource_name = "martyo_run"
 length = 0.200002
 loop_mode = 1
 step = 0.0166667
@@ -2661,7 +2661,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_run"]
+"values": [&"martyo_run"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2677,7 +2677,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_tfc78"]
-resource_name = "mario_sheild"
+resource_name = "martyo_sheild"
 loop_mode = 1
 step = 0.0166667
 tracks/0/type = "value"
@@ -2690,7 +2690,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_shield"]
+"values": [&"martyo_shield"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2706,7 +2706,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_4iic2"]
-resource_name = "mario_strong_dash_attack"
+resource_name = "martyo_strong_dash_attack"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2718,7 +2718,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_strong_dash_attack"]
+"values": [&"martyo_strong_dash_attack"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2734,7 +2734,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_70w35"]
-resource_name = "mario_throw"
+resource_name = "martyo_throw"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2746,7 +2746,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_throw"]
+"values": [&"martyo_throw"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2762,7 +2762,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_tqg7t"]
-resource_name = "mario_turn"
+resource_name = "martyo_turn"
 length = 0.116669
 step = 0.0166667
 tracks/0/type = "value"
@@ -2775,7 +2775,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_turn"]
+"values": [&"martyo_turn"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2791,7 +2791,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_ktvs1"]
-resource_name = "mario_uair"
+resource_name = "martyo_uair"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2803,7 +2803,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_uair"]
+"values": [&"martyo_uair"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2819,7 +2819,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_dy1qr"]
-resource_name = "mario_up_smash"
+resource_name = "martyo_up_smash"
 length = 1.5
 step = 0.0166667
 tracks/0/type = "value"
@@ -2832,7 +2832,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_upsmash"]
+"values": [&"martyo_upsmash"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2848,7 +2848,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_mhcvs"]
-resource_name = "mario_upspecial"
+resource_name = "martyo_upspecial"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2860,7 +2860,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_upspecial"]
+"values": [&"martyo_upspecial"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2876,7 +2876,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_vpf1c"]
-resource_name = "mario_utilt"
+resource_name = "martyo_utilt"
 length = 0.750002
 step = 0.0166667
 tracks/0/type = "value"
@@ -2889,7 +2889,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"mario_utilt"]
+"values": [&"martyo_utilt"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2907,40 +2907,40 @@ tracks/1/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ln6oh"]
 _data = {
 "RESET": SubResource("Animation_fr81u"),
-"mario_air": SubResource("Animation_aeabs"),
-"mario_airdodge_right": SubResource("Animation_aqbq4"),
-"mario_bair": SubResource("Animation_12x7l"),
-"mario_crouch": SubResource("Animation_5y3h1"),
-"mario_dair": SubResource("Animation_w5hhq"),
-"mario_dash_attack": SubResource("Animation_mpi2n"),
-"mario_down_smash": SubResource("Animation_mjnsc"),
-"mario_dtilt": SubResource("Animation_bv3th"),
-"mario_fair": SubResource("Animation_jihwp"),
-"mario_fsmash": SubResource("Animation_gv5xh"),
-"mario_ftilt": SubResource("Animation_pouu5"),
-"mario_grab": SubResource("Animation_evemg"),
-"mario_hurt": SubResource("Animation_nv7qt"),
-"mario_idle": SubResource("Animation_t8kir"),
-"mario_jump_squat": SubResource("Animation_xxu3t"),
-"mario_landing": SubResource("Animation_cvena"),
-"mario_ledge": SubResource("Animation_5mk15"),
-"mario_nair": SubResource("Animation_vvsic"),
-"mario_roll": SubResource("Animation_a3jjj"),
-"mario_run": SubResource("Animation_w70mg"),
-"mario_sheild": SubResource("Animation_tfc78"),
-"mario_strong_dash_attack": SubResource("Animation_4iic2"),
-"mario_throw": SubResource("Animation_70w35"),
-"mario_turn": SubResource("Animation_tqg7t"),
-"mario_uair": SubResource("Animation_ktvs1"),
-"mario_up_smash": SubResource("Animation_dy1qr"),
-"mario_upspecial": SubResource("Animation_mhcvs"),
-"mario_utilt": SubResource("Animation_vpf1c")
+"martyo_air": SubResource("Animation_aeabs"),
+"martyo_airdodge_right": SubResource("Animation_aqbq4"),
+"martyo_bair": SubResource("Animation_12x7l"),
+"martyo_crouch": SubResource("Animation_5y3h1"),
+"martyo_dair": SubResource("Animation_w5hhq"),
+"martyo_dash_attack": SubResource("Animation_mpi2n"),
+"martyo_down_smash": SubResource("Animation_mjnsc"),
+"martyo_dtilt": SubResource("Animation_bv3th"),
+"martyo_fair": SubResource("Animation_jihwp"),
+"martyo_fsmash": SubResource("Animation_gv5xh"),
+"martyo_ftilt": SubResource("Animation_pouu5"),
+"martyo_grab": SubResource("Animation_evemg"),
+"martyo_hurt": SubResource("Animation_nv7qt"),
+"martyo_idle": SubResource("Animation_t8kir"),
+"martyo_jump_squat": SubResource("Animation_xxu3t"),
+"martyo_landing": SubResource("Animation_cvena"),
+"martyo_ledge": SubResource("Animation_5mk15"),
+"martyo_nair": SubResource("Animation_vvsic"),
+"martyo_roll": SubResource("Animation_a3jjj"),
+"martyo_run": SubResource("Animation_w70mg"),
+"martyo_sheild": SubResource("Animation_tfc78"),
+"martyo_strong_dash_attack": SubResource("Animation_4iic2"),
+"martyo_throw": SubResource("Animation_70w35"),
+"martyo_turn": SubResource("Animation_tqg7t"),
+"martyo_uair": SubResource("Animation_ktvs1"),
+"martyo_up_smash": SubResource("Animation_dy1qr"),
+"martyo_upspecial": SubResource("Animation_mhcvs"),
+"martyo_utilt": SubResource("Animation_vpf1c")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a4awx"]
 size = Vector2(33.5, 69.0833)
 
-[node name="MARIO" type="CharacterBody2D"]
+[node name="MARTYO" type="CharacterBody2D"]
 collision_mask = 6
 script = ExtResource("1_jh38t")
 run_speed = 680.0

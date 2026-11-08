@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bca38w6xbuc1o"
-path="res://.godot/imported/crouch2.png-d4052b9940689492ef184e7606c3cb9a.ctex"
+path="res://.godot/imported/crouch2.png-d7c238579a9f158c16ff36b5e08fc797.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/crouch2.png"
-dest_files=["res://.godot/imported/crouch2.png-d4052b9940689492ef184e7606c3cb9a.ctex"]
+source_file="res://characters/martyo/sprites/crouch2.png"
+dest_files=["res://.godot/imported/crouch2.png-d7c238579a9f158c16ff36b5e08fc797.ctex"]
 
 [params]
 

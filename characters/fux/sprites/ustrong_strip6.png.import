@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bigpj8tfxmk12"
-path="res://.godot/imported/ustrong_strip6.png-2f0aeef57fb6d3ca3c85ed14649b91f5.ctex"
+path="res://.godot/imported/ustrong_strip6.png-de3005751a4c3ab40062f92bdef67a7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/ustrong_strip6.png"
-dest_files=["res://.godot/imported/ustrong_strip6.png-2f0aeef57fb6d3ca3c85ed14649b91f5.ctex"]
+source_file="res://characters/fux/sprites/ustrong_strip6.png"
+dest_files=["res://.godot/imported/ustrong_strip6.png-de3005751a4c3ab40062f92bdef67a7e.ctex"]
 
 [params]
 

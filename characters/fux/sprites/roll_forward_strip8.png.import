@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmtj77i87k7p8"
-path="res://.godot/imported/roll_forward_strip8.png-0e4d1e8eaf9f82884732020469d9d259.ctex"
+path="res://.godot/imported/roll_forward_strip8.png-6ec99f74c274ea015d9ad995ae2e6035.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/roll_forward_strip8.png"
-dest_files=["res://.godot/imported/roll_forward_strip8.png-0e4d1e8eaf9f82884732020469d9d259.ctex"]
+source_file="res://characters/fux/sprites/roll_forward_strip8.png"
+dest_files=["res://.godot/imported/roll_forward_strip8.png-6ec99f74c274ea015d9ad995ae2e6035.ctex"]
 
 [params]
 

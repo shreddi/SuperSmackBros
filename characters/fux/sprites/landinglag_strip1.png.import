@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq6dly0127ger"
-path="res://.godot/imported/landinglag_strip1.png-bd86117a92153837c6714ced04534d4e.ctex"
+path="res://.godot/imported/landinglag_strip1.png-c92aa39af3c7ad026ca8b16e0ceeffd5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/landinglag_strip1.png"
-dest_files=["res://.godot/imported/landinglag_strip1.png-bd86117a92153837c6714ced04534d4e.ctex"]
+source_file="res://characters/fux/sprites/landinglag_strip1.png"
+dest_files=["res://.godot/imported/landinglag_strip1.png-c92aa39af3c7ad026ca8b16e0ceeffd5.ctex"]
 
 [params]
 

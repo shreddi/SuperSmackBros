@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://h75lm0aba1sk"
-path="res://.godot/imported/throw.png-7818bba43bdb494106c2d73d04028831.ctex"
+path="res://.godot/imported/throw.png-a430cca8dbe533abd1adedadd64d6dbd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/throw.png"
-dest_files=["res://.godot/imported/throw.png-7818bba43bdb494106c2d73d04028831.ctex"]
+source_file="res://characters/martyo/sprites/throw.png"
+dest_files=["res://.godot/imported/throw.png-a430cca8dbe533abd1adedadd64d6dbd.ctex"]
 
 [params]
 

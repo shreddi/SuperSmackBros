@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://di6y0txob5nrn"
-path="res://.godot/imported/dattack_strip3.png-a82add2176897b0832a03163174cab0f.ctex"
+path="res://.godot/imported/dattack_strip3.png-e94f62f9f7f871d4f138113ba752ac69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/dattack_strip3.png"
-dest_files=["res://.godot/imported/dattack_strip3.png-a82add2176897b0832a03163174cab0f.ctex"]
+source_file="res://characters/fux/sprites/dattack_strip3.png"
+dest_files=["res://.godot/imported/dattack_strip3.png-e94f62f9f7f871d4f138113ba752ac69.ctex"]
 
 [params]
 

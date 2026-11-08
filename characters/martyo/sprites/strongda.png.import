@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2mhhe54baclv"
-path="res://.godot/imported/strongda.png-6b41f77d49b601feee5bb6980174848e.ctex"
+path="res://.godot/imported/strongda.png-a7d0010c045df64f191ce2d17791aa3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/strongda.png"
-dest_files=["res://.godot/imported/strongda.png-6b41f77d49b601feee5bb6980174848e.ctex"]
+source_file="res://characters/martyo/sprites/strongda.png"
+dest_files=["res://.godot/imported/strongda.png-a7d0010c045df64f191ce2d17791aa3f.ctex"]
 
 [params]
 

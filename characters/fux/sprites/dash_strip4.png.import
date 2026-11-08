@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://623tn0swqcad"
-path="res://.godot/imported/dash_strip4.png-4d2225ea0c2235d898555a17c876caee.ctex"
+path="res://.godot/imported/dash_strip4.png-38c853c64d63ab766f0ccfc7b4fadad6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/dash_strip4.png"
-dest_files=["res://.godot/imported/dash_strip4.png-4d2225ea0c2235d898555a17c876caee.ctex"]
+source_file="res://characters/fux/sprites/dash_strip4.png"
+dest_files=["res://.godot/imported/dash_strip4.png-38c853c64d63ab766f0ccfc7b4fadad6.ctex"]
 
 [params]
 

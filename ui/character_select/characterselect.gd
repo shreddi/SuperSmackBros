@@ -5,7 +5,7 @@ signal selection_confirmed(player, character_index)
 
 var player1_selection = 1
 var player2_selection = 1
-var characters = {"fox": "res://characters/fox/fox.tscn", "mario": "res://characters/mario/mario.tscn"} # Character to path mapping
+var characters = {"fux": "res://characters/fux/fux.tscn", "martyo": "res://characters/martyo/martyo.tscn"} # Character to path mapping
 @onready var gridContainer = $HBoxContainer/VBoxContainer/GridContainer
 @onready var p1 = $Player1Indicator
 @onready var p2 = $Player2Indicator

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpfxmnacinb7o"
-path="res://.godot/imported/dashstart_strip2.png-5e6a123e88127fe5232131ecc5bdfade.ctex"
+path="res://.godot/imported/dashstart_strip2.png-d2cfd13c8dbe43f56d6722048292d8ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/dashstart_strip2.png"
-dest_files=["res://.godot/imported/dashstart_strip2.png-5e6a123e88127fe5232131ecc5bdfade.ctex"]
+source_file="res://characters/fux/sprites/dashstart_strip2.png"
+dest_files=["res://.godot/imported/dashstart_strip2.png-d2cfd13c8dbe43f56d6722048292d8ff.ctex"]
 
 [params]
 

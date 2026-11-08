@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drp5l8iml50si"
-path="res://.godot/imported/grab.png-4e6bcac2c58da1086c2e64eb6fe45869.ctex"
+path="res://.godot/imported/grab.png-8b576897109f179863ffc27569e21dae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/grab.png"
-dest_files=["res://.godot/imported/grab.png-4e6bcac2c58da1086c2e64eb6fe45869.ctex"]
+source_file="res://characters/martyo/sprites/grab.png"
+dest_files=["res://.godot/imported/grab.png-8b576897109f179863ffc27569e21dae.ctex"]
 
 [params]
 

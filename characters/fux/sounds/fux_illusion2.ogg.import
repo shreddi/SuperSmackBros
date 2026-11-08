@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://drmd7abpbgarr"
-path="res://.godot/imported/fox_illusion2.ogg-fae3b6431a6fd9b09dab30c10d39b1d3.oggvorbisstr"
+path="res://.godot/imported/fux_illusion2.ogg-b72e85bf83c3a8fd56b4904e7746b9f3.oggvorbisstr"
 
 [deps]
 
-source_file="res://characters/fox/sounds/fox_illusion2.ogg"
-dest_files=["res://.godot/imported/fox_illusion2.ogg-fae3b6431a6fd9b09dab30c10d39b1d3.oggvorbisstr"]
+source_file="res://characters/fux/sounds/fux_illusion2.ogg"
+dest_files=["res://.godot/imported/fux_illusion2.ogg-b72e85bf83c3a8fd56b4904e7746b9f3.oggvorbisstr"]
 
 [params]
 

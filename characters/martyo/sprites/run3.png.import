@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dthvxtojbdum0"
-path="res://.godot/imported/run3.png-e33c4bf7250a2405e6ba6558549f316e.ctex"
+path="res://.godot/imported/run3.png-4b7b1c99df964983cc87b129ee9af416.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/run3.png"
-dest_files=["res://.godot/imported/run3.png-e33c4bf7250a2405e6ba6558549f316e.ctex"]
+source_file="res://characters/martyo/sprites/run3.png"
+dest_files=["res://.godot/imported/run3.png-4b7b1c99df964983cc87b129ee9af416.ctex"]
 
 [params]
 

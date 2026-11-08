@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dn852j3e0bupp"
-path="res://.godot/imported/ftilt_strip3.png-cceb799dfe5099e36a350df0f0f22515.ctex"
+path="res://.godot/imported/ftilt_strip3.png-39dd7e9668b96dd29b85dc59a0a09862.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/ftilt_strip3.png"
-dest_files=["res://.godot/imported/ftilt_strip3.png-cceb799dfe5099e36a350df0f0f22515.ctex"]
+source_file="res://characters/fux/sprites/ftilt_strip3.png"
+dest_files=["res://.godot/imported/ftilt_strip3.png-39dd7e9668b96dd29b85dc59a0a09862.ctex"]
 
 [params]
 

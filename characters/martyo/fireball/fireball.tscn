@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://c365wbvot4nlh"]
 
-[ext_resource type="Script" path="res://characters/mario/fireball/fireball.gd" id="1_julbi"]
-[ext_resource type="Texture2D" uid="uid://dbunm7bthcotj" path="res://characters/mario/sprites/fireball.png" id="2_wvq8g"]
+[ext_resource type="Script" path="res://characters/martyo/fireball/fireball.gd" id="1_julbi"]
+[ext_resource type="Texture2D" uid="uid://dbunm7bthcotj" path="res://characters/martyo/sprites/fireball.png" id="2_wvq8g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gmanv"]
 atlas = ExtResource("2_wvq8g")

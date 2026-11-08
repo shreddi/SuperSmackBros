@@ -1,104 +1,104 @@
 [gd_scene load_steps=355 format=3 uid="uid://ds0is3du5q5ce"]
 
-[ext_resource type="Script" path="res://characters/fox/fox_state_machine.gd" id="1_cptmj"]
-[ext_resource type="Script" path="res://characters/fox/fox.gd" id="1_h48nh"]
-[ext_resource type="Texture2D" uid="uid://da6exuvlp5bmc" path="res://characters/fox/sprites/jump_strip5.png" id="2_5m6bu"]
-[ext_resource type="Texture2D" uid="uid://c2qlbdifdkfsd" path="res://characters/fox/sprites/dtilt_strip3.png" id="2_p7w45"]
-[ext_resource type="Texture2D" uid="uid://3ohf2ty6qn4q" path="res://characters/fox/sprites/idle_strip10.png" id="3_6vpy5"]
-[ext_resource type="Texture2D" uid="uid://dxpe6s101ruwp" path="res://characters/fox/sprites/airdodge_strip6.png" id="3_vo3oh"]
-[ext_resource type="Texture2D" uid="uid://d1wnviqrtu8uq" path="res://characters/fox/sprites/bair_strip4.png" id="4_adbp4"]
-[ext_resource type="Texture2D" uid="uid://01sindlrudq3" path="res://characters/fox/sprites/crouch_strip4.png" id="5_5gfg7"]
-[ext_resource type="Texture2D" uid="uid://bw1ts40dc5qxt" path="res://characters/fox/sprites/dair_strip4.png" id="6_6xttd"]
-[ext_resource type="Texture2D" uid="uid://dpfxmnacinb7o" path="res://characters/fox/sprites/dashstart_strip2.png" id="7_ivwi4"]
-[ext_resource type="Texture2D" uid="uid://623tn0swqcad" path="res://characters/fox/sprites/dash_strip4.png" id="8_fr6ma"]
-[ext_resource type="Texture2D" uid="uid://di6y0txob5nrn" path="res://characters/fox/sprites/dattack_strip3.png" id="9_m2f2o"]
-[ext_resource type="Texture2D" uid="uid://7qcjpdcmkcnq" path="res://characters/fox/sprites/dstrong_strip4.png" id="10_n8mgc"]
-[ext_resource type="Texture2D" uid="uid://g41664niktpu" path="res://characters/fox/sprites/dspecial_strip2.png" id="11_oiawo"]
-[ext_resource type="Texture2D" uid="uid://d0tcpmg65gqjg" path="res://characters/fox/sprites/fair_strip6.png" id="13_weg1a"]
-[ext_resource type="Texture2D" uid="uid://ghkcu7ki2nhp" path="res://characters/fox/sprites/fstrong_strip6.png" id="14_vymw5"]
-[ext_resource type="Texture2D" uid="uid://06eb15yreuuf" path="res://characters/fox/sprites/fspecial_strip5.png" id="15_c2mn6"]
-[ext_resource type="Texture2D" uid="uid://dn852j3e0bupp" path="res://characters/fox/sprites/ftilt_strip3.png" id="16_umqyl"]
-[ext_resource type="Texture2D" uid="uid://bpf3ei36xjksk" path="res://characters/fox/sprites/hurt_strip1.png" id="17_4fnjp"]
-[ext_resource type="Texture2D" uid="uid://d08x32nbolt20" path="res://characters/fox/sprites/jab_strip5.png" id="19_8g2oi"]
-[ext_resource type="Texture2D" uid="uid://cuqpi0w6fuckl" path="res://characters/fox/sprites/jumpstart_strip1.png" id="20_uj7j6"]
-[ext_resource type="Texture2D" uid="uid://dq6dly0127ger" path="res://characters/fox/sprites/landinglag_strip1.png" id="21_rnopg"]
-[ext_resource type="Texture2D" uid="uid://bqkmx3wisd1f3" path="res://characters/fox/sprites/ledge_strip1.png" id="22_wxdvv"]
-[ext_resource type="Texture2D" uid="uid://cj1qynv8bd1f2" path="res://characters/mario/sprites/idle2.png" id="23_4yybe"]
-[ext_resource type="Texture2D" uid="uid://cvp33qj7my8a" path="res://characters/fox/sprites/nair_strip1.png" id="24_xqvj1"]
-[ext_resource type="Texture2D" uid="uid://ccnr8gmwnhjra" path="res://characters/fox/sprites/nspecial_strip1.png" id="25_smmqi"]
-[ext_resource type="Texture2D" uid="uid://2q65avu24dw3" path="res://characters/fox/sprites/parry_strip1.png" id="26_1u17h"]
-[ext_resource type="Texture2D" uid="uid://dmtj77i87k7p8" path="res://characters/fox/sprites/roll_forward_strip8.png" id="27_4g67n"]
-[ext_resource type="Texture2D" uid="uid://babo42lyimrhs" path="res://characters/fox/sprites/tech_strip6.png" id="28_60pgb"]
-[ext_resource type="Texture2D" uid="uid://dk1p4dgl12nyk" path="res://characters/fox/sprites/dashturn_strip1.png" id="29_a25k5"]
-[ext_resource type="Texture2D" uid="uid://cecyt8bhnric3" path="res://characters/fox/sprites/uair_strip4.png" id="30_fc6ca"]
-[ext_resource type="Texture2D" uid="uid://bigpj8tfxmk12" path="res://characters/fox/sprites/ustrong_strip6.png" id="31_n8m7x"]
-[ext_resource type="Texture2D" uid="uid://bb8nvsjirqj8b" path="res://characters/fox/sprites/uspecial_strip16.png" id="32_stelg"]
-[ext_resource type="Texture2D" uid="uid://dcc4urm38hl6e" path="res://characters/fox/sprites/utilt_strip3.png" id="33_mmoxt"]
-[ext_resource type="Texture2D" uid="uid://euddajdsnyrf" path="res://characters/fox/sprites/walk_strip4.png" id="34_8shrc"]
-[ext_resource type="Texture2D" uid="uid://ct6t5ybecb0an" path="res://characters/fox/sprites/walkturn_strip5.png" id="35_l0psf"]
-[ext_resource type="Texture2D" uid="uid://dt7eraguw2yjc" path="res://characters/fox/sprites/walljump_strip5.png" id="36_belah"]
-[ext_resource type="Texture2D" uid="uid://dtsun12dxb0qx" path="res://characters/mario/sprites/air2.png" id="37_0fwn1"]
-[ext_resource type="Texture2D" uid="uid://vxfm6jtsnevc" path="res://characters/fox/shield.png" id="37_aq0as"]
-[ext_resource type="Texture2D" uid="uid://dgualtw306tqw" path="res://characters/mario/sprites/air_dodge.png" id="38_j6mf3"]
-[ext_resource type="Texture2D" uid="uid://bix4hp4l33h17" path="res://characters/mario/sprites/bair.png" id="39_wp5bi"]
-[ext_resource type="Texture2D" uid="uid://bca38w6xbuc1o" path="res://characters/mario/sprites/crouch2.png" id="40_dc5ov"]
-[ext_resource type="Texture2D" uid="uid://bodemsy2nqb2r" path="res://characters/mario/sprites/dair.png" id="41_82e41"]
-[ext_resource type="Texture2D" uid="uid://br8r4kk8a1rl6" path="res://characters/mario/sprites/dashattack.png" id="42_4467r"]
-[ext_resource type="Texture2D" uid="uid://0ooimox66vdd" path="res://Characters/Mario/Sprites/DOWNSMASH 14.png" id="43_hxm52"]
-[ext_resource type="Texture2D" uid="uid://qqjf048lvnbn" path="res://characters/mario/sprites/downsmash2_02.png" id="44_l053e"]
-[ext_resource type="Texture2D" uid="uid://cp3obwk7ysijs" path="res://characters/mario/sprites/downsmash2_03.png" id="45_we1o7"]
-[ext_resource type="Texture2D" uid="uid://0gax1ej6538q" path="res://characters/mario/sprites/downsmash2_04.png" id="46_5hje6"]
-[ext_resource type="Texture2D" uid="uid://csr4nroxgfjhy" path="res://characters/mario/sprites/downsmash2_05.png" id="47_6pwdn"]
-[ext_resource type="Texture2D" uid="uid://dunoiudpav7j1" path="res://characters/mario/sprites/downsmash2_06.png" id="48_4pnxw"]
-[ext_resource type="Texture2D" uid="uid://05bswdrrapvx" path="res://characters/mario/sprites/downsmash2_07.png" id="49_ujv7d"]
-[ext_resource type="Texture2D" uid="uid://b3c8mxxyvqnw" path="res://characters/mario/sprites/downsmash2_08.png" id="50_ayffl"]
-[ext_resource type="Texture2D" uid="uid://cfobjoujw2y84" path="res://characters/mario/sprites/downsmash2_09.png" id="51_16dfw"]
-[ext_resource type="Texture2D" uid="uid://cryj355ju1lfb" path="res://characters/mario/sprites/downsmash2_10.png" id="52_bg2t6"]
-[ext_resource type="Texture2D" uid="uid://4r7r1a014xu" path="res://characters/mario/sprites/downsmash2_11.png" id="53_10fl4"]
-[ext_resource type="Texture2D" uid="uid://cahcpdosima1s" path="res://characters/mario/sprites/downsmash2_12.png" id="54_ny8rk"]
-[ext_resource type="Texture2D" uid="uid://d4cv6h0rm4gwp" path="res://characters/mario/sprites/downsmash2_13.png" id="55_dw7p6"]
-[ext_resource type="Texture2D" uid="uid://5q0bkmt2inmg" path="res://characters/mario/sprites/downsmash2_14.png" id="56_mgire"]
-[ext_resource type="Texture2D" uid="uid://ytpnemiepryv" path="res://characters/mario/sprites/downsmash2_15.png" id="57_quqqf"]
-[ext_resource type="Texture2D" uid="uid://6i05dj8ll0fn" path="res://characters/mario/sprites/downsmash2_16.png" id="58_3uwsm"]
-[ext_resource type="Texture2D" uid="uid://dv4ow4dg0y27x" path="res://characters/mario/sprites/downsmash2_17.png" id="59_astom"]
-[ext_resource type="Texture2D" uid="uid://cuyy2unx82e5u" path="res://characters/mario/sprites/downsmash2_18.png" id="60_ewmmj"]
-[ext_resource type="Texture2D" uid="uid://dwcfpa58vu6hr" path="res://characters/mario/sprites/downsmash2_19.png" id="61_n75og"]
-[ext_resource type="Texture2D" uid="uid://bonuqed3apv5j" path="res://characters/mario/sprites/downsmash2_20.png" id="62_1ua1o"]
-[ext_resource type="Texture2D" uid="uid://dr25xohkqrvpa" path="res://characters/mario/sprites/dtilt.png" id="63_pnu3s"]
-[ext_resource type="Texture2D" uid="uid://dt8mpculswx3a" path="res://characters/mario/sprites/fair.png" id="64_s156x"]
-[ext_resource type="Texture2D" uid="uid://dxf77ull8umj2" path="res://characters/mario/sprites/fsmash_01.png" id="65_r0jem"]
-[ext_resource type="Texture2D" uid="uid://lfgg54e13hdp" path="res://characters/mario/sprites/fsmash_02.png" id="66_qqe3j"]
-[ext_resource type="Texture2D" uid="uid://dpgjpubsk76l1" path="res://characters/mario/sprites/fsmash_03.png" id="67_lp0f6"]
-[ext_resource type="Texture2D" uid="uid://d1ithj38dbnld" path="res://characters/mario/sprites/fsmash_04_2.png" id="68_dcwus"]
-[ext_resource type="Texture2D" uid="uid://3t0aw1arxpy" path="res://characters/mario/sprites/fsmash_05.png" id="69_vj53l"]
-[ext_resource type="Texture2D" uid="uid://cijicw54ptmmp" path="res://characters/mario/sprites/fsmash_06.png" id="70_gt2me"]
-[ext_resource type="Texture2D" uid="uid://bhfccrw83gr6n" path="res://characters/mario/sprites/fsmash_07.png" id="71_pwksx"]
-[ext_resource type="Texture2D" uid="uid://c6gom0u88476o" path="res://characters/mario/sprites/fsmash_08.png" id="72_vj3e0"]
-[ext_resource type="Texture2D" uid="uid://dwtaogb83lkmu" path="res://characters/mario/sprites/fsmash_09.png" id="73_mgjsi"]
-[ext_resource type="Texture2D" uid="uid://hq2ydkyfmhxb" path="res://characters/mario/sprites/ftilt.png" id="74_2okqr"]
-[ext_resource type="Texture2D" uid="uid://drp5l8iml50si" path="res://characters/mario/sprites/grab.png" id="75_op4jb"]
-[ext_resource type="Texture2D" uid="uid://5btupfl188qt" path="res://characters/mario/sprites/hurt.png" id="76_llefp"]
-[ext_resource type="Texture2D" uid="uid://cw8kq165rw8mo" path="res://characters/mario/sprites/ledge2.png" id="77_q36ni"]
-[ext_resource type="Texture2D" uid="uid://6anb8ofooesu" path="res://characters/mario/sprites/nair2.png" id="78_0uf38"]
-[ext_resource type="Texture2D" uid="uid://bnqfuhb6hrwt4" path="res://characters/mario/sprites/roll.png" id="79_5bi7d"]
-[ext_resource type="Texture2D" uid="uid://dthvxtojbdum0" path="res://characters/mario/sprites/run3.png" id="80_ygk3h"]
-[ext_resource type="Texture2D" uid="uid://bq23m2m2symar" path="res://characters/mario/sprites/shield.png" id="81_bjrep"]
-[ext_resource type="Texture2D" uid="uid://cx8dccfwipe0a" path="res://characters/mario/sprites/strong-dash-attack.png" id="82_odjr8"]
-[ext_resource type="Texture2D" uid="uid://h75lm0aba1sk" path="res://characters/mario/sprites/throw.png" id="83_8rgdq"]
-[ext_resource type="Texture2D" uid="uid://c4qrcjuw743fa" path="res://characters/mario/sprites/turn.png" id="84_aruip"]
-[ext_resource type="Texture2D" uid="uid://dixow3nx77y7j" path="res://characters/mario/sprites/uair.png" id="85_bdr1a"]
-[ext_resource type="Texture2D" uid="uid://bsl7go4tmy2fs" path="res://characters/mario/sprites/upsmash_01.png" id="86_ek3uy"]
-[ext_resource type="Texture2D" uid="uid://bfsec4ydldtn1" path="res://characters/mario/sprites/upsmash_02.png" id="87_3d1lk"]
-[ext_resource type="Texture2D" uid="uid://cq7dvvwfoa2fn" path="res://characters/mario/sprites/upsmash_03.png" id="88_llmyq"]
-[ext_resource type="Texture2D" uid="uid://ddnqvx6fq4bfj" path="res://characters/mario/sprites/upsmash_04.png" id="89_pbnty"]
-[ext_resource type="Texture2D" uid="uid://cl18nu8gvpwbw" path="res://characters/mario/sprites/upsmash_05.png" id="90_b2412"]
-[ext_resource type="Texture2D" uid="uid://dimbr4lsidsqy" path="res://characters/mario/sprites/upsmash_06.png" id="91_si2jw"]
-[ext_resource type="Texture2D" uid="uid://yyjkle3fw3wo" path="res://characters/mario/sprites/upsmash_07.png" id="92_6svdw"]
-[ext_resource type="Texture2D" uid="uid://becc2jrkvmkfm" path="res://characters/mario/sprites/upsmash_08.png" id="93_xa03e"]
-[ext_resource type="Texture2D" uid="uid://smif28psq24m" path="res://characters/mario/sprites/upsmash_09.png" id="94_rllh1"]
-[ext_resource type="Texture2D" uid="uid://caeili7xnccw4" path="res://characters/mario/sprites/upsmash_10.png" id="95_w4l0e"]
-[ext_resource type="Texture2D" uid="uid://cask847klww0x" path="res://characters/mario/sprites/up_special.png" id="96_vy7vm"]
-[ext_resource type="Texture2D" uid="uid://cg7y1cnupv3rq" path="res://characters/mario/sprites/uptilt.png" id="97_6dduu"]
+[ext_resource type="Script" path="res://characters/fux/fux_state_machine.gd" id="1_cptmj"]
+[ext_resource type="Script" path="res://characters/fux/fux.gd" id="1_h48nh"]
+[ext_resource type="Texture2D" uid="uid://da6exuvlp5bmc" path="res://characters/fux/sprites/jump_strip5.png" id="2_5m6bu"]
+[ext_resource type="Texture2D" uid="uid://c2qlbdifdkfsd" path="res://characters/fux/sprites/dtilt_strip3.png" id="2_p7w45"]
+[ext_resource type="Texture2D" uid="uid://3ohf2ty6qn4q" path="res://characters/fux/sprites/idle_strip10.png" id="3_6vpy5"]
+[ext_resource type="Texture2D" uid="uid://dxpe6s101ruwp" path="res://characters/fux/sprites/airdodge_strip6.png" id="3_vo3oh"]
+[ext_resource type="Texture2D" uid="uid://d1wnviqrtu8uq" path="res://characters/fux/sprites/bair_strip4.png" id="4_adbp4"]
+[ext_resource type="Texture2D" uid="uid://01sindlrudq3" path="res://characters/fux/sprites/crouch_strip4.png" id="5_5gfg7"]
+[ext_resource type="Texture2D" uid="uid://bw1ts40dc5qxt" path="res://characters/fux/sprites/dair_strip4.png" id="6_6xttd"]
+[ext_resource type="Texture2D" uid="uid://dpfxmnacinb7o" path="res://characters/fux/sprites/dashstart_strip2.png" id="7_ivwi4"]
+[ext_resource type="Texture2D" uid="uid://623tn0swqcad" path="res://characters/fux/sprites/dash_strip4.png" id="8_fr6ma"]
+[ext_resource type="Texture2D" uid="uid://di6y0txob5nrn" path="res://characters/fux/sprites/dattack_strip3.png" id="9_m2f2o"]
+[ext_resource type="Texture2D" uid="uid://7qcjpdcmkcnq" path="res://characters/fux/sprites/dstrong_strip4.png" id="10_n8mgc"]
+[ext_resource type="Texture2D" uid="uid://g41664niktpu" path="res://characters/fux/sprites/dspecial_strip2.png" id="11_oiawo"]
+[ext_resource type="Texture2D" uid="uid://d0tcpmg65gqjg" path="res://characters/fux/sprites/fair_strip6.png" id="13_weg1a"]
+[ext_resource type="Texture2D" uid="uid://ghkcu7ki2nhp" path="res://characters/fux/sprites/fstrong_strip6.png" id="14_vymw5"]
+[ext_resource type="Texture2D" uid="uid://06eb15yreuuf" path="res://characters/fux/sprites/fspecial_strip5.png" id="15_c2mn6"]
+[ext_resource type="Texture2D" uid="uid://dn852j3e0bupp" path="res://characters/fux/sprites/ftilt_strip3.png" id="16_umqyl"]
+[ext_resource type="Texture2D" uid="uid://bpf3ei36xjksk" path="res://characters/fux/sprites/hurt_strip1.png" id="17_4fnjp"]
+[ext_resource type="Texture2D" uid="uid://d08x32nbolt20" path="res://characters/fux/sprites/jab_strip5.png" id="19_8g2oi"]
+[ext_resource type="Texture2D" uid="uid://cuqpi0w6fuckl" path="res://characters/fux/sprites/jumpstart_strip1.png" id="20_uj7j6"]
+[ext_resource type="Texture2D" uid="uid://dq6dly0127ger" path="res://characters/fux/sprites/landinglag_strip1.png" id="21_rnopg"]
+[ext_resource type="Texture2D" uid="uid://bqkmx3wisd1f3" path="res://characters/fux/sprites/ledge_strip1.png" id="22_wxdvv"]
+[ext_resource type="Texture2D" uid="uid://cj1qynv8bd1f2" path="res://characters/martyo/sprites/idle2.png" id="23_4yybe"]
+[ext_resource type="Texture2D" uid="uid://cvp33qj7my8a" path="res://characters/fux/sprites/nair_strip1.png" id="24_xqvj1"]
+[ext_resource type="Texture2D" uid="uid://ccnr8gmwnhjra" path="res://characters/fux/sprites/nspecial_strip1.png" id="25_smmqi"]
+[ext_resource type="Texture2D" uid="uid://2q65avu24dw3" path="res://characters/fux/sprites/parry_strip1.png" id="26_1u17h"]
+[ext_resource type="Texture2D" uid="uid://dmtj77i87k7p8" path="res://characters/fux/sprites/roll_forward_strip8.png" id="27_4g67n"]
+[ext_resource type="Texture2D" uid="uid://babo42lyimrhs" path="res://characters/fux/sprites/tech_strip6.png" id="28_60pgb"]
+[ext_resource type="Texture2D" uid="uid://dk1p4dgl12nyk" path="res://characters/fux/sprites/dashturn_strip1.png" id="29_a25k5"]
+[ext_resource type="Texture2D" uid="uid://cecyt8bhnric3" path="res://characters/fux/sprites/uair_strip4.png" id="30_fc6ca"]
+[ext_resource type="Texture2D" uid="uid://bigpj8tfxmk12" path="res://characters/fux/sprites/ustrong_strip6.png" id="31_n8m7x"]
+[ext_resource type="Texture2D" uid="uid://bb8nvsjirqj8b" path="res://characters/fux/sprites/uspecial_strip16.png" id="32_stelg"]
+[ext_resource type="Texture2D" uid="uid://dcc4urm38hl6e" path="res://characters/fux/sprites/utilt_strip3.png" id="33_mmoxt"]
+[ext_resource type="Texture2D" uid="uid://euddajdsnyrf" path="res://characters/fux/sprites/walk_strip4.png" id="34_8shrc"]
+[ext_resource type="Texture2D" uid="uid://ct6t5ybecb0an" path="res://characters/fux/sprites/walkturn_strip5.png" id="35_l0psf"]
+[ext_resource type="Texture2D" uid="uid://dt7eraguw2yjc" path="res://characters/fux/sprites/walljump_strip5.png" id="36_belah"]
+[ext_resource type="Texture2D" uid="uid://dtsun12dxb0qx" path="res://characters/martyo/sprites/air2.png" id="37_0fwn1"]
+[ext_resource type="Texture2D" uid="uid://vxfm6jtsnevc" path="res://characters/fux/shield.png" id="37_aq0as"]
+[ext_resource type="Texture2D" uid="uid://dgualtw306tqw" path="res://characters/martyo/sprites/air_dodge.png" id="38_j6mf3"]
+[ext_resource type="Texture2D" uid="uid://bix4hp4l33h17" path="res://characters/martyo/sprites/bair.png" id="39_wp5bi"]
+[ext_resource type="Texture2D" uid="uid://bca38w6xbuc1o" path="res://characters/martyo/sprites/crouch2.png" id="40_dc5ov"]
+[ext_resource type="Texture2D" uid="uid://bodemsy2nqb2r" path="res://characters/martyo/sprites/dair.png" id="41_82e41"]
+[ext_resource type="Texture2D" uid="uid://br8r4kk8a1rl6" path="res://characters/martyo/sprites/dashattack.png" id="42_4467r"]
+[ext_resource type="Texture2D" uid="uid://0ooimox66vdd" path="res://Characters/Martyo/Sprites/DOWNSMASH 14.png" id="43_hxm52"]
+[ext_resource type="Texture2D" uid="uid://qqjf048lvnbn" path="res://characters/martyo/sprites/downsmash2_02.png" id="44_l053e"]
+[ext_resource type="Texture2D" uid="uid://cp3obwk7ysijs" path="res://characters/martyo/sprites/downsmash2_03.png" id="45_we1o7"]
+[ext_resource type="Texture2D" uid="uid://0gax1ej6538q" path="res://characters/martyo/sprites/downsmash2_04.png" id="46_5hje6"]
+[ext_resource type="Texture2D" uid="uid://csr4nroxgfjhy" path="res://characters/martyo/sprites/downsmash2_05.png" id="47_6pwdn"]
+[ext_resource type="Texture2D" uid="uid://dunoiudpav7j1" path="res://characters/martyo/sprites/downsmash2_06.png" id="48_4pnxw"]
+[ext_resource type="Texture2D" uid="uid://05bswdrrapvx" path="res://characters/martyo/sprites/downsmash2_07.png" id="49_ujv7d"]
+[ext_resource type="Texture2D" uid="uid://b3c8mxxyvqnw" path="res://characters/martyo/sprites/downsmash2_08.png" id="50_ayffl"]
+[ext_resource type="Texture2D" uid="uid://cfobjoujw2y84" path="res://characters/martyo/sprites/downsmash2_09.png" id="51_16dfw"]
+[ext_resource type="Texture2D" uid="uid://cryj355ju1lfb" path="res://characters/martyo/sprites/downsmash2_10.png" id="52_bg2t6"]
+[ext_resource type="Texture2D" uid="uid://4r7r1a014xu" path="res://characters/martyo/sprites/downsmash2_11.png" id="53_10fl4"]
+[ext_resource type="Texture2D" uid="uid://cahcpdosima1s" path="res://characters/martyo/sprites/downsmash2_12.png" id="54_ny8rk"]
+[ext_resource type="Texture2D" uid="uid://d4cv6h0rm4gwp" path="res://characters/martyo/sprites/downsmash2_13.png" id="55_dw7p6"]
+[ext_resource type="Texture2D" uid="uid://5q0bkmt2inmg" path="res://characters/martyo/sprites/downsmash2_14.png" id="56_mgire"]
+[ext_resource type="Texture2D" uid="uid://ytpnemiepryv" path="res://characters/martyo/sprites/downsmash2_15.png" id="57_quqqf"]
+[ext_resource type="Texture2D" uid="uid://6i05dj8ll0fn" path="res://characters/martyo/sprites/downsmash2_16.png" id="58_3uwsm"]
+[ext_resource type="Texture2D" uid="uid://dv4ow4dg0y27x" path="res://characters/martyo/sprites/downsmash2_17.png" id="59_astom"]
+[ext_resource type="Texture2D" uid="uid://cuyy2unx82e5u" path="res://characters/martyo/sprites/downsmash2_18.png" id="60_ewmmj"]
+[ext_resource type="Texture2D" uid="uid://dwcfpa58vu6hr" path="res://characters/martyo/sprites/downsmash2_19.png" id="61_n75og"]
+[ext_resource type="Texture2D" uid="uid://bonuqed3apv5j" path="res://characters/martyo/sprites/downsmash2_20.png" id="62_1ua1o"]
+[ext_resource type="Texture2D" uid="uid://dr25xohkqrvpa" path="res://characters/martyo/sprites/dtilt.png" id="63_pnu3s"]
+[ext_resource type="Texture2D" uid="uid://dt8mpculswx3a" path="res://characters/martyo/sprites/fair.png" id="64_s156x"]
+[ext_resource type="Texture2D" uid="uid://dxf77ull8umj2" path="res://characters/martyo/sprites/fsmash_01.png" id="65_r0jem"]
+[ext_resource type="Texture2D" uid="uid://lfgg54e13hdp" path="res://characters/martyo/sprites/fsmash_02.png" id="66_qqe3j"]
+[ext_resource type="Texture2D" uid="uid://dpgjpubsk76l1" path="res://characters/martyo/sprites/fsmash_03.png" id="67_lp0f6"]
+[ext_resource type="Texture2D" uid="uid://d1ithj38dbnld" path="res://characters/martyo/sprites/fsmash_04_2.png" id="68_dcwus"]
+[ext_resource type="Texture2D" uid="uid://3t0aw1arxpy" path="res://characters/martyo/sprites/fsmash_05.png" id="69_vj53l"]
+[ext_resource type="Texture2D" uid="uid://cijicw54ptmmp" path="res://characters/martyo/sprites/fsmash_06.png" id="70_gt2me"]
+[ext_resource type="Texture2D" uid="uid://bhfccrw83gr6n" path="res://characters/martyo/sprites/fsmash_07.png" id="71_pwksx"]
+[ext_resource type="Texture2D" uid="uid://c6gom0u88476o" path="res://characters/martyo/sprites/fsmash_08.png" id="72_vj3e0"]
+[ext_resource type="Texture2D" uid="uid://dwtaogb83lkmu" path="res://characters/martyo/sprites/fsmash_09.png" id="73_mgjsi"]
+[ext_resource type="Texture2D" uid="uid://hq2ydkyfmhxb" path="res://characters/martyo/sprites/ftilt.png" id="74_2okqr"]
+[ext_resource type="Texture2D" uid="uid://drp5l8iml50si" path="res://characters/martyo/sprites/grab.png" id="75_op4jb"]
+[ext_resource type="Texture2D" uid="uid://5btupfl188qt" path="res://characters/martyo/sprites/hurt.png" id="76_llefp"]
+[ext_resource type="Texture2D" uid="uid://cw8kq165rw8mo" path="res://characters/martyo/sprites/ledge2.png" id="77_q36ni"]
+[ext_resource type="Texture2D" uid="uid://6anb8ofooesu" path="res://characters/martyo/sprites/nair2.png" id="78_0uf38"]
+[ext_resource type="Texture2D" uid="uid://bnqfuhb6hrwt4" path="res://characters/martyo/sprites/roll.png" id="79_5bi7d"]
+[ext_resource type="Texture2D" uid="uid://dthvxtojbdum0" path="res://characters/martyo/sprites/run3.png" id="80_ygk3h"]
+[ext_resource type="Texture2D" uid="uid://bq23m2m2symar" path="res://characters/martyo/sprites/shield.png" id="81_bjrep"]
+[ext_resource type="Texture2D" uid="uid://cx8dccfwipe0a" path="res://characters/martyo/sprites/strong-dash-attack.png" id="82_odjr8"]
+[ext_resource type="Texture2D" uid="uid://h75lm0aba1sk" path="res://characters/martyo/sprites/throw.png" id="83_8rgdq"]
+[ext_resource type="Texture2D" uid="uid://c4qrcjuw743fa" path="res://characters/martyo/sprites/turn.png" id="84_aruip"]
+[ext_resource type="Texture2D" uid="uid://dixow3nx77y7j" path="res://characters/martyo/sprites/uair.png" id="85_bdr1a"]
+[ext_resource type="Texture2D" uid="uid://bsl7go4tmy2fs" path="res://characters/martyo/sprites/upsmash_01.png" id="86_ek3uy"]
+[ext_resource type="Texture2D" uid="uid://bfsec4ydldtn1" path="res://characters/martyo/sprites/upsmash_02.png" id="87_3d1lk"]
+[ext_resource type="Texture2D" uid="uid://cq7dvvwfoa2fn" path="res://characters/martyo/sprites/upsmash_03.png" id="88_llmyq"]
+[ext_resource type="Texture2D" uid="uid://ddnqvx6fq4bfj" path="res://characters/martyo/sprites/upsmash_04.png" id="89_pbnty"]
+[ext_resource type="Texture2D" uid="uid://cl18nu8gvpwbw" path="res://characters/martyo/sprites/upsmash_05.png" id="90_b2412"]
+[ext_resource type="Texture2D" uid="uid://dimbr4lsidsqy" path="res://characters/martyo/sprites/upsmash_06.png" id="91_si2jw"]
+[ext_resource type="Texture2D" uid="uid://yyjkle3fw3wo" path="res://characters/martyo/sprites/upsmash_07.png" id="92_6svdw"]
+[ext_resource type="Texture2D" uid="uid://becc2jrkvmkfm" path="res://characters/martyo/sprites/upsmash_08.png" id="93_xa03e"]
+[ext_resource type="Texture2D" uid="uid://smif28psq24m" path="res://characters/martyo/sprites/upsmash_09.png" id="94_rllh1"]
+[ext_resource type="Texture2D" uid="uid://caeili7xnccw4" path="res://characters/martyo/sprites/upsmash_10.png" id="95_w4l0e"]
+[ext_resource type="Texture2D" uid="uid://cask847klww0x" path="res://characters/martyo/sprites/up_special.png" id="96_vy7vm"]
+[ext_resource type="Texture2D" uid="uid://cg7y1cnupv3rq" path="res://characters/martyo/sprites/uptilt.png" id="97_6dduu"]
 
 [sub_resource type="AtlasTexture" id="19"]
 atlas = ExtResource("2_5m6bu")
@@ -1345,7 +1345,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_yj3cu")
 }],
 "loop": true,
-"name": &"Mario_Idle",
+"name": &"Martyo_Idle",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1609,7 +1609,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ds3iw")
 }],
 "loop": true,
-"name": &"fox_shield",
+"name": &"fux_shield",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1626,7 +1626,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_8cx57")
 }],
 "loop": true,
-"name": &"mario_air",
+"name": &"martyo_air",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1637,7 +1637,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_gpl04")
 }],
 "loop": true,
-"name": &"mario_airdodge_right",
+"name": &"martyo_airdodge_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1654,7 +1654,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_dpvb1")
 }],
 "loop": true,
-"name": &"mario_bair",
+"name": &"martyo_bair",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1668,7 +1668,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_pk6r7")
 }],
 "loop": false,
-"name": &"mario_crouch",
+"name": &"martyo_crouch",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1688,7 +1688,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_u5o58")
 }],
 "loop": true,
-"name": &"mario_dair",
+"name": &"martyo_dair",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1702,7 +1702,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_16wkn")
 }],
 "loop": true,
-"name": &"mario_dash_attack",
+"name": &"martyo_dash_attack",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1767,7 +1767,7 @@ animations = [{
 "texture": ExtResource("62_1ua1o")
 }],
 "loop": true,
-"name": &"mario_down_smash",
+"name": &"martyo_down_smash",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1787,7 +1787,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_wkr32")
 }],
 "loop": false,
-"name": &"mario_dtilt",
+"name": &"martyo_dtilt",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1804,7 +1804,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_jc0mv")
 }],
 "loop": true,
-"name": &"mario_fair",
+"name": &"martyo_fair",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1836,7 +1836,7 @@ animations = [{
 "texture": ExtResource("73_mgjsi")
 }],
 "loop": true,
-"name": &"mario_fsmash",
+"name": &"martyo_fsmash",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1859,7 +1859,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_bolww")
 }],
 "loop": false,
-"name": &"mario_ftilt",
+"name": &"martyo_ftilt",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1867,7 +1867,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_3dnui")
 }],
 "loop": true,
-"name": &"mario_grab",
+"name": &"martyo_grab",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1878,7 +1878,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_de42m")
 }],
 "loop": true,
-"name": &"mario_hurt",
+"name": &"martyo_hurt",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1892,7 +1892,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_un7pa")
 }],
 "loop": false,
-"name": &"mario_jump_squat",
+"name": &"martyo_jump_squat",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1900,7 +1900,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_xxqtd")
 }],
 "loop": true,
-"name": &"mario_landing",
+"name": &"martyo_landing",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1908,7 +1908,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_rdcar")
 }],
 "loop": true,
-"name": &"mario_ledge",
+"name": &"martyo_ledge",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1922,7 +1922,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_wn8ti")
 }],
 "loop": true,
-"name": &"mario_nair",
+"name": &"martyo_nair",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1939,7 +1939,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_xcm24")
 }],
 "loop": true,
-"name": &"mario_roll",
+"name": &"martyo_roll",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1956,7 +1956,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_hc1cl")
 }],
 "loop": true,
-"name": &"mario_run",
+"name": &"martyo_run",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1964,7 +1964,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_hlqia")
 }],
 "loop": true,
-"name": &"mario_shield",
+"name": &"martyo_shield",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1978,7 +1978,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_x62le")
 }],
 "loop": true,
-"name": &"mario_strong_dash_attack",
+"name": &"martyo_strong_dash_attack",
 "speed": 5.0
 }, {
 "frames": [{
@@ -1989,7 +1989,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_8f50h")
 }],
 "loop": true,
-"name": &"mario_throw",
+"name": &"martyo_throw",
 "speed": 5.0
 }, {
 "frames": [{
@@ -2000,7 +2000,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ltkk0")
 }],
 "loop": false,
-"name": &"mario_turn",
+"name": &"martyo_turn",
 "speed": 5.0
 }, {
 "frames": [{
@@ -2023,7 +2023,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_2vw8o")
 }],
 "loop": true,
-"name": &"mario_uair",
+"name": &"martyo_uair",
 "speed": 5.0
 }, {
 "frames": [{
@@ -2058,7 +2058,7 @@ animations = [{
 "texture": ExtResource("95_w4l0e")
 }],
 "loop": true,
-"name": &"mario_upsmash",
+"name": &"martyo_upsmash",
 "speed": 5.0
 }, {
 "frames": [{
@@ -2066,7 +2066,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_ry475")
 }],
 "loop": true,
-"name": &"mario_upspecial",
+"name": &"martyo_upspecial",
 "speed": 5.0
 }, {
 "frames": [{
@@ -2086,7 +2086,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_76ebr")
 }],
 "loop": false,
-"name": &"mario_utilt",
+"name": &"martyo_utilt",
 "speed": 5.0
 }, {
 "frames": [],
@@ -2133,7 +2133,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_54gu4"]
-resource_name = "fox_air"
+resource_name = "fux_air"
 length = 0.266668
 loop_mode = 1
 step = 0.0166667
@@ -2163,7 +2163,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_3l076"]
-resource_name = "fox_air_dodge"
+resource_name = "fux_air_dodge"
 length = 0.100002
 step = 0.0166667
 tracks/0/type = "value"
@@ -2192,7 +2192,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_582hr"]
-resource_name = "fox_back_air"
+resource_name = "fux_back_air"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2220,7 +2220,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_wm14y"]
-resource_name = "fox_crouch"
+resource_name = "fux_crouch"
 length = 0.0166683
 loop_mode = 1
 step = 0.0166667
@@ -2250,7 +2250,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_1vk0k"]
-resource_name = "fox_dash"
+resource_name = "fux_dash"
 length = 0.033335
 step = 0.0166667
 tracks/0/type = "value"
@@ -2279,7 +2279,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_y3tfc"]
-resource_name = "fox_dash_attack"
+resource_name = "fux_dash_attack"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2307,7 +2307,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_x63ft"]
-resource_name = "fox_down_air"
+resource_name = "fux_down_air"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2335,7 +2335,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_nlrhe"]
-resource_name = "fox_down_smash"
+resource_name = "fux_down_smash"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2363,7 +2363,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_und06"]
-resource_name = "fox_down_tilt"
+resource_name = "fux_down_tilt"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2391,7 +2391,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_kn62o"]
-resource_name = "fox_forward_air"
+resource_name = "fux_forward_air"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2419,7 +2419,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_ebjil"]
-resource_name = "fox_forward_smash"
+resource_name = "fux_forward_smash"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2447,7 +2447,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_iu0w1"]
-resource_name = "fox_forward_tilt"
+resource_name = "fux_forward_tilt"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2475,7 +2475,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_7irtu"]
-resource_name = "fox_free_fall"
+resource_name = "fux_free_fall"
 length = 0.400002
 loop_mode = 1
 step = 0.0166667
@@ -2505,7 +2505,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_1mj7j"]
-resource_name = "fox_grab"
+resource_name = "fux_grab"
 length = 0.333335
 step = 0.0166667
 tracks/0/type = "value"
@@ -2534,7 +2534,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_dyc4l"]
-resource_name = "fox_hitstun"
+resource_name = "fux_hitstun"
 length = 0.0166683
 loop_mode = 1
 step = 0.0166667
@@ -2564,7 +2564,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_ffnje"]
-resource_name = "fox_idle"
+resource_name = "fux_idle"
 loop_mode = 1
 step = 0.0166667
 tracks/0/type = "value"
@@ -2593,7 +2593,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_n4s84"]
-resource_name = "fox_landing"
+resource_name = "fux_landing"
 length = 0.0166683
 step = 0.0166667
 tracks/0/type = "value"
@@ -2622,7 +2622,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_n4v5x"]
-resource_name = "fox_ledge"
+resource_name = "fux_ledge"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2650,7 +2650,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_pu023"]
-resource_name = "fox_neutral_air"
+resource_name = "fux_neutral_air"
 loop_mode = 1
 step = 0.0166667
 tracks/0/type = "value"
@@ -2679,7 +2679,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_yor5b"]
-resource_name = "fox_neutral_special"
+resource_name = "fux_neutral_special"
 length = 0.10001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2707,7 +2707,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_wnshu"]
-resource_name = "fox_roll"
+resource_name = "fux_roll"
 length = 0.150002
 step = 0.0166667
 tracks/0/type = "value"
@@ -2736,7 +2736,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_pdvtv"]
-resource_name = "fox_run"
+resource_name = "fux_run"
 length = 0.400002
 loop_mode = 1
 step = 0.0166667
@@ -2766,7 +2766,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_2yifb"]
-resource_name = "fox_shield"
+resource_name = "fux_shield"
 length = 0.0166683
 loop_mode = 1
 step = 0.0166667
@@ -2780,7 +2780,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"fox_shield"]
+"values": [&"fux_shield"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2796,7 +2796,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_gy8ua"]
-resource_name = "fox_strong_dash_attack"
+resource_name = "fux_strong_dash_attack"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2824,7 +2824,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_c5i7n"]
-resource_name = "fox_throw"
+resource_name = "fux_throw"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2852,7 +2852,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_otp4u"]
-resource_name = "fox_turn"
+resource_name = "fux_turn"
 length = 0.0166683
 step = 0.0166667
 tracks/0/type = "value"
@@ -2881,7 +2881,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_75s7m"]
-resource_name = "fox_up_air"
+resource_name = "fux_up_air"
 step = 0.0166667
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2909,7 +2909,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_suknf"]
-resource_name = "fox_up_smash"
+resource_name = "fux_up_smash"
 length = 1.66667
 step = 0.0166667
 tracks/0/type = "value"
@@ -2938,7 +2938,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_euxpe"]
-resource_name = "fox_up_special"
+resource_name = "fux_up_special"
 length = 7200.01
 step = 0.0166667
 tracks/0/type = "value"
@@ -2967,7 +2967,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_2gill"]
-resource_name = "fox_up_tilt"
+resource_name = "fux_up_tilt"
 length = 5.00001
 step = 0.0166667
 tracks/0/type = "value"
@@ -2998,42 +2998,42 @@ tracks/1/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_iv8t2"]
 _data = {
 "RESET": SubResource("Animation_whqjg"),
-"fox_air": SubResource("Animation_54gu4"),
-"fox_air_dodge": SubResource("Animation_3l076"),
-"fox_back_air": SubResource("Animation_582hr"),
-"fox_crouch": SubResource("Animation_wm14y"),
-"fox_dash": SubResource("Animation_1vk0k"),
-"fox_dash_attack": SubResource("Animation_y3tfc"),
-"fox_down_air": SubResource("Animation_x63ft"),
-"fox_down_smash": SubResource("Animation_nlrhe"),
-"fox_down_tilt": SubResource("Animation_und06"),
-"fox_forward_air": SubResource("Animation_kn62o"),
-"fox_forward_smash": SubResource("Animation_ebjil"),
-"fox_forward_tilt": SubResource("Animation_iu0w1"),
-"fox_free_fall": SubResource("Animation_7irtu"),
-"fox_grab": SubResource("Animation_1mj7j"),
-"fox_hitstun": SubResource("Animation_dyc4l"),
-"fox_idle": SubResource("Animation_ffnje"),
-"fox_landing": SubResource("Animation_n4s84"),
-"fox_ledge": SubResource("Animation_n4v5x"),
-"fox_neutral_air": SubResource("Animation_pu023"),
-"fox_neutral_special": SubResource("Animation_yor5b"),
-"fox_roll": SubResource("Animation_wnshu"),
-"fox_run": SubResource("Animation_pdvtv"),
-"fox_shield": SubResource("Animation_2yifb"),
-"fox_strong_dash_attack": SubResource("Animation_gy8ua"),
-"fox_throw": SubResource("Animation_c5i7n"),
-"fox_turn": SubResource("Animation_otp4u"),
-"fox_up_air": SubResource("Animation_75s7m"),
-"fox_up_smash": SubResource("Animation_suknf"),
-"fox_up_special": SubResource("Animation_euxpe"),
-"fox_up_tilt": SubResource("Animation_2gill")
+"fux_air": SubResource("Animation_54gu4"),
+"fux_air_dodge": SubResource("Animation_3l076"),
+"fux_back_air": SubResource("Animation_582hr"),
+"fux_crouch": SubResource("Animation_wm14y"),
+"fux_dash": SubResource("Animation_1vk0k"),
+"fux_dash_attack": SubResource("Animation_y3tfc"),
+"fux_down_air": SubResource("Animation_x63ft"),
+"fux_down_smash": SubResource("Animation_nlrhe"),
+"fux_down_tilt": SubResource("Animation_und06"),
+"fux_forward_air": SubResource("Animation_kn62o"),
+"fux_forward_smash": SubResource("Animation_ebjil"),
+"fux_forward_tilt": SubResource("Animation_iu0w1"),
+"fux_free_fall": SubResource("Animation_7irtu"),
+"fux_grab": SubResource("Animation_1mj7j"),
+"fux_hitstun": SubResource("Animation_dyc4l"),
+"fux_idle": SubResource("Animation_ffnje"),
+"fux_landing": SubResource("Animation_n4s84"),
+"fux_ledge": SubResource("Animation_n4v5x"),
+"fux_neutral_air": SubResource("Animation_pu023"),
+"fux_neutral_special": SubResource("Animation_yor5b"),
+"fux_roll": SubResource("Animation_wnshu"),
+"fux_run": SubResource("Animation_pdvtv"),
+"fux_shield": SubResource("Animation_2yifb"),
+"fux_strong_dash_attack": SubResource("Animation_gy8ua"),
+"fux_throw": SubResource("Animation_c5i7n"),
+"fux_turn": SubResource("Animation_otp4u"),
+"fux_up_air": SubResource("Animation_75s7m"),
+"fux_up_smash": SubResource("Animation_suknf"),
+"fux_up_special": SubResource("Animation_euxpe"),
+"fux_up_tilt": SubResource("Animation_2gill")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a4awx"]
 size = Vector2(44, 56.5834)
 
-[node name="FOX" type="CharacterBody2D"]
+[node name="FUX" type="CharacterBody2D"]
 collision_mask = 6
 script = ExtResource("1_h48nh")
 

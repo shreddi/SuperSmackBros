@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://01sindlrudq3"
-path="res://.godot/imported/crouch_strip4.png-f78dac7ec2940a860cfa03feae1cb541.ctex"
+path="res://.godot/imported/crouch_strip4.png-ccbfb027c33c0b72f7551b612a80ae72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/crouch_strip4.png"
-dest_files=["res://.godot/imported/crouch_strip4.png-f78dac7ec2940a860cfa03feae1cb541.ctex"]
+source_file="res://characters/fux/sprites/crouch_strip4.png"
+dest_files=["res://.godot/imported/crouch_strip4.png-ccbfb027c33c0b72f7551b612a80ae72.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dstoambb1w2qf"
-path="res://.godot/imported/fox_airdodge.ogg-44353a37046049fec4eaf101389a4850.oggvorbisstr"
+path="res://.godot/imported/fux_airdodge.ogg-957d3c7a4d74a554eab6f6b8f5f399db.oggvorbisstr"
 
 [deps]
 
-source_file="res://characters/fox/sounds/fox_airdodge.ogg"
-dest_files=["res://.godot/imported/fox_airdodge.ogg-44353a37046049fec4eaf101389a4850.oggvorbisstr"]
+source_file="res://characters/fux/sounds/fux_airdodge.ogg"
+dest_files=["res://.godot/imported/fux_airdodge.ogg-957d3c7a4d74a554eab6f6b8f5f399db.oggvorbisstr"]
 
 [params]
 

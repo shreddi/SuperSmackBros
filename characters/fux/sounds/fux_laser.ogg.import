@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://br7ds4capsmds"
-path="res://.godot/imported/fox_laser.ogg-dd50e93e8a7bb8a35ff7a78a3251652c.oggvorbisstr"
+path="res://.godot/imported/fux_laser.ogg-0b7245b77283e7ba514e34007d3f5f65.oggvorbisstr"
 
 [deps]
 
-source_file="res://characters/fox/sounds/fox_laser.ogg"
-dest_files=["res://.godot/imported/fox_laser.ogg-dd50e93e8a7bb8a35ff7a78a3251652c.oggvorbisstr"]
+source_file="res://characters/fux/sounds/fux_laser.ogg"
+dest_files=["res://.godot/imported/fux_laser.ogg-0b7245b77283e7ba514e34007d3f5f65.oggvorbisstr"]
 
 [params]
 

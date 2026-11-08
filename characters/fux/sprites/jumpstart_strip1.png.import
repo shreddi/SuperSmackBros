@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cuqpi0w6fuckl"
-path="res://.godot/imported/jumpstart_strip1.png-9859aa716022fe7a78f2e3ec27ebbeb4.ctex"
+path="res://.godot/imported/jumpstart_strip1.png-53bc14e48baa71687e9d332f102646d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/jumpstart_strip1.png"
-dest_files=["res://.godot/imported/jumpstart_strip1.png-9859aa716022fe7a78f2e3ec27ebbeb4.ctex"]
+source_file="res://characters/fux/sprites/jumpstart_strip1.png"
+dest_files=["res://.godot/imported/jumpstart_strip1.png-53bc14e48baa71687e9d332f102646d2.ctex"]
 
 [params]
 

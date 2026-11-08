@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dtefuumpayja3"
-path="res://.godot/imported/fox_ledge_sfx.ogg-a73af870642808888d3c27dc18546cf7.oggvorbisstr"
+path="res://.godot/imported/fux_ledge_sfx.ogg-6a8505fc6f22303a3ffb4f4d3c1b2e8b.oggvorbisstr"
 
 [deps]
 
-source_file="res://characters/fox/sounds/fox_ledge_sfx.ogg"
-dest_files=["res://.godot/imported/fox_ledge_sfx.ogg-a73af870642808888d3c27dc18546cf7.oggvorbisstr"]
+source_file="res://characters/fux/sounds/fux_ledge_sfx.ogg"
+dest_files=["res://.godot/imported/fux_ledge_sfx.ogg-6a8505fc6f22303a3ffb4f4d3c1b2e8b.oggvorbisstr"]
 
 [params]
 

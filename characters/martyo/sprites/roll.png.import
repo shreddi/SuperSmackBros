@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnqfuhb6hrwt4"
-path="res://.godot/imported/roll.png-f39747b8f138339aeaf8e787141eee56.ctex"
+path="res://.godot/imported/roll.png-eb860614066bd73bfd462c853fab9585.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/roll.png"
-dest_files=["res://.godot/imported/roll.png-f39747b8f138339aeaf8e787141eee56.ctex"]
+source_file="res://characters/martyo/sprites/roll.png"
+dest_files=["res://.godot/imported/roll.png-eb860614066bd73bfd462c853fab9585.ctex"]
 
 [params]
 

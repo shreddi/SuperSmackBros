@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nkdfl5bywrxp"
-path="res://.godot/imported/doublejump_strip5.png-8b8f2d5f30503bf10b3ce59576506199.ctex"
+path="res://.godot/imported/doublejump_strip5.png-2320d05bb2ca5db4318cc3f22610e8cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/doublejump_strip5.png"
-dest_files=["res://.godot/imported/doublejump_strip5.png-8b8f2d5f30503bf10b3ce59576506199.ctex"]
+source_file="res://characters/fux/sprites/doublejump_strip5.png"
+dest_files=["res://.godot/imported/doublejump_strip5.png-2320d05bb2ca5db4318cc3f22610e8cf.ctex"]
 
 [params]
 

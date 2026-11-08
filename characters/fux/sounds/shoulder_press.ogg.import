@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c4cbqqdnkwpam"
-path="res://.godot/imported/shoulder_press.ogg-a114aaf9f2d61174d4baee92fd0f47c0.oggvorbisstr"
+path="res://.godot/imported/shoulder_press.ogg-1f30849308b92ac4ee36e365205fbac3.oggvorbisstr"
 
 [deps]
 
-source_file="res://characters/fox/sounds/shoulder_press.ogg"
-dest_files=["res://.godot/imported/shoulder_press.ogg-a114aaf9f2d61174d4baee92fd0f47c0.oggvorbisstr"]
+source_file="res://characters/fux/sounds/shoulder_press.ogg"
+dest_files=["res://.godot/imported/shoulder_press.ogg-1f30849308b92ac4ee36e365205fbac3.oggvorbisstr"]
 
 [params]
 

@@ -9,31 +9,31 @@ var p2instance
 
 # Enum for Fighters
 enum Fighters {
-	FOX,
-	MARIO
+	FUX,
+	MARTYO
 }
 
 func _ready():
 
 	# Load the correct character for Player 1
-	p1 = load('res://characters/fox/fox.tscn')
+	p1 = load('res://characters/fux/fux.tscn')
 	match Globals.player1:
-		Fighters.FOX:
-			p1 = load('res://characters/fox/fox.tscn')
-			p1portrait.texture = preload("res://characters/fox/charselect.png")
-		Fighters.MARIO:
-			p1 = load('res://characters/mario/mario.tscn')
-			p1portrait.texture = preload("res://characters/mario/sprites/portrait.png")
+		Fighters.FUX:
+			p1 = load('res://characters/fux/fux.tscn')
+			p1portrait.texture = preload("res://characters/fux/charselect.png")
+		Fighters.MARTYO:
+			p1 = load('res://characters/martyo/martyo.tscn')
+			p1portrait.texture = preload("res://characters/martyo/sprites/portrait.png")
 	
 	# Load the correct character for Player 2
-	p2 = load('res://characters/mario/mario.tscn')	
+	p2 = load('res://characters/martyo/martyo.tscn')	
 	match Globals.player2:
-		Fighters.FOX:
-			p2 = load('res://characters/fox/fox.tscn')
-			p2portrait.texture = preload("res://characters/fox/charselect.png")
-		Fighters.MARIO:
-			p2 = load('res://characters/mario/mario.tscn')
-			p2portrait.texture = preload("res://characters/mario/sprites/portrait.png")
+		Fighters.FUX:
+			p2 = load('res://characters/fux/fux.tscn')
+			p2portrait.texture = preload("res://characters/fux/charselect.png")
+		Fighters.MARTYO:
+			p2 = load('res://characters/martyo/martyo.tscn')
+			p2portrait.texture = preload("res://characters/martyo/sprites/portrait.png")
 
 	# Instantiate and add Player 1 character to the scene
 	p1instance = p1.instantiate()

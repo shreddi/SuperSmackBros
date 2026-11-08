@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgso1dpvsxbnh"
-path="res://.godot/imported/dtilt2.png-7a9b10ec6962d764e1e203c6af10ef69.ctex"
+path="res://.godot/imported/dtilt2.png-577ed189e97f6c1ee7a6f11daa5ec535.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/dtilt2.png"
-dest_files=["res://.godot/imported/dtilt2.png-7a9b10ec6962d764e1e203c6af10ef69.ctex"]
+source_file="res://characters/martyo/sprites/dtilt2.png"
+dest_files=["res://.godot/imported/dtilt2.png-577ed189e97f6c1ee7a6f11daa5ec535.ctex"]
 
 [params]
 

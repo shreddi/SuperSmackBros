@@ -8,7 +8,7 @@ Every fighter is built from three pieces that share common base classes:
 | The state machine (STAND, DASH, ledge, hitstun, ...) | `FighterStateMachine` | `characters/fighter_state_machine.gd` |
 | The scene (sprite, animations, hurtbox, ray casts, a `State` child) | | `characters/<name>/<name>.tscn` |
 
-`fox/` and `mario/` are the reference examples.
+`fux/` and `martyo/` are the reference examples.
 
 ## Configurable stats
 
@@ -56,7 +56,7 @@ Override these only when the default does not fit:
 
 ## Checking you did not break anything
 
-`tests/run_regression.sh <out_dir> <godot>` plays Fox and Mario against each
+`tests/run_regression.sh <out_dir> <godot>` plays Fux and Martyo against each
 other with seeded random input and records a per-frame trace. Run it before and
 after a change and `diff -r` the two folders: any gameplay change shows up as a
 difference. See `tests/trace_runner.gd`.

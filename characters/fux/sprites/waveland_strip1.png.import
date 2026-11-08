@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4bdjekasod26"
-path="res://.godot/imported/waveland_strip1.png-9375e674265632b3633631649d81d961.ctex"
+path="res://.godot/imported/waveland_strip1.png-06439bc63ae86cd98a02b07f469f2587.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/waveland_strip1.png"
-dest_files=["res://.godot/imported/waveland_strip1.png-9375e674265632b3633631649d81d961.ctex"]
+source_file="res://characters/fux/sprites/waveland_strip1.png"
+dest_files=["res://.godot/imported/waveland_strip1.png-06439bc63ae86cd98a02b07f469f2587.ctex"]
 
 [params]
 

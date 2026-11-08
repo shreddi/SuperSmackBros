@@ -9,7 +9,7 @@ extends StateMachine
 ##                             character specific (smashes, dash attacks, ...)
 ##   * `_before_actions()`   - optional per-frame hook before inputs are read
 ##   * `_ledge_blocked_states()`
-## See characters/fox/fox_state_machine.gd for a minimal example.
+## See characters/fux/fux_state_machine.gd for a minimal example.
 
 ## state name (e.g. "STAND") -> animation name. An empty string keeps the
 ## current animation. States missing from the map do not touch the label.

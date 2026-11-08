@@ -3,17 +3,17 @@ extends Fighter
 @onready var hand_pos = $hand
 
 func _init():
-	projectile_scene = load('res://characters/mario/fireball/fireball.tscn')
+	projectile_scene = load('res://characters/martyo/fireball/fireball.tscn')
 
 func _ready():
-	# Mario starts without his up special and with a fireball cooldown.
+	# Martyo starts without his up special and with a fireball cooldown.
 	special = false
 	projectile_cooldown = 30
 
 func _physics_extra():
 	projectile_cooldown -= 1
 
-## Fireballs spawn a fixed distance in front of Mario.
+## Fireballs spawn a fixed distance in front of Martyo.
 func _projectile_spawn_position(_point) -> Vector2:
 	return position + Vector2(100 * direction(), 0)
 

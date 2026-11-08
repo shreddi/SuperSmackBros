@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cecyt8bhnric3"
-path="res://.godot/imported/uair_strip4.png-094a9563b3e38d99efcda85562123742.ctex"
+path="res://.godot/imported/uair_strip4.png-0e1871656a32a4d85dd49dd30e861a4d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/uair_strip4.png"
-dest_files=["res://.godot/imported/uair_strip4.png-094a9563b3e38d99efcda85562123742.ctex"]
+source_file="res://characters/fux/sprites/uair_strip4.png"
+dest_files=["res://.godot/imported/uair_strip4.png-0e1871656a32a4d85dd49dd30e861a4d.ctex"]
 
 [params]
 

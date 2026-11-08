@@ -3,7 +3,7 @@ extends Fighter
 @onready var gun_pos = $gun_pos
 
 func _init():
-	projectile_scene = load('res://characters/fox/fox_laser.tscn')
+	projectile_scene = load('res://characters/fux/fux_laser.tscn')
 
 ## Lasers come out of the gun node, mirrored when facing left.
 func _projectile_spawn_position(point) -> Vector2:

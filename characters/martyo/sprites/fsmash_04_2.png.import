@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1ithj38dbnld"
-path="res://.godot/imported/fsmash_04_2.png-6216fce6379aedba7db4859240f1ccd6.ctex"
+path="res://.godot/imported/fsmash_04_2.png-60811983a54c5b3882b1d4d4a2f3996a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/fsmash_04_2.png"
-dest_files=["res://.godot/imported/fsmash_04_2.png-6216fce6379aedba7db4859240f1ccd6.ctex"]
+source_file="res://characters/martyo/sprites/fsmash_04_2.png"
+dest_files=["res://.godot/imported/fsmash_04_2.png-60811983a54c5b3882b1d4d4a2f3996a.ctex"]
 
 [params]
 

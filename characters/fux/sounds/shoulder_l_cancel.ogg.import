@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dqiqdg54pw8r"
-path="res://.godot/imported/shoulder_l_cancel.ogg-178b40ced31745dabb3040ef275af6be.oggvorbisstr"
+path="res://.godot/imported/shoulder_l_cancel.ogg-5ff0b654de919ab53091aee6606e4dee.oggvorbisstr"
 
 [deps]
 
-source_file="res://characters/fox/sounds/shoulder_l_cancel.ogg"
-dest_files=["res://.godot/imported/shoulder_l_cancel.ogg-178b40ced31745dabb3040ef275af6be.oggvorbisstr"]
+source_file="res://characters/fux/sounds/shoulder_l_cancel.ogg"
+dest_files=["res://.godot/imported/shoulder_l_cancel.ogg-5ff0b654de919ab53091aee6606e4dee.oggvorbisstr"]
 
 [params]
 

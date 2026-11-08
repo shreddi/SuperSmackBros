@@ -5,12 +5,12 @@ extends Node
 ##
 ## Run with (the fixed FPS keeps physics deterministic):
 ##   godot --headless --fixed-fps 60 --path . res://tests/trace_runner.tscn \
-##       -- --p1=fox --p2=mario --seed=1 --frames=3000 --out=/tmp/trace.txt
+##       -- --p1=fux --p2=martyo --seed=1 --frames=3000 --out=/tmp/trace.txt
 ##
 ## Compare traces before and after a refactor; they should be byte-identical.
 
 const ACTIONS := ["right", "left", "up", "down", "shield", "jump", "attack", "special", "strong"]
-const FIGHTERS := {"fox": 0, "mario": 1}
+const FIGHTERS := {"fux": 0, "martyo": 1}
 
 var stage
 var rng_state: int

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpcurf6aajrqg"
-path="res://.godot/imported/finalsmash_strip7.png-eb53b86fcf96ee4f72598370bccebac3.ctex"
+path="res://.godot/imported/finalsmash_strip7.png-51b3382e2f6011603b4e132547bc89d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/finalsmash_strip7.png"
-dest_files=["res://.godot/imported/finalsmash_strip7.png-eb53b86fcf96ee4f72598370bccebac3.ctex"]
+source_file="res://characters/fux/sprites/finalsmash_strip7.png"
+dest_files=["res://.godot/imported/finalsmash_strip7.png-51b3382e2f6011603b4e132547bc89d5.ctex"]
 
 [params]
 

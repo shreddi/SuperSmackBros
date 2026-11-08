@@ -9,7 +9,7 @@ mkdir -p "$OUT"
 cd "$(dirname "$0")/.."
 FRAMES=${FRAMES:-4000}
 i=0
-for pair in fox:mario mario:fox fox:fox mario:mario; do
+for pair in fux:martyo martyo:fux fux:fux martyo:martyo; do
   for seed in 1 2 3; do
     i=$((i+1))
     p1=${pair%%:*}; p2=${pair##*:}

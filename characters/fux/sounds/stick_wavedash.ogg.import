@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b054jdjmjftxf"
-path="res://.godot/imported/stick_wavedash.ogg-63d138f98823a80c2c174c87d6ec1c42.oggvorbisstr"
+path="res://.godot/imported/stick_wavedash.ogg-73e071e22965db3297e1865fedf5823f.oggvorbisstr"
 
 [deps]
 
-source_file="res://characters/fox/sounds/stick_wavedash.ogg"
-dest_files=["res://.godot/imported/stick_wavedash.ogg-63d138f98823a80c2c174c87d6ec1c42.oggvorbisstr"]
+source_file="res://characters/fux/sounds/stick_wavedash.ogg"
+dest_files=["res://.godot/imported/stick_wavedash.ogg-73e071e22965db3297e1865fedf5823f.oggvorbisstr"]
 
 [params]
 

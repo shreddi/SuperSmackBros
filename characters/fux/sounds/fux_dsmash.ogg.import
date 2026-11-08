@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cbyrsvkisebnc"
-path="res://.godot/imported/fox_dsmash.ogg-10ae599bdbfcc71de6eb329e6aa930d9.oggvorbisstr"
+path="res://.godot/imported/fux_dsmash.ogg-c04252811c46881dfe3a150eb4ba2afe.oggvorbisstr"
 
 [deps]
 
-source_file="res://characters/fox/sounds/fox_dsmash.ogg"
-dest_files=["res://.godot/imported/fox_dsmash.ogg-10ae599bdbfcc71de6eb329e6aa930d9.oggvorbisstr"]
+source_file="res://characters/fux/sounds/fux_dsmash.ogg"
+dest_files=["res://.godot/imported/fux_dsmash.ogg-c04252811c46881dfe3a150eb4ba2afe.oggvorbisstr"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk1p4dgl12nyk"
-path="res://.godot/imported/dashturn_strip1.png-1359445be3717ddd9c89e78e40af451d.ctex"
+path="res://.godot/imported/dashturn_strip1.png-c5a68212c8b0e63b1fe1d9421938868b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/fox/sprites/dashturn_strip1.png"
-dest_files=["res://.godot/imported/dashturn_strip1.png-1359445be3717ddd9c89e78e40af451d.ctex"]
+source_file="res://characters/fux/sprites/dashturn_strip1.png"
+dest_files=["res://.godot/imported/dashturn_strip1.png-c5a68212c8b0e63b1fe1d9421938868b.ctex"]
 
 [params]
 

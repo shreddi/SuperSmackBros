@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qqjf048lvnbn"
-path="res://.godot/imported/downsmash2_02.png-8cf37e4ece545839c8a7c5c350734328.ctex"
+path="res://.godot/imported/downsmash2_02.png-c2b2109f5791e4bbc3eb8e683da0a982.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/downsmash2_02.png"
-dest_files=["res://.godot/imported/downsmash2_02.png-8cf37e4ece545839c8a7c5c350734328.ctex"]
+source_file="res://characters/martyo/sprites/downsmash2_02.png"
+dest_files=["res://.godot/imported/downsmash2_02.png-c2b2109f5791e4bbc3eb8e683da0a982.ctex"]
 
 [params]
 

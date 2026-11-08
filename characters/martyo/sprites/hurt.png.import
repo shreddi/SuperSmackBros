@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5btupfl188qt"
-path="res://.godot/imported/hurt.png-447130e629f4e929b629cab724071760.ctex"
+path="res://.godot/imported/hurt.png-73596a52475020e1b908c2618cf0a6c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/hurt.png"
-dest_files=["res://.godot/imported/hurt.png-447130e629f4e929b629cab724071760.ctex"]
+source_file="res://characters/martyo/sprites/hurt.png"
+dest_files=["res://.godot/imported/hurt.png-73596a52475020e1b908c2618cf0a6c4.ctex"]
 
 [params]
 

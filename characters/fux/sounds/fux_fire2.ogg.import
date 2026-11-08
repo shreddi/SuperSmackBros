@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cjqn12d4uoi2a"
-path="res://.godot/imported/fox_fire2.ogg-0f3624c59170fff96a75f249f3b5ff9d.oggvorbisstr"
+path="res://.godot/imported/fux_fire2.ogg-275e997d3e8ac732673a5e37b421bef3.oggvorbisstr"
 
 [deps]
 
-source_file="res://characters/fox/sounds/fox_fire2.ogg"
-dest_files=["res://.godot/imported/fox_fire2.ogg-0f3624c59170fff96a75f249f3b5ff9d.oggvorbisstr"]
+source_file="res://characters/fux/sounds/fux_fire2.ogg"
+dest_files=["res://.godot/imported/fux_fire2.ogg-275e997d3e8ac732673a5e37b421bef3.oggvorbisstr"]
 
 [params]
 

@@ -1,10 +1,10 @@
 [gd_scene load_steps=32 format=3 uid="uid://xk7fdeaogkqq"]
 
-[ext_resource type="Texture2D" uid="uid://bqhp5t1on48i1" path="res://characters/fox/charselect.png" id="1_aj6me"]
+[ext_resource type="Texture2D" uid="uid://bqhp5t1on48i1" path="res://characters/fux/charselect.png" id="1_aj6me"]
 [ext_resource type="Script" path="res://ui/character_select/characterselect.gd" id="1_thc21"]
 [ext_resource type="Texture2D" uid="uid://bj6qrbp73nart" path="res://ui/character_select/p1indicator.png" id="2_iyqww"]
 [ext_resource type="Texture2D" uid="uid://c8b23g45te57j" path="res://ui/character_select/p2indicator.png" id="3_r7jn7"]
-[ext_resource type="Texture2D" uid="uid://b3exfmw1wwd1w" path="res://characters/mario/sprites/portrait.png" id="5_3xlhb"]
+[ext_resource type="Texture2D" uid="uid://b3exfmw1wwd1w" path="res://characters/martyo/sprites/portrait.png" id="5_3xlhb"]
 [ext_resource type="Script" path="res://ui/menu_button.gd" id="5_xbe68"]
 [ext_resource type="Texture2D" uid="uid://bdolo3igs00ug" path="res://ui/character_select/fire.png" id="7_pctem"]
 
@@ -264,13 +264,13 @@ theme_override_constants/h_separation = 100
 theme_override_constants/v_separation = 0
 columns = 2
 
-[node name="Fox" type="TextureRect" parent="HBoxContainer/VBoxContainer/GridContainer"]
+[node name="Fux" type="TextureRect" parent="HBoxContainer/VBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(400, 300)
 layout_mode = 2
 texture = ExtResource("1_aj6me")
 script = SubResource("GDScript_4rcup")
 
-[node name="Mario" type="TextureRect" parent="HBoxContainer/VBoxContainer/GridContainer"]
+[node name="Martyo" type="TextureRect" parent="HBoxContainer/VBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(400, 300)
 layout_mode = 2
 texture = ExtResource("5_3xlhb")

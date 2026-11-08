@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bodemsy2nqb2r"
-path="res://.godot/imported/dair.png-f482d92aec2059682ecb978863488503.ctex"
+path="res://.godot/imported/dair.png-3bf513431e77d529bb2ac76e4dbb16d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/dair.png"
-dest_files=["res://.godot/imported/dair.png-f482d92aec2059682ecb978863488503.ctex"]
+source_file="res://characters/martyo/sprites/dair.png"
+dest_files=["res://.godot/imported/dair.png-3bf513431e77d529bb2ac76e4dbb16d6.ctex"]
 
 [params]
 

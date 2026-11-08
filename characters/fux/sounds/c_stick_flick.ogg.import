@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cqc750w484kmc"
-path="res://.godot/imported/c_stick_flick.ogg-5e7e02ed2f15e6c0f957d68ebfefa709.oggvorbisstr"
+path="res://.godot/imported/c_stick_flick.ogg-a7edbabbdc55c20d035dbc99e9692bd5.oggvorbisstr"
 
 [deps]
 
-source_file="res://characters/fox/sounds/c_stick_flick.ogg"
-dest_files=["res://.godot/imported/c_stick_flick.ogg-5e7e02ed2f15e6c0f957d68ebfefa709.oggvorbisstr"]
+source_file="res://characters/fux/sounds/c_stick_flick.ogg"
+dest_files=["res://.godot/imported/c_stick_flick.ogg-a7edbabbdc55c20d035dbc99e9692bd5.oggvorbisstr"]
 
 [params]
 

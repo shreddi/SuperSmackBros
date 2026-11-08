@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx8dccfwipe0a"
-path="res://.godot/imported/strong-dash-attack.png-1c444222fb8f2a1e23cbc9fc17f64c55.ctex"
+path="res://.godot/imported/strong-dash-attack.png-761cf675aa69c373acc440a1bea7ce2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/strong-dash-attack.png"
-dest_files=["res://.godot/imported/strong-dash-attack.png-1c444222fb8f2a1e23cbc9fc17f64c55.ctex"]
+source_file="res://characters/martyo/sprites/strong-dash-attack.png"
+dest_files=["res://.godot/imported/strong-dash-attack.png-761cf675aa69c373acc440a1bea7ce2c.ctex"]
 
 [params]
 

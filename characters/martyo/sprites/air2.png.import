@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtsun12dxb0qx"
-path="res://.godot/imported/air2.png-c3f002242579504ef62fecd999d46fd9.ctex"
+path="res://.godot/imported/air2.png-b7a5123cf7641536634cd91a5ee88439.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/air2.png"
-dest_files=["res://.godot/imported/air2.png-c3f002242579504ef62fecd999d46fd9.ctex"]
+source_file="res://characters/martyo/sprites/air2.png"
+dest_files=["res://.godot/imported/air2.png-b7a5123cf7641536634cd91a5ee88439.ctex"]
 
 [params]
 

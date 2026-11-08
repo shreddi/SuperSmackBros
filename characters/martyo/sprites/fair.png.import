@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt8mpculswx3a"
-path="res://.godot/imported/fair.png-419df48a13c859cf0b86c633d755cd69.ctex"
+path="res://.godot/imported/fair.png-b039cc54c9edfa0590c2585e4a9b0891.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/fair.png"
-dest_files=["res://.godot/imported/fair.png-419df48a13c859cf0b86c633d755cd69.ctex"]
+source_file="res://characters/martyo/sprites/fair.png"
+dest_files=["res://.godot/imported/fair.png-b039cc54c9edfa0590c2585e4a9b0891.ctex"]
 
 [params]
 

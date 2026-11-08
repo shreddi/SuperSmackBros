@@ -28,7 +28,7 @@ func dir(directionx, directiony):
 	dir_x = directionx
 	dir_y = directiony
 	
-func _on_Fox_Laser_body_entered(body):
+func _on_Fux_Laser_body_entered(body):
 	if not (body in player_list):
 		var charstate = body.get_node("StateMachine")
 		if charstate.state != charstate.states.SHIELD:

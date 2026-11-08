@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4qrcjuw743fa"
-path="res://.godot/imported/turn.png-d68f4c155516a820f3689b9f02a421f2.ctex"
+path="res://.godot/imported/turn.png-23cff344b7089e7b61492bf15e38af4e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/mario/sprites/turn.png"
-dest_files=["res://.godot/imported/turn.png-d68f4c155516a820f3689b9f02a421f2.ctex"]
+source_file="res://characters/martyo/sprites/turn.png"
+dest_files=["res://.godot/imported/turn.png-23cff344b7089e7b61492bf15e38af4e.ctex"]
 
 [params]
 
