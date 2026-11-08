@@ -419,7 +419,6 @@ func DAIR_LANDING():
 
 
 func UP_SPECIAL():
-	print("rotation: ", $Sprite.rotation)
 	special = false
 	var start = 5
 	var trans1 = 60
@@ -457,7 +456,6 @@ func UP_SPECIAL():
 				ang+=360
 			ang*=-1
 			ang+=90
-			print(ang)
 		direction.y *= -1
 		var angle = round(rad_to_deg(direction.angle()))
 		direction.y *= -1
@@ -465,8 +463,6 @@ func UP_SPECIAL():
 			angle+=360
 		angle*=-1
 		angle+=90
-		print("")
-		print(angle)
 			#
 		#90
 		#45

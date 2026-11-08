@@ -25,7 +25,6 @@ func set_parameters(aWidth, aHeight, aDamage, aDuration, aPos, parent=get_parent
 	set_physics_process(true)
 	
 func Grabbox_Collide(body):
-	print("yes")
 	if !(body in player_list):
 		body.percentage += damage
 		var charstate

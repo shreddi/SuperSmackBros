@@ -12,7 +12,6 @@ var viewport_rect = Rect2()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print("camera")
 	viewport_rect = get_viewport_rect()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -17,17 +17,12 @@ func _ready():
 	#anim.scale.x = 10
 	anim.play("default",1.0,false)
 	characters = gridContainer.get_children()
-	print(characters)
 
 	# Initialize selections
 	update_selection(1, 0)
 	update_selection(2, 0)
 	p1.global_position = Vector2(669, 345)
 	p2.global_position = Vector2(749, 345)
-	print(p1.global_position)
-	print(p2.global_position)
-	print(p1.position)
-	print(p2.position)
 
 func _input(event):
 	if Input.is_action_just_pressed("left_1"):
@@ -57,5 +52,3 @@ func update_selection(player, selection_index):
 		p2.global_position.x = characters[selection_index].global_position.x + characters[selection_index].custom_minimum_size.x*3/5
 		p2.global_position.y = characters[selection_index].global_position.y - 30
 		Globals.player2 = selection_index
-	print(p2.global_position)
-	print(p1.global_position)

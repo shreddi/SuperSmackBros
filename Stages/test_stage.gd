@@ -14,7 +14,6 @@ enum Fighters {
 }
 
 func _ready():
-	print("stage")
 
 	# Load the correct character for Player 1
 	p1 = load('res://Characters/Fox/Fox.tscn')

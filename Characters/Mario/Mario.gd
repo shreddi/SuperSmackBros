@@ -525,7 +525,6 @@ func DAIR_LANDING():
 
 # Special Attacks
 func NEUTRAL_SPECIAL():
-	print(projectile_cooldown)
 	if frame == 8:
 		if projectile_cooldown < 0:
 			create_projectile(1,0,Vector2(50,0))
