@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bj6qrbp73nart" path="res://UI/character_select/p1indicator.png" id="2_iyqww"]
 [ext_resource type="Texture2D" uid="uid://c8b23g45te57j" path="res://UI/character_select/P2indicator.png" id="3_r7jn7"]
 [ext_resource type="Texture2D" uid="uid://b3exfmw1wwd1w" path="res://Characters/Mario/Sprites/portrait.png" id="5_3xlhb"]
-[ext_resource type="Script" path="res://UI/character_select/startbutton.gd" id="5_xbe68"]
+[ext_resource type="Script" path="res://UI/menu_button.gd" id="5_xbe68"]
 [ext_resource type="Texture2D" uid="uid://bdolo3igs00ug" path="res://UI/character_select/fire.png" id="7_pctem"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ciqtx"]
@@ -286,6 +286,7 @@ theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 43
 text = "START GAME"
 script = ExtResource("5_xbe68")
+path = "res://Stages/test_stage.tscn"
 
 [node name="p2column" type="VBoxContainer" parent="HBoxContainer"]
 layout_mode = 2

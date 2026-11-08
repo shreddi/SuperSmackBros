@@ -1,11 +1,11 @@
 [gd_scene load_steps=31 format=3 uid="uid://bq75qy14ncugn"]
 
-[ext_resource type="Script" path="res://UI/Title_Screen/playbutton.gd" id="1_al4n3"]
+[ext_resource type="Script" path="res://UI/menu_button.gd" id="1_al4n3"]
 [ext_resource type="Script" path="res://UI/Title_Screen/titlescreen.gd" id="1_dl327"]
 [ext_resource type="Texture2D" uid="uid://bdolo3igs00ug" path="res://UI/character_select/fire.png" id="2_61vfs"]
-[ext_resource type="Script" path="res://UI/Title_Screen/optionsbutton.gd" id="2_goa6y"]
+[ext_resource type="Script" path="res://UI/menu_button.gd" id="2_goa6y"]
 [ext_resource type="Texture2D" uid="uid://dwrseo06ljnka" path="res://UI/Title_Screen/pixeltitle2.png" id="2_ugoa3"]
-[ext_resource type="Script" path="res://UI/Title_Screen/exitbutton.gd" id="3_0km31"]
+[ext_resource type="Script" path="res://UI/menu_button.gd" id="3_0km31"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ciqtx"]
 atlas = ExtResource("2_61vfs")
@@ -215,6 +215,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "PLAY"
 script = ExtResource("1_al4n3")
+path = "res://UI/character_select/character_select.tscn"
 
 [node name="Area2D" type="Area2D" parent="VBoxContainer/playbutton"]
 collision_layer = 65536
@@ -243,6 +244,7 @@ custom_minimum_size = Vector2(600, 100)
 layout_mode = 2
 text = "EXITS"
 script = ExtResource("3_0km31")
+quit_game = true
 
 [node name="Area2D" type="Area2D" parent="VBoxContainer/exitbutton"]
 collision_layer = 65536
