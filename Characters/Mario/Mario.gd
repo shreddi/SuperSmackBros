@@ -48,7 +48,7 @@ var special = false
 
 #hitboxes
 @export var hitbox: PackedScene = load('res://Hitbox/hitbox.tscn')
-@export var fox_laser: PackedScene = load('res://Characters/Mario/fireball/fireball.tscn')
+@export var fireball_scene: PackedScene = load('res://Characters/Mario/fireball/fireball.tscn')
 @export var grabbox: PackedScene = load('res://Hitbox/grabbox.tscn')
 var selfState
 
@@ -92,7 +92,7 @@ func create_hitbox(width, height, damage, angle, base_kb, kb_scaling, duration, 
 	return hitbox_instance
 	
 func create_projectile(dir_x,dir_y,point):
-	var projectile_instance = fox_laser.instantiate()
+	var projectile_instance = fireball_scene.instantiate()
 	projectile_instance.player_list.append(self)
 	get_parent().add_child(projectile_instance)
 	if direction() == 1:
