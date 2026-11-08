@@ -1137,12 +1137,7 @@ func _ledge_blocked_states() -> Array:
 
 ## Slows the fighter down on the ground; `coeff` scales the fighter's traction.
 func apply_traction(coeff):
-	if parent.velocity.x > 0:
-		parent.velocity.x += -parent.traction*coeff
-		parent.velocity.x = clampf(parent.velocity.x,0,parent.velocity.x)
-	elif parent.velocity.x < 0:
-		parent.velocity.x += parent.traction*coeff
-		parent.velocity.x = clampf(parent.velocity.x,parent.velocity.x,0)
+	parent.apply_traction(coeff)
 
 func _state_forward_smash():
 	if parent.FORWARD_SMASH() == true:
