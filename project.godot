@@ -15,19 +15,19 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Super Trash Bros"
-run/main_scene="res://UI/Title_Screen/titlescreen.tscn"
+run/main_scene="res://ui/title_screen/titlescreen.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Globals="*res://Autoload/Globals.gd"
+Globals="*res://autoload/globals.gd"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/always_on_top=true
+window/size/always_on_top=false
 window/stretch/mode="canvas_items"
 
 [input]
