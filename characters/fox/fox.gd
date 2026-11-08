@@ -64,23 +64,23 @@ var selfState
 @onready var gun_pos = $gun_pos
 
 #Attributes
-var RUNSPEED = 450*2
-var DASHSPEED = 390*2
-var WALKSPEED = 200*2
-var GRAVITY = 1800*1
-var JUMPFORCE = 1000
-var MAX_JUMPFORCE = 1700
-var DOUBLEJUMPFORCE = 1700
-var MAXAIRSPEED = 300*2
-var AIR_ACCEL = 60
-var FALLSPEED = 80
-var FALLINGSPEED = 900*2
-var MAXFALLSPEED = 900*2
-var TRACTION = 80
-var ROLL_DISTANCE = 500*2
+var run_speed = 450*2
+var dash_speed = 390*2
+var walk_speed = 200*2
+var gravity = 1800*1
+var jump_force = 1000
+var max_jump_force = 1700
+var double_jump_force = 1700
+var max_air_speed = 300*2
+var air_accel = 60
+var fall_speed = 80
+var falling_speed = 900*2
+var max_fall_speed = 900*2
+var traction = 80
+var roll_distance = 500*2
 var air_dodge_speed = 700*5
-var UP_B_LAUNCHSPEED = 700*2
-var AIRJUMPS = 1
+var up_b_launch_speed = 700*2
+var air_jumps = 1
 
 func create_hitbox(width, height, damage, angle, base_kb, kb_scaling, duration, type, points, angle_flipper, hitlag = 1):
 	var hitbox_instance = hitbox.instantiate()
@@ -162,7 +162,7 @@ func newframe():
 	
 func reset_jumps():
 	special = true
-	airJump = AIRJUMPS
+	airJump = air_jumps
 
 func play_animation(animation_name):
 	anim.play(animation_name)
@@ -170,12 +170,12 @@ func play_animation(animation_name):
 func reset_ledge():
 	last_ledge = false
 	
-func traction(coeff):
+func apply_traction(coeff):
 	if velocity.x > 0:
-			velocity.x += -TRACTION*coeff
+			velocity.x += -traction*coeff
 			velocity.x = clampf(velocity.x,0,velocity.x)
 	elif velocity.x < 0:
-		velocity.x += TRACTION*coeff
+		velocity.x += traction*coeff
 		velocity.x = clampf(velocity.x,velocity.x,0)
 
 # Called when the node enters the scene tree for the first time.
@@ -291,7 +291,7 @@ func FORWARD_SMASH():
 	var duration = 4
 	var endlag = 30
 	if frame < start:
-		traction(3)
+		apply_traction(3)
 	if frame == start:
 		velocity.x+=600*direction()
 		velocity.y-=200
@@ -311,7 +311,7 @@ func DOWN_SMASH():
 	var duration = 2
 	var endlag = 45
 	if frame >= 1:
-		traction(3)
+		apply_traction(3)
 	if frame == start:
 		create_hitbox(70,50,14,30,100,100,duration,'normal',Vector2(60,30),0)
 		create_hitbox(70,50,14,150,100,100,duration,'normal',Vector2(-60,30),0)

@@ -63,23 +63,23 @@ var selfState
 @onready var hand_pos = $hand
 
 #Attributes
-var RUNSPEED = 340*2
-var DASHSPEED = 390*2
-var WALKSPEED = 200*2
-var GRAVITY = 1800*1
-var JUMPFORCE = 800
-var MAX_JUMPFORCE = 1300
-var DOUBLEJUMPFORCE = 1300
-var MAXAIRSPEED = 300*1.5
-var AIR_ACCEL = 50
-var FALLSPEED = 60
-var FALLINGSPEED = 1800
-var MAXFALLSPEED = 1800
-var TRACTION = 80
-var ROLL_DISTANCE = 350*3
+var run_speed = 340*2
+var dash_speed = 390*2
+var walk_speed = 200*2
+var gravity = 1800*1
+var jump_force = 800
+var max_jump_force = 1300
+var double_jump_force = 1300
+var max_air_speed = 300*1.5
+var air_accel = 50
+var fall_speed = 60
+var falling_speed = 1800
+var max_fall_speed = 1800
+var traction = 80
+var roll_distance = 350*3
 var air_dodge_speed = 700*5
-var UP_B_LAUNCHSPEED = 700*2
-var AIRJUMPS = 1
+var up_b_launch_speed = 700*2
+var air_jumps = 1
 
 func create_hitbox(width, height, damage, angle, base_kb, kb_scaling, duration, type, points, angle_flipper, hitlag = 1):
 	var hitbox_instance = hitbox.instantiate()
@@ -159,7 +159,7 @@ func newframe():
 	frame = 0
 	
 func reset_jumps():
-	airJump = AIRJUMPS
+	airJump = air_jumps
 	special = true
 
 func play_animation(animation_name):
