@@ -2,8 +2,8 @@ extends Node2D
 
 @export var p1: PackedScene
 @export var p2: PackedScene
-@onready var p1portrait = $CanvasLayer/Control/HBoxContainer/P1Card/HBoxContainer/Portrait
-@onready var p2portrait = $CanvasLayer/Control/HBoxContainer/P2Card/HBoxContainer/Portrait
+@onready var p1card = $CanvasLayer/Control/HBoxContainer/P1Card
+@onready var p2card = $CanvasLayer/Control/HBoxContainer/P2Card
 var p1instance
 var p2instance 
 
@@ -20,20 +20,20 @@ func _ready():
 	match Globals.player1:
 		Fighters.FUX:
 			p1 = load('res://characters/fux/fux.tscn')
-			p1portrait.texture = preload("res://characters/fux/charselect.png")
+			p1card.set_portrait(preload("res://characters/fux/charselect.png"))
 		Fighters.MARTYO:
 			p1 = load('res://characters/martyo/martyo.tscn')
-			p1portrait.texture = preload("res://characters/martyo/sprites/portrait.png")
+			p1card.set_portrait(preload("res://characters/martyo/sprites/portrait.png"))
 	
 	# Load the correct character for Player 2
 	p2 = load('res://characters/martyo/martyo.tscn')	
 	match Globals.player2:
 		Fighters.FUX:
 			p2 = load('res://characters/fux/fux.tscn')
-			p2portrait.texture = preload("res://characters/fux/charselect.png")
+			p2card.set_portrait(preload("res://characters/fux/charselect.png"))
 		Fighters.MARTYO:
 			p2 = load('res://characters/martyo/martyo.tscn')
-			p2portrait.texture = preload("res://characters/martyo/sprites/portrait.png")
+			p2card.set_portrait(preload("res://characters/martyo/sprites/portrait.png"))
 
 	# Instantiate and add Player 1 character to the scene
 	p1instance = p1.instantiate()
@@ -57,10 +57,10 @@ func _ready():
 
 
 func _process(delta):
-	$CanvasLayer/Control/HBoxContainer/P1Card/HBoxContainer/VBoxContainer/Stocks.text = str(p1instance.stocks)
-	$CanvasLayer/Control/HBoxContainer/P2Card/HBoxContainer/VBoxContainer/Stocks.text = str(p2instance.stocks)
-	$CanvasLayer/Control/HBoxContainer/P1Card/HBoxContainer/VBoxContainer/Percent.text = str(round(p1instance.percentage)) + "%"
-	$CanvasLayer/Control/HBoxContainer/P2Card/HBoxContainer/VBoxContainer/Percent.text = str(round(p2instance.percentage)) + "%"
-	
+	p1card.set_stocks(p1instance.stocks)
+	p2card.set_stocks(p2instance.stocks)
+	p1card.set_percent(int(round(p1instance.percentage)))
+	p2card.set_percent(int(round(p2instance.percentage)))
+
 	if p1instance.stocks < 1 or p2instance.stocks < 1:
 		get_tree().change_scene_to_file('res://ui/character_select/character_select.tscn')
