@@ -26,6 +26,23 @@
 [ext_resource type="Texture2D" path="res://stages/monolith/monolith.png" id="21_mono"]
 [ext_resource type="Texture2D" path="res://stages/monolith/monolith_glow.png" id="22_glow"]
 
+[ext_resource type="Shader" path="res://stages/monolith/monolith_pulse.gdshader" id="33_pulse"]
+[ext_resource type="Shader" path="res://stages/monolith/monolith_breath.gdshader" id="34_breath"]
+[ext_resource type="Texture2D" path="res://stages/monolith/monolith_lines.png" id="35_lines"]
+[ext_resource type="Texture2D" path="res://stages/monolith/monolith_slit.png" id="36_slit"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pulse"]
+shader = ExtResource("33_pulse")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_slit"]
+shader = ExtResource("34_breath")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_underglow"]
+shader = ExtResource("34_breath")
+shader_parameter/breath_amount = 0.12
+shader_parameter/flash_amount = 0.3
+shader_parameter/flash_width = 0.4
+
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_add"]
 blend_mode = 1
 
@@ -205,6 +222,7 @@ collision_mask = 0
 z_index = -2
 position = Vector2(0, 410)
 scale = Vector2(2.167, 2.167)
+material = SubResource("ShaderMaterial_underglow")
 texture = ExtResource("22_glow")
 
 [node name="Main Stage 2" type="Sprite2D" parent="."]
@@ -212,6 +230,20 @@ z_index = -2
 position = Vector2(2.08165e-12, 301)
 scale = Vector2(0.54175, 0.54175)
 texture = ExtResource("21_mono")
+
+[node name="Monolith Lines" type="Sprite2D" parent="."]
+z_index = -2
+material = SubResource("ShaderMaterial_pulse")
+position = Vector2(2.08165e-12, 301)
+scale = Vector2(0.54175, 0.54175)
+texture = ExtResource("35_lines")
+
+[node name="Monolith Slit" type="Sprite2D" parent="."]
+z_index = -2
+material = SubResource("ShaderMaterial_slit")
+position = Vector2(2.08165e-12, 301)
+scale = Vector2(0.54175, 0.54175)
+texture = ExtResource("36_slit")
 
 [node name="CanvasLayer" parent="." instance=ExtResource("12_upc5g")]
 
