@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://smrcwvx16pxp"
-path="res://.godot/imported/space_bg.png-6cc18dcaa79ba20d102926b6c9809411.ctex"
+uid="uid://b18okpyf13p8h"
+path="res://.godot/imported/galaxy_6.png-17c33a44d2e0099184f0d537d468411e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://stages/space/space_bg.png"
-dest_files=["res://.godot/imported/space_bg.png-6cc18dcaa79ba20d102926b6c9809411.ctex"]
+source_file="res://stages/monolith/backdrop/galaxy_6.png"
+dest_files=["res://.godot/imported/galaxy_6.png-17c33a44d2e0099184f0d537d468411e.ctex"]
 
 [params]
 

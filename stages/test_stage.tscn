@@ -13,9 +13,21 @@
 [ext_resource type="Texture2D" uid="uid://2jhg1oyhaa4l" path="res://stages/trashville/stage1.png" id="10_c7ci1"]
 [ext_resource type="PackedScene" uid="uid://becgecctqkkj5" path="res://ui/canvas_layer.tscn" id="12_upc5g"]
 
-[ext_resource type="Texture2D" path="res://stages/monolith/space_bg.png" id="20_spacebg"]
+[ext_resource type="Script" path="res://stages/monolith/space_backdrop.gd" id="23_backdrop"]
+[ext_resource type="Script" path="res://stages/monolith/shooting_stars.gd" id="24_shooting"]
+[ext_resource type="Texture2D" path="res://stages/monolith/backdrop/nebula.png" id="25_nebula"]
+[ext_resource type="Texture2D" path="res://stages/monolith/backdrop/stars.png" id="26_stars"]
+[ext_resource type="Texture2D" path="res://stages/monolith/backdrop/galaxy_1.png" id="27_g1"]
+[ext_resource type="Texture2D" path="res://stages/monolith/backdrop/galaxy_2.png" id="28_g2"]
+[ext_resource type="Texture2D" path="res://stages/monolith/backdrop/galaxy_3.png" id="29_g3"]
+[ext_resource type="Texture2D" path="res://stages/monolith/backdrop/galaxy_4.png" id="30_g4"]
+[ext_resource type="Texture2D" path="res://stages/monolith/backdrop/galaxy_5.png" id="31_g5"]
+[ext_resource type="Texture2D" path="res://stages/monolith/backdrop/galaxy_6.png" id="32_g6"]
 [ext_resource type="Texture2D" path="res://stages/monolith/monolith.png" id="21_mono"]
 [ext_resource type="Texture2D" path="res://stages/monolith/monolith_glow.png" id="22_glow"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_add"]
+blend_mode = 1
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_px5ta"]
 size = Vector2(962, 39)
@@ -77,14 +89,56 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_s81bm")
 centered = false
 
-[node name="Background" type="Node2D" parent="."]
-scale = Vector2(2, 2)
-
-[node name="Space" type="Sprite2D" parent="Background"]
+[node name="SpaceBackdrop" type="Node2D" parent="."]
 z_index = -3
-position = Vector2(75, 0)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("20_spacebg")
+position = Vector2(150, 0)
+script = ExtResource("23_backdrop")
+
+[node name="Nebula" type="Sprite2D" parent="SpaceBackdrop"]
+scale = Vector2(2, 2)
+texture = ExtResource("25_nebula")
+
+[node name="Galaxies" type="Node2D" parent="SpaceBackdrop"]
+
+[node name="Galaxy1" type="Sprite2D" parent="SpaceBackdrop/Galaxies"]
+material = SubResource("CanvasItemMaterial_add")
+position = Vector2(800, -830)
+texture = ExtResource("27_g1")
+
+[node name="Galaxy2" type="Sprite2D" parent="SpaceBackdrop/Galaxies"]
+material = SubResource("CanvasItemMaterial_add")
+position = Vector2(-1140, 600)
+texture = ExtResource("28_g2")
+
+[node name="Galaxy3" type="Sprite2D" parent="SpaceBackdrop/Galaxies"]
+material = SubResource("CanvasItemMaterial_add")
+position = Vector2(1150, 750)
+texture = ExtResource("29_g3")
+
+[node name="Galaxy4" type="Sprite2D" parent="SpaceBackdrop/Galaxies"]
+material = SubResource("CanvasItemMaterial_add")
+position = Vector2(-1370, -930)
+texture = ExtResource("30_g4")
+
+[node name="Galaxy5" type="Sprite2D" parent="SpaceBackdrop/Galaxies"]
+material = SubResource("CanvasItemMaterial_add")
+position = Vector2(-200, -1090)
+texture = ExtResource("31_g5")
+
+[node name="Galaxy6" type="Sprite2D" parent="SpaceBackdrop/Galaxies"]
+material = SubResource("CanvasItemMaterial_add")
+position = Vector2(200, 1050)
+texture = ExtResource("32_g6")
+
+[node name="Stars" type="Sprite2D" parent="SpaceBackdrop"]
+material = SubResource("CanvasItemMaterial_add")
+texture = ExtResource("26_stars")
+
+[node name="Twinkle" type="Node2D" parent="SpaceBackdrop"]
+
+[node name="ShootingStars" type="Node2D" parent="."]
+z_index = -3
+script = ExtResource("24_shooting")
 
 [node name="StageTemplate" type="Sprite2D" parent="."]
 visible = false
