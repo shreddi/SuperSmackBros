@@ -1,28 +1,11 @@
 [gd_scene format=3 uid="uid://xk7fdeaogkqq"]
 
-[ext_resource type="Texture2D" uid="uid://bqhp5t1on48i1" path="res://characters/fux/charselect.png" id="1_aj6me"]
 [ext_resource type="Script" path="res://ui/character_select/characterselect.gd" id="1_thc21"]
-[ext_resource type="Texture2D" uid="uid://bj6qrbp73nart" path="res://ui/character_select/p1indicator.png" id="2_iyqww"]
-[ext_resource type="Texture2D" uid="uid://c8b23g45te57j" path="res://ui/character_select/p2indicator.png" id="3_r7jn7"]
-[ext_resource type="Texture2D" uid="uid://b3exfmw1wwd1w" path="res://characters/martyo/sprites/portrait.png" id="5_3xlhb"]
-[ext_resource type="Script" path="res://ui/menu_button.gd" id="5_xbe68"]
-[ext_resource type="Theme" path="res://ui/fx/smack_button.tres" id="98_theme"]
 [ext_resource type="Script" path="res://ui/character_select/controls_panel.gd" id="97_ctrl"]
 [ext_resource type="FontFile" path="res://ui/title_screen/fonts/LilitaOne-Regular.ttf" id="96_font"]
 [ext_resource type="Shader" path="res://ui/fx/fire.gdshader" id="99_fire"]
 
-[sub_resource type="GDScript" id="GDScript_4rcup"]
-script/source = "extends TextureRect
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-	
-"
+[ext_resource type="Script" path="res://ui/character_select/fighter_preview.gd" id="100_prev"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fire"]
 shader = ExtResource("99_fire")
@@ -61,94 +44,93 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(1, 1, 1, 1)
 
-[node name="Player1Indicator" type="Sprite2D" parent="."]
-position = Vector2(-64, -38)
-texture = ExtResource("3_r7jn7")
-
-[node name="Player2Indicator" type="Sprite2D" parent="."]
-position = Vector2(-9, -39)
-texture = ExtResource("2_iyqww")
-
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="Title" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -942.0
-offset_top = -517.0
-offset_right = 941.0
-offset_bottom = 516.0
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 10.0
+offset_bottom = 120.0
 grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="p1column" type="VBoxContainer" parent="HBoxContainer"]
-layout_mode = 2
-alignment = 2
-
-[node name="p1controls" type="PanelContainer" parent="HBoxContainer/p1column"]
-layout_mode = 2
-script = ExtResource("97_ctrl")
-player_label = "P1"
-accent = Color(1, 0.29, 0.23, 1)
-rows = [["Select", "A / D"], ["Move", "W A S D"], ["Light attack", "Z"], ["Strong attack", "X"], ["Jump", "C"], ["Special", "V"], ["Shield", "Shift"], ["Grab", "Shield + Attack"]]
-
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 100
-alignment = 1
-
-[node name="title" type="Label" parent="HBoxContainer/VBoxContainer"]
-layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.88, 0.29, 1)
 theme_override_colors/font_outline_color = Color(0.1, 0.02, 0.02, 1)
 theme_override_colors/font_shadow_color = Color(0.35, 0.05, 0.02, 1)
 theme_override_constants/shadow_offset_y = 6
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("96_font")
-theme_override_font_sizes/font_size = 84
-text = "SELECT YOUR CHARACTER"
+theme_override_font_sizes/font_size = 76
+text = "SELECT YOUR FIGHTER"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="GridContainer" type="GridContainer" parent="HBoxContainer/VBoxContainer"]
+[node name="Columns" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = -40.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="P1Column" type="VBoxContainer" parent="Columns"]
+custom_minimum_size = Vector2(520, 0)
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="P1Preview" type="PanelContainer" parent="Columns/P1Column"]
+layout_mode = 2
+script = ExtResource("100_prev")
+player_label = "P1"
+accent = Color(1, 0.29, 0.23, 1)
+
+[node name="P1Controls" type="PanelContainer" parent="Columns/P1Column"]
+layout_mode = 2
+script = ExtResource("97_ctrl")
+player_label = "P1"
+accent = Color(1, 0.29, 0.23, 1)
+rows = [["Move / Choose", "W A S D"], ["Attack / Lock in", "Z"], ["Strong attack", "X"], ["Jump", "C"], ["Special / Back", "V"], ["Shield", "Shift"], ["Grab", "Shield + Attack"]]
+
+[node name="Center" type="VBoxContainer" parent="Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="Grid" type="GridContainer" parent="Columns/Center"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_constants/h_separation = 100
-theme_override_constants/v_separation = 0
-columns = 2
+theme_override_constants/h_separation = 14
+theme_override_constants/v_separation = 14
+columns = 4
 
-[node name="Fux" type="TextureRect" parent="HBoxContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(400, 300)
+[node name="Status" type="Label" parent="Columns/Center"]
+custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
-texture = ExtResource("1_aj6me")
-script = SubResource("GDScript_4rcup")
+theme_override_colors/font_color = Color(1, 0.88, 0.29, 1)
+theme_override_colors/font_outline_color = Color(0.1, 0.02, 0.02, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("96_font")
+theme_override_font_sizes/font_size = 52
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Martyo" type="TextureRect" parent="HBoxContainer/VBoxContainer/GridContainer"]
-custom_minimum_size = Vector2(400, 300)
+[node name="P2Column" type="VBoxContainer" parent="Columns"]
+custom_minimum_size = Vector2(520, 0)
 layout_mode = 2
-texture = ExtResource("5_3xlhb")
+theme_override_constants/separation = 20
 
-[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(500, 110)
+[node name="P2Preview" type="PanelContainer" parent="Columns/P2Column"]
 layout_mode = 2
-size_flags_horizontal = 4
-theme = ExtResource("98_theme")
-text = "START GAME"
-script = ExtResource("5_xbe68")
-path = "res://stages/test_stage.tscn"
+script = ExtResource("100_prev")
+player_label = "P2"
+accent = Color(0.3, 0.55, 1, 1)
 
-[node name="p2column" type="VBoxContainer" parent="HBoxContainer"]
-layout_mode = 2
-alignment = 2
-
-[node name="p2controls" type="PanelContainer" parent="HBoxContainer/p2column"]
+[node name="P2Controls" type="PanelContainer" parent="Columns/P2Column"]
 layout_mode = 2
 script = ExtResource("97_ctrl")
 player_label = "P2"
 accent = Color(0.3, 0.55, 1, 1)
-rows = [["Select", "J / L"], ["Move", "I J K L"], ["Light attack", "M"], ["Strong attack", ","], ["Jump", "."], ["Special", "/"], ["Shield", "N"], ["Grab", "Shield + Attack"]]
-
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/Button" to="HBoxContainer/VBoxContainer/Button" method="_on_pressed"]
+rows = [["Move / Choose", "I J K L"], ["Attack / Lock in", "M"], ["Strong attack", ","], ["Jump", "."], ["Special / Back", "/"], ["Shield", "N"], ["Grab", "Shield + Attack"]]

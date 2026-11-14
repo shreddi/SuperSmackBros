@@ -37,8 +37,9 @@ the defaults):
    map is not announced at all.
 4. Point the scene's root script at `<name>.gd` and its `State` child's script
    at the state machine.
-5. Register the character in `ui/character_select/characterselect.gd` and
-   `stages/test_stage.gd`.
+5. Add one entry (id, name, scene, portrait, optional select sound) to
+   `FIGHTERS` in `characters/roster.gd`. The character select screen and the
+   stage both read it, and the select grid grows and wraps on its own.
 
 ## Where a character can differ
 

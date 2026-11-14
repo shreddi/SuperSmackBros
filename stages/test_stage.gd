@@ -7,33 +7,17 @@ extends Node2D
 var p1instance
 var p2instance 
 
-# Enum for Fighters
-enum Fighters {
-	FUX,
-	MARTYO
-}
+const Roster = preload("res://characters/roster.gd")
 
 func _ready():
 
-	# Load the correct character for Player 1
-	p1 = load('res://characters/fux/fux.tscn')
-	match Globals.player1:
-		Fighters.FUX:
-			p1 = load('res://characters/fux/fux.tscn')
-			p1card.set_portrait(preload("res://characters/fux/charselect.png"))
-		Fighters.MARTYO:
-			p1 = load('res://characters/martyo/martyo.tscn')
-			p1card.set_portrait(preload("res://characters/martyo/sprites/portrait.png"))
-	
-	# Load the correct character for Player 2
-	p2 = load('res://characters/martyo/martyo.tscn')	
-	match Globals.player2:
-		Fighters.FUX:
-			p2 = load('res://characters/fux/fux.tscn')
-			p2card.set_portrait(preload("res://characters/fux/charselect.png"))
-		Fighters.MARTYO:
-			p2 = load('res://characters/martyo/martyo.tscn')
-			p2card.set_portrait(preload("res://characters/martyo/sprites/portrait.png"))
+	# Load the chosen fighters (Globals holds roster indices from the select screen)
+	var p1_entry := Roster.entry(Globals.player1, 0)
+	var p2_entry := Roster.entry(Globals.player2, 1)
+	p1 = load(p1_entry.scene)
+	p1card.set_portrait(load(p1_entry.portrait))
+	p2 = load(p2_entry.scene)
+	p2card.set_portrait(load(p2_entry.portrait))
 
 	# Instantiate and add Player 1 character to the scene
 	p1instance = p1.instantiate()
