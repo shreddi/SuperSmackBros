@@ -13,10 +13,14 @@
 [ext_resource type="Texture2D" uid="uid://2jhg1oyhaa4l" path="res://stages/trashville/stage1.png" id="10_c7ci1"]
 [ext_resource type="PackedScene" uid="uid://becgecctqkkj5" path="res://ui/canvas_layer.tscn" id="12_upc5g"]
 
+[ext_resource type="Texture2D" path="res://stages/monolith/space_bg.png" id="20_spacebg"]
+[ext_resource type="Texture2D" path="res://stages/monolith/monolith.png" id="21_mono"]
+[ext_resource type="Texture2D" path="res://stages/monolith/monolith_glow.png" id="22_glow"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_px5ta"]
 size = Vector2(962, 39)
 
-[node name="TestStage" type="Node2D"]
+[node name="Monolith" type="Node2D"]
 position = Vector2(2.08165e-12, 2.08165e-12)
 script = ExtResource("1_kepiv")
 
@@ -76,35 +80,11 @@ centered = false
 [node name="Background" type="Node2D" parent="."]
 scale = Vector2(2, 2)
 
-[node name="Sky" type="Sprite2D" parent="Background"]
-z_index = -2
-position = Vector2(0, -288)
-scale = Vector2(1.977, 1.977)
-texture = ExtResource("1_mhrm7")
-
-[node name="Fog" type="Sprite2D" parent="Background"]
-z_index = -2
-position = Vector2(-40, -149)
-scale = Vector2(1.977, 1.977)
-texture = ExtResource("2_w1er4")
-
-[node name="Clouds" type="Sprite2D" parent="Background"]
-z_index = -2
-position = Vector2(0, -375)
-scale = Vector2(1.977, 1.977)
-texture = ExtResource("3_l2lcj")
-
-[node name="Buildings2" type="Sprite2D" parent="Background"]
-z_index = -2
-position = Vector2(-130, -50)
-scale = Vector2(2.334, 2.334)
-texture = ExtResource("4_lc82a")
-
-[node name="MainBG" type="Sprite2D" parent="Background"]
-z_index = -2
-position = Vector2(0, 300)
+[node name="Space" type="Sprite2D" parent="Background"]
+z_index = -3
+position = Vector2(75, 0)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_s81bm")
+texture = ExtResource("20_spacebg")
 
 [node name="StageTemplate" type="Sprite2D" parent="."]
 visible = false
@@ -169,15 +149,15 @@ collision_mask = 0
 
 [node name="Main Stage 1" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(2.08165e-12, 300)
-scale = Vector2(2.207, 2.167)
-texture = ExtResource("9_kw7pb")
+position = Vector2(0, 410)
+scale = Vector2(2.167, 2.167)
+texture = ExtResource("22_glow")
 
 [node name="Main Stage 2" type="Sprite2D" parent="."]
 z_index = -2
 position = Vector2(2.08165e-12, 301)
-scale = Vector2(2.167, 2.167)
-texture = ExtResource("10_c7ci1")
+scale = Vector2(0.54175, 0.54175)
+texture = ExtResource("21_mono")
 
 [node name="CanvasLayer" parent="." instance=ExtResource("12_upc5g")]
 
