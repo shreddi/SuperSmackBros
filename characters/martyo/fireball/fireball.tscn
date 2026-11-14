@@ -5,15 +5,15 @@
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gmanv"]
 atlas = ExtResource("2_wvq8g")
-region = Rect2(256, 0, 128, 128)
+region = Rect2(768, 0, 384, 384)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vuqdk"]
 atlas = ExtResource("2_wvq8g")
-region = Rect2(0, 0, 128, 128)
+region = Rect2(0, 0, 384, 384)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jat5e"]
 atlas = ExtResource("2_wvq8g")
-region = Rect2(128, 0, 128, 128)
+region = Rect2(384, 0, 384, 384)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2adno"]
 animations = [{
@@ -62,7 +62,7 @@ script = ExtResource("1_julbi")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(2.84217e-14, 28)
-scale = Vector2(5, 5)
+scale = Vector2(1.66667, 1.66667)
 sprite_frames = SubResource("SpriteFrames_2adno")
 animation = &"burst"
 
