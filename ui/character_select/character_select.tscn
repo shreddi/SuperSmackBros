@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c8b23g45te57j" path="res://ui/character_select/p2indicator.png" id="3_r7jn7"]
 [ext_resource type="Texture2D" uid="uid://b3exfmw1wwd1w" path="res://characters/martyo/sprites/portrait.png" id="5_3xlhb"]
 [ext_resource type="Script" path="res://ui/menu_button.gd" id="5_xbe68"]
+[ext_resource type="Theme" path="res://ui/fx/smack_button.tres" id="98_theme"]
 [ext_resource type="Shader" path="res://ui/fx/fire.gdshader" id="99_fire"]
 
 [sub_resource type="GDScript" id="GDScript_4rcup"]
@@ -131,14 +132,10 @@ layout_mode = 2
 texture = ExtResource("5_3xlhb")
 
 [node name="Button" type="Button" parent="HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(500, 100)
+custom_minimum_size = Vector2(500, 110)
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 0, 1)
-theme_override_colors/icon_normal_color = Color(1, 0, 0, 1)
-theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
-theme_override_font_sizes/font_size = 43
+size_flags_horizontal = 4
+theme = ExtResource("98_theme")
 text = "START GAME"
 script = ExtResource("5_xbe68")
 path = "res://stages/test_stage.tscn"
