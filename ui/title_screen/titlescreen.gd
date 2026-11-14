@@ -2,7 +2,6 @@ extends Control
 
 var current_state = States.PLAY
 @onready var getpointer = $Pointer
-@onready var anim = $AnimatedSprite2D
 
 enum States{
 	PLAY,
@@ -11,7 +10,14 @@ enum States{
 }
 
 func _ready():
-	anim.play("default",1.0,false)
+	# Pop the play button in after the logo has slammed down.
+	var btn: Button = $VBoxContainer/playbutton
+	btn.modulate.a = 0.0
+	btn.pivot_offset = btn.custom_minimum_size / 2.0
+	btn.scale = Vector2(0.6, 0.6)
+	var tw: Tween = create_tween().set_parallel(true)
+	tw.tween_property(btn, "modulate:a", 1.0, 0.2).set_delay(1.5)
+	tw.tween_property(btn, "scale", Vector2.ONE, 0.35).set_delay(1.5).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 	
 func _process(delta):
 	pass

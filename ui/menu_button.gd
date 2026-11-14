@@ -7,9 +7,15 @@ extends Button
 
 func _on_SinglePlayerButton_focus_entered():
 	add_theme_color_override("font_outline_color", Color(1, 0.3254, 0))
+	_pulse(1.06)
 
 func _on_SinglePlayerButton_focus_exited():
 	add_theme_color_override("font_outline_color", Color(0, 0, 0))
+	_pulse(1.0)
+
+func _pulse(target: float) -> void:
+	pivot_offset = size / 2.0
+	create_tween().tween_property(self, "scale", Vector2(target, target), 0.12).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 
 func _on_pressed():
 	if quit_game:

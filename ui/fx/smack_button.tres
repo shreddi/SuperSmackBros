@@ -1,0 +1,62 @@
+[gd_resource type="Theme" load_steps=6 format=3]
+
+[ext_resource type="FontFile" path="res://ui/title_screen/fonts/LilitaOne-Regular.ttf" id="1_font"]
+
+[sub_resource type="StyleBoxFlat" id="normal"]
+bg_color = Color(0.1, 0.02, 0.02, 0.92)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 12
+border_color = Color(1, 0.69, 0, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+shadow_color = Color(0, 0, 0, 0.6)
+shadow_size = 8
+shadow_offset = Vector2(0, 6)
+
+[sub_resource type="StyleBoxFlat" id="hover"]
+bg_color = Color(0.45, 0.07, 0.02, 0.95)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 12
+border_color = Color(1, 0.9, 0.3, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+shadow_color = Color(1, 0.35, 0, 0.55)
+shadow_size = 18
+shadow_offset = Vector2(0, 0)
+
+[sub_resource type="StyleBoxFlat" id="pressed"]
+bg_color = Color(0.7, 0.14, 0.03, 1)
+border_width_left = 6
+border_width_top = 12
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(1, 0.95, 0.6, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxEmpty" id="empty"]
+
+[resource]
+default_font = ExtResource("1_font")
+default_font_size = 64
+Button/colors/font_color = Color(1, 0.9, 0.35, 1)
+Button/colors/font_hover_color = Color(1, 1, 0.85, 1)
+Button/colors/font_focus_color = Color(1, 1, 0.85, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(0.1, 0.02, 0.02, 1)
+Button/constants/outline_size = 12
+Button/styles/normal = SubResource("normal")
+Button/styles/hover = SubResource("hover")
+Button/styles/focus = SubResource("hover")
+Button/styles/pressed = SubResource("pressed")
+Button/styles/disabled = SubResource("normal")
