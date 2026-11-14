@@ -9,13 +9,11 @@ var characters = {"fux": "res://characters/fux/fux.tscn", "martyo": "res://chara
 @onready var gridContainer = $HBoxContainer/VBoxContainer/GridContainer
 @onready var p1 = $Player1Indicator
 @onready var p2 = $Player2Indicator
-@onready var anim = $AnimatedSprite2D
 
 func _ready():
 	#anim.position = Vector2(1920/2+200,1080/2)
 	#anim.scale.y = 6
 	#anim.scale.x = 10
-	anim.play("default",1.0,false)
 	characters = gridContainer.get_children()
 
 	# Initialize selections
